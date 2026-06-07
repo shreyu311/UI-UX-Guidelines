@@ -33,7 +33,7 @@ _Link example handoff files in the Standards/ folder for actual component-specif
 
 ```html
 <!-- Primary Button -->
-<button class="bg-[#208692] text-white font-bold py-3 px-8 rounded-[12px] focus:outline-none focus-visible:ring-2 ring-offset-2 ring-[#208692] transition hover:bg-[#164F5B]">
+<button class="bg-[[YOUR_PRIMARY]] text-white font-bold py-3 px-8 rounded-[12px] focus:outline-none focus-visible:ring-2 ring-offset-2 ring-[[YOUR_PRIMARY]] transition hover:bg-[[YOUR_PRIMARY_DARK]]">
   Confirm
 </button>
 
@@ -72,7 +72,7 @@ _Link example handoff files in the Standards/ folder for actual component-specif
 <input
   type="email"
   id="email"
-  class="block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#208692]"
+  class="block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[[YOUR_PRIMARY]]"
   aria-required="true"
   aria-describedby="email-help"
 />

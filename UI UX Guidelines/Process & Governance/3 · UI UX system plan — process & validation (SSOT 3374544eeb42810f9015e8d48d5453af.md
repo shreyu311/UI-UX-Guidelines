@@ -9,7 +9,7 @@
 
 ## What this is
 
-**Single source of truth** for how UI/UX requirements are **defined**, **mocked**, and **validated** across **all Aosenuma projects**. Executable rules in repo live in **`design.md`**; this page + the linked repo doc together form the full system.
+**Single source of truth** for how UI/UX requirements are **defined**, **mocked**, and **validated** across **all [YOUR_COMPANY_NAME] projects**. Executable rules in repo live in **`design.md`**; this page + the linked repo doc together form the full system.
 
 <aside>
 📌
@@ -62,7 +62,7 @@ Log **what / why / approver / evidence**; avoid permanent one-offs — recurring
 ## Governance & packaging
 
 - Program overview & CTO path: [2 · System design proposal — CTO review package](https://www.notion.so/2-System-design-proposal-CTO-review-package-d9fc7ae92aa9477c96677c2fde5d69ad?pvs=21)
-- Jorge assignment / process working plan: [8 · Working plan — UI/UX process (from Jorge assignment)](../Planning%20&%20Meetings/8%20%C2%B7%20Working%20plan%20%E2%80%94%20UI%20UX%20process%20(from%20Jorge%20assig%203374544eeb428142ac89e6c06ce1db5e.md)
+- [project-name] assignment / process working plan: [8 · Working plan — UI/UX process (from [project-name] assignment)](../Planning%20&%20Meetings/8%20%C2%B7%20Working%20plan%20%E2%80%94%20UI%20UX%20process%20(from%20[project-name]%20assig%203374544eeb428142ac89e6c06ce1db5e.md)
 
 ## RACI (short)
 

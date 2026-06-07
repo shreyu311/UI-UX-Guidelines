@@ -2,7 +2,7 @@
 
 ## Purpose & scope
 
-This document is the single source of truth for **aosenuma** product UI: layout, hierarchy, interaction, visual system, in-product language, required states, and accessibility. Implementation uses **ShadCN + Tailwind** with tokens from **`globals.css`**.
+This document is the single source of truth for **[YOUR_COMPANY_NAME]** product UI: layout, hierarchy, interaction, visual system, in-product language, required states, and accessibility. Implementation uses **ShadCN + Tailwind** with tokens from **`globals.css`**.
 
 ### Scope
 
@@ -18,14 +18,14 @@ Canonical product colors (see [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%
 
 | Role | HEX | Token (code) |
 | --- | --- | --- |
-| Primary / focus | **#208692** | `--primary`, `--ring` |
-| Deep / nav chrome | **#164F5B** | `deep` (Figma) / paired with accessible text |
-| Accent (highlight only) | **#D4D970** | `--accent` |
-| Page background | **#F4F5F0** | `--background` |
-| Default text | **#26272A** | `--foreground` |
-| Border / muted fill | **#CFD0BF** | `--border`, `--muted` |
-| Muted text | **#527779** | `--muted-foreground` |
-| Secondary wash | **#C7D8D0** | `--secondary` |
+| Primary / focus | **[YOUR_PRIMARY]** | `--primary`, `--ring` |
+| Deep / nav chrome | **[YOUR_PRIMARY_DARK]** | `deep` (Figma) / paired with accessible text |
+| Accent (highlight only) | **[YOUR_ACCENT]** | `--accent` |
+| Page background | **[YOUR_BACKGROUND]** | `--background` |
+| Default text | **[YOUR_TEXT]** | `--foreground` |
+| Border / muted fill | **[YOUR_COMPLEMENTARY_1]** | `--border`, `--muted` |
+| Muted text | **[YOUR_COMPLEMENTARY_3]** | `--muted-foreground` |
+| Secondary wash | **[YOUR_COMPLEMENTARY_2]** | `--secondary` |
 | Success / warning / error (chips & states) | **#16A34A** / **#F59E0B** / **#DC2626** | map to semantic components in **4 · Components** |
 
 ### Visual swatches (Figma / PNG)
@@ -73,7 +73,7 @@ Single map from UI domains to the living spec. If a row points to a section that
 
 ### Standards owner
 
-- Shreyas Shirke
+- [project-name]as Shirke
 
 ---
 
@@ -102,7 +102,7 @@ Accessibility and **recoverability** win over novelty.
 - [ ]  Token-driven styling (no orphan hex)
 - [ ]  Loading · empty · error · success covered
 - [ ]  Keyboard, focus, and semantics verified
-- [ ]  Copy matches voice (**aosenuma** lowercase, warm, concise)
+- [ ]  Copy matches voice (**[YOUR_COMPANY_NAME]** lowercase, warm, concise)
 
 ### PR snippet (copy/paste)
 

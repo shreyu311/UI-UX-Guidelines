@@ -2,7 +2,7 @@
 
 ## Ownership
 
-- **Standards owner:** Shreyas Shirke
+- **Standards owner:** [project-name]as Shirke
 - **Repo SSOT:** `design.md` in `docs/` or repo root
 - **Approved deviations:** `docs/design-exceptions.md`
 
@@ -10,7 +10,7 @@
 
 - **Engineering merge gate:** the Markdown UI specification checked into Git under **docs** (and optionally at the repository root—see **Ownership** for the exact filename). If a PR conflicts with that file, update it first or log an approved exception in the exceptions Markdown next to it.
 - **Design narrative:** this Notion hub is the human-friendly reference (examples, Figma links, tables). If Notion and the Git spec disagree, **follow the Git spec for code** until both are updated together.
-- **Workshop snapshots:** PDF or HTML exports (for example the stakeholder **Components Reference** booklet tied to v1.0 of the Git spec) can lag. Refresh them after substantive changes. **Shreyas Shirke** (or delegated design ops) owns export cadence.
+- **Workshop snapshots:** PDF or HTML exports (for example the stakeholder **Components Reference** booklet tied to v1.0 of the Git spec) can lag. Refresh them after substantive changes. **[project-name]as Shirke** (or delegated design ops) owns export cadence.
 
 ### Export checklist (design ops)
 
@@ -22,7 +22,7 @@
 ## How we extend these guidelines
 
 1. **Categorize UI** (actions, forms, feedback, navigation, data display) and document anatomy, spacing, and states per pattern.
-2. **Use NN/g + Material** only as **baseline** references for sizing, density, and interaction — **aosenuma tokens + ShadCN** stay authoritative in shipped UI.
+2. **Use NN/g + Material** only as **baseline** references for sizing, density, and interaction — **[YOUR_COMPANY_NAME] tokens + ShadCN** stay authoritative in shipped UI.
 3. **Show decisions on components** in the shared Figma library (color, motion, spacing, hierarchy) — not swatch-only slides.
 4. **Call out density** differences (e.g. admin vs marketing) directly in Figma frames.
 
@@ -35,7 +35,7 @@ UI is ready to merge when:
 - [ ]  **Token-only** styling — no orphan hex in frames or code
 - [ ]  **Loading · empty · error · success** covered
 - [ ]  **Keyboard, focus, semantics** verified against **4 · Components & patterns**
-- [ ]  **Copy** matches voice (**aosenuma** lowercase, warm, concise)
+- [ ]  **Copy** matches voice (**[YOUR_COMPANY_NAME]** lowercase, warm, concise)
 - [ ]  **Figma** library + frame linked on the work item (or **N/A** with reason)
 - [ ]  **Exceptions** logged in `docs/design-exceptions.md` when deviating
 

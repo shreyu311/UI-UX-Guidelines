@@ -6,49 +6,49 @@ These HEX values match **2 · Brand, layout & tokens** and **`globals.css`**. Us
 
 <aside>
 
-**#208692** `primary` · `ring`
+**[YOUR_PRIMARY]** `primary` · `ring`
 
 </aside>
 
 <aside>
 
-**#164F5B** `deep`
+**[YOUR_PRIMARY_DARK]** `deep`
 
 </aside>
 
 <aside>
 
-**#D4D970** `accent`
+**[YOUR_ACCENT]** `accent`
 
 </aside>
 
 <aside>
 
-**#F4F5F0** `background`
+**[YOUR_BACKGROUND]** `background`
 
 </aside>
 
 <aside>
 
-**#26272A** `foreground`
+**[YOUR_TEXT]** `foreground`
 
 </aside>
 
 <aside>
 
-**#527779** `muted-foreground`
+**[YOUR_COMPLEMENTARY_3]** `muted-foreground`
 
 </aside>
 
 <aside>
 
-**#CFD0BF** `border` · `muted`
+**[YOUR_COMPLEMENTARY_1]** `border` · `muted`
 
 </aside>
 
 <aside>
 
-**#C7D8D0** `secondary`
+**[YOUR_COMPLEMENTARY_2]** `secondary`
 
 </aside>
 
@@ -74,7 +74,7 @@ Use the **same six documentation slots** as [2 · Brand, layout & tokens](2%20%C
 <aside>
 🖼️
 
-**1 · Hero / marketing CTA band** — gradient **#164F5B → #208692** on real buttons + headline.
+**1 · Hero / marketing CTA band** — gradient **[YOUR_PRIMARY_DARK] → [YOUR_PRIMARY]** on real buttons + headline.
 
 </aside>
 
@@ -113,34 +113,34 @@ Use the **same six documentation slots** as [2 · Brand, layout & tokens](2%20%C
 
 </aside>
 
-[aosenuma Components Reference — design.md v1.0.pdf](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/aosenuma_Components_Reference__design.md_v1.0.pdf)
+[[YOUR_COMPANY_NAME] Components Reference — design.md v1.0.pdf](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/[YOUR_COMPANY_NAME]_Components_Reference__design.md_v1.0.pdf)
 
 ## Components overview + button anatomy
 
-This sheet introduces the aosenuma component system and the baseline button anatomy (8pt grid), including Large/Medium/Small sizes and the 44×44px minimum touch target.
+This sheet introduces the [YOUR_COMPANY_NAME] component system and the baseline button anatomy (8pt grid), including Large/Medium/Small sizes and the 44×44px minimum touch target.
 
-![aosenuma Components Reference — design.md v1.0-images-0.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/aosenuma_Components_Reference__design.md_v1.0-images-0.jpg)
+![[YOUR_COMPANY_NAME] Components Reference — design.md v1.0-images-0.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/[YOUR_COMPANY_NAME]_Components_Reference__design.md_v1.0-images-0.jpg)
 
 ## Button state matrix — pressed & processing (primary + split)
 
 Reference for how primary buttons behave in pressed and processing/loading states across contained/outlined/text/split variants, using the token palette (primary + deep primary).
 
-![aosenuma Components Reference — design.md v1.0-images-1.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/aosenuma_Components_Reference__design.md_v1.0-images-1.jpg)
+![[YOUR_COMPANY_NAME] Components Reference — design.md v1.0-images-1.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/[YOUR_COMPANY_NAME]_Components_Reference__design.md_v1.0-images-1.jpg)
 
 ## Controls + input/select sizing and states
 
 Guidance for form controls (checkbox, radio, switch, chips) and input fields: focus ring uses primary; error uses destructive; select/dropdown sizing and open-menu behavior are shown.
 
-![aosenuma Components Reference — design.md v1.0-images-2.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/aosenuma_Components_Reference__design.md_v1.0-images-2.jpg)
+![[YOUR_COMPANY_NAME] Components Reference — design.md v1.0-images-2.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/[YOUR_COMPANY_NAME]_Components_Reference__design.md_v1.0-images-2.jpg)
 
 ## Dropdown menu spec callout (compliance targets)
 
 Quick reference for dropdown menu compliance (item height, padding, and elevation/shadow) so implementation matches the design system consistently.
 
-![aosenuma Components Reference — design.md v1.0-images-3.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/aosenuma_Components_Reference__design.md_v1.0-images-3.jpg)
+![[YOUR_COMPANY_NAME] Components Reference — design.md v1.0-images-3.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/[YOUR_COMPANY_NAME]_Components_Reference__design.md_v1.0-images-3.jpg)
 
 ## Cards, containers, and spacing grid
 
 Defines card variants (basic/elevated/deep surface), container sizing (modal/drawer/card), default radii/shadows, and the spacing scale aligned to the 8pt grid (with 4pt micro-adjustments).
 
-![aosenuma Components Reference — design.md v1.0-images-4.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/aosenuma_Components_Reference__design.md_v1.0-images-4.jpg)
+![[YOUR_COMPANY_NAME] Components Reference — design.md v1.0-images-4.jpg](3%20%C2%B7%20Style%20Card%20for%20UI%20UX/[YOUR_COMPANY_NAME]_Components_Reference__design.md_v1.0-images-4.jpg)

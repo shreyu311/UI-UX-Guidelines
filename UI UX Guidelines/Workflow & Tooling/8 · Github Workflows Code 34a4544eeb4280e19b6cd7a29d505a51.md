@@ -74,14 +74,14 @@ jobs:
 
 ## Sync Header
 
-Notion hub is canonical for narrative and visuals: [UI/UX guidelines](https://www.notion.so/aosenuma-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
+Notion hub is canonical for narrative and visuals: [UI/UX guidelines](https://www.notion.so/[YOUR_COMPANY_NAME]-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
 This file is canonical for tokens and component APIs used in code.
 If this file and implementation drift, log an exception in `docs/design-exceptions.md`.
 Do not ship unlogged drift.
 
 ## Owner and Status
 
-- Owner: Shreyas Shirke
+- Owner: [project-name]as Shirke
 - Status: v1 mirror from Apr 2026 hub export
 - Stack target: Next.js App Router + Tailwind + ShadCN
 
@@ -89,7 +89,7 @@ Do not ship unlogged drift.
 
 | Role | Tailwind intent | CSS variables | Hex | Use for | Never use for |
 | --- | --- | --- | --- | --- | --- |
-| Primary / Teal | `bg-primary text-primary-foreground` | `--primary`, `--primary-foreground`, `--ring` | `#208692` default, `#164F5B` hover | CTAs, links, focus rings, active states | Errors, failure states |
+| Primary / Teal | `bg-primary text-primary-foreground` | `--primary`, `--primary-foreground`, `--ring` | `[YOUR_PRIMARY]` default, `[YOUR_PRIMARY_DARK]` hover | CTAs, links, focus rings, active states | Errors, failure states |
 | Success / Green | `bg-success text-success-foreground` | `--success`, `--success-foreground`, `--success-bg` | `#16A34A` base, `#DCFCE7` bg | Confirmation, completed states, success toast | Warnings or errors |
 | Warning / Amber | `bg-warning text-warning-foreground` | `--warning`, `--warning-foreground`, `--warning-bg` | `#F59E0B` base, `#FEF3C7` bg | Non-blocking risk, missing required info | Blocking errors |
 | Destructive / Red | `bg-destructive text-destructive-foreground` | `--destructive`, `--destructive-foreground`, `--destructive-bg` | `#DC2626` base, `#B91C1C` hover, `#FEE2E2` bg | Blocking errors, irreversible danger | Marketing emphasis, success |
@@ -103,8 +103,8 @@ Do not ship unlogged drift.
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
 
-  --primary: 186 64% 35%;              /* #208692 */
-  --primary-hover: 191 60% 22%;        /* #164F5B */
+  --primary: 186 64% 35%;              /* [YOUR_PRIMARY] */
+  --primary-hover: 191 60% 22%;        /* [YOUR_PRIMARY_DARK] */
   --primary-foreground: 0 0% 100%;
 
   --success: 142 76% 37%;              /* #16A34A */
@@ -137,7 +137,7 @@ Do not ship unlogged drift.
 
 ## Gradient Token
 
-- Approved gradient only: `linear-gradient(135deg, #164F5B 0%, #208692 100%)`.
+- Approved gradient only: `linear-gradient(135deg, [YOUR_PRIMARY_DARK] 0%, [YOUR_PRIMARY] 100%)`.
 - Token name: `--gradient-primary`.
 - Decorative gradients are disallowed unless logged in `docs/design-exceptions.md`.
 
@@ -158,7 +158,7 @@ Reference: [2 럂 䈀爀愀渀搀Ⰰ 氀愀礀漀甀琀 ☀ 琀漀欀攀
 
 ```tsx
 // Don't: raw hex in component code
-<button style={{ backgroundColor: "#208692" }}>Save</button>
+<button style={{ backgroundColor: "[YOUR_PRIMARY]" }}>Save</button>
 
 // Do: semantic component variant
 <Button variant="default">Save</Button>
@@ -213,7 +213,7 @@ Controls also require interaction states as documented in chapter 4.
 - ShadCN component path: `@/components/ui/*`.
 - Token source of truth in code: `app/globals.css`.
 - Figma library URL: `TODO_ADD_CANONICAL_FIGMA_LIBRARY_URL`.
-- Notion canonical narrative and visuals: [UI/UX guidelines](https://www.notion.so/aosenuma-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
+- Notion canonical narrative and visuals: [UI/UX guidelines](https://www.notion.so/[YOUR_COMPANY_NAME]-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
 
 ## Workflow (Design -> Code, Compact)
 

@@ -1,6 +1,6 @@
 # Accessibility Standards
 
-**Status:** Binding — WCAG 2.1 Level AA is the **minimum requirement** for all shipped UI. Aosenuma projects must pass automated and manual accessibility audits before release.
+**Status:** Binding — WCAG 2.1 Level AA is the **minimum requirement** for all shipped UI. All projects using this template must pass automated and manual accessibility audits before release.
 
 ---
 
@@ -16,7 +16,7 @@ All UI components and pages must meet these criteria:
 | **Operable** | 2.1.1 Keyboard | All functionality operable via keyboard (no keyboard trap) | Tab through entire page, test with only keyboard |
 | **Operable** | 2.1.2 No Keyboard Trap | Focus can move away from any element using keyboard alone | Navigate with Tab/Shift+Tab—focus must not get stuck |
 | **Operable** | 2.4.3 Focus Order | Focus order is logical and meaningful | Verify tab order matches visual reading order |
-| **Operable** | 2.4.7 Focus Visible | Keyboard focus indicator is always visible | `outline: 2px solid #208692; outline-offset: 2px;` (or equivalent) |
+| **Operable** | 2.4.7 Focus Visible | Keyboard focus indicator is always visible | `outline: 2px solid [YOUR_PRIMARY]; outline-offset: 2px;` (or equivalent) |
 | **Operable** | 2.4.4 Link Purpose | Purpose of link is clear from link text OR surrounding context | Avoid generic "click here"; use `aria-label` if needed |
 | **Understandable** | 3.3.1 Error Identification | Form errors are identified AND described in text (not color alone) | Error messages must include the field name and issue |
 | **Understandable** | 3.3.4 Error Prevention | Confirmations provided for legal, financial, or data deletion actions | Show confirmation dialog; require explicit opt-in |
@@ -33,15 +33,15 @@ All colors in the design system have been tested for contrast compliance:
 
 | Color | Hex | WCAG AA on White | WCAG AA on Black | Use case |
 |-------|-----|------------------|------------------|----------|
-| Primary Teal | `#208692` | ✅ 4.5:1 | ✅ 5.2:1 | CTAs, links, primary actions |
-| Sage Wash | `#E5EADF` | ❌ 1.8:1 (insufficient on white) | ✅ 11:1 | Hover states; pair with dark text for sufficient contrast |
+| Primary Teal | `[YOUR_PRIMARY]` | ✅ 4.5:1 | ✅ 5.2:1 | CTAs, links, primary actions |
+| Sage Wash | `[YOUR_SURFACE_WASH]` | ❌ 1.8:1 (insufficient on white) | ✅ 11:1 | Hover states; pair with dark text for sufficient contrast |
 | Destructive | `#DC2626` | ❌ 3.9:1 (insufficient on white; use `#B91C1C` for text) | ✅ 6.5:1 | Error states, destructive actions |
 | Success | `#16A34A` | ✅ 5.2:1 | ✅ 4.5:1 | Confirmations, success states |
 | Warning | `#F59E0B` | ❌ 2.1:1 (pair with dark text or dark background) | ✅ 8.5:1 | Non-blocking alerts, warnings |
 | Info | `#3B82F6` | ✅ 4.5:1 | ✅ 5.6:1 | Informational content |
 | Disabled | `#D1D5DB` (fill), `#9CA3AF` (text) | ❌ Do not use for interactive elements | ✅ 4.7:1 | Disabled states only |
 
-**Rule:** Never use `#E5EADF` (Sage Wash), `#F59E0B` (Warning), or `#D1D5DB` (Disabled) as text or interactive element fill on white. Always pair with darker alternatives or sufficient background contrast.
+**Rule:** Never use `[YOUR_SURFACE_WASH]` (Sage Wash), `#F59E0B` (Warning), or `#D1D5DB` (Disabled) as text or interactive element fill on white. Always pair with darker alternatives or sufficient background contrast.
 
 ### Testing Contrast
 
@@ -66,13 +66,13 @@ If overriding the browser default outline, use:
 ```css
 /* Primary focus style */
 :focus-visible {
-  outline: 2px solid #208692;
+  outline: 2px solid [YOUR_PRIMARY];
   outline-offset: 2px;
 }
 
 /* Dark background variant */
 body.dark-mode :focus-visible {
-  outline: 2px solid #E5EADF;
+  outline: 2px solid [YOUR_SURFACE_WASH];
   outline-offset: 2px;
 }
 ```

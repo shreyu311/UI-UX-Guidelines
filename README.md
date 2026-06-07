@@ -1,8 +1,20 @@
-# Company UI/UX standards (shared)
+# UI/UX Guidelines — open template
 
-This repository is the **shared UI/UX guideline library** for all projects — Markdown-first so it renders on **GitHub**, pairs with **Figma** semantic variables, and feeds **Claude Design / Claude Code / Cursor** via [`AGENTS.md`](AGENTS.md) and **Google Stitch** via root [`DESIGN.md`](DESIGN.md).
+An **open, forkable UI/UX guideline library** any company can adopt and customize. Markdown-first so it renders on **GitHub**, pairs with **Figma** semantic variables, and feeds **AI coding tools** via [`AGENTS.md`](AGENTS.md) and [`DESIGN.md`](DESIGN.md).
 
-Quick map of long paths vs hashes: **`NAVIGATION.md`**. How we accept changes: **`CONTRIBUTING.md`**. Licensing: **`LICENSE`**.
+**Start customizing:** [`CUSTOMIZATION.md`](CUSTOMIZATION.md) · **Your brand values:** [`BRANDBOOK.md`](BRANDBOOK.md)
+
+---
+
+## Quick start
+
+| Step | Action |
+| --- | --- |
+| 1 | Fork this repo into your organization |
+| 2 | Fill in [`BRANDBOOK.md`](BRANDBOOK.md) with your company colors, fonts, and logo rules |
+| 3 | Add your logo to [`assets/`](assets/) |
+| 4 | Update [`DESIGN.md`](DESIGN.md) with your resolved token values |
+| 5 | Share with your design and engineering teams |
 
 ---
 
@@ -10,34 +22,22 @@ Quick map of long paths vs hashes: **`NAVIGATION.md`**. How we accept changes: *
 
 | Role | Document |
 | --- | --- |
-| **Humans — full narrative + tables** | [`UI UX Guidelines/UI UX guidelines 20be6c5f913d4f53ac0e76eb5e904eef.md`](UI%20UX%20Guidelines/UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) |
-| **First-week onboarding (program)** | [`Onboarding — start here`](UI%20UX%20Guidelines/Planning%20%26%20Meetings/Company%20UI%20UX%20standards/Onboarding%20%E2%80%94%20start%20here%203454544eeb428192b340d7326b5015d4.md) (under Planning / Company UI UX standards) |
+| **Your brand values** | [`BRANDBOOK.md`](BRANDBOOK.md) |
+| **Humans — full narrative + tables** | [`UI UX Guidelines/UI UX guidelines`](UI%20UX%20Guidelines/UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) |
 | **Machines — agents** | [`AGENTS.md`](AGENTS.md) |
-| **Machines — Stitch excerpt** | [`DESIGN.md`](DESIGN.md) |
+| **Machines — codegen excerpt** | [`DESIGN.md`](DESIGN.md) |
+| **How to customize** | [`CUSTOMIZATION.md`](CUSTOMIZATION.md) |
 
 ---
 
-## Source-of-truth ladder (resolve conflicts here)
+## Source-of-truth ladder
 
 When two files disagree:
 
-1. **Hub** (`UI UX guidelines 20be6c…md`) — authoritative summary: semantic palette, gradients, branding, pointers.
-2. **Numbered Standards** [`UI UX Guidelines/Standards/`](UI%20UX%20Guidelines/Standards/) — binding detail for tokens, patterns, accessibility, assets (when cited by hub).
-3. **`Process & Governance/`** — how to ship, exceptions logs, mandated reporting/playbooks.
-
-**Planning & Meetings / Company UI UX standards:** onboarding templates, rollout notes, duplicated topic pages for **squads kicking off**. If text conflicts with **hub + Standards**, align Planning copy toward Standards rather than retaining a divergent fork.
-
----
-
-## Pilot & project artifacts (**not** binding by default)
-
-**[`UI UX Guidelines/Projects/`](UI%20UX%20Guidelines/Projects/README.md)** contains pilots, Stitch outputs, screenshots, HTML, and experiments. **`DESIGN.md` files nested under Projects are product-local** unless you explicitly promoted rules into **`Standards/`**. Always prefer repository root **[`DESIGN.md`](DESIGN.md)** for org-wide codegen.
-
----
-
-## External links & Notion
-
-Some pages retain **`notion.so`** references for stakeholder context, approvals, embedded boards, or live collaboration. Critical rules that must survive **offline / GitHub-only** workflows should ultimately be mirrored in this repo—but until then, broken Notion URLs are treated as governance debt; note URL moves in **`CONTRIBUTING.md`** PR checklist.
+1. **BRANDBOOK.md** — your company's brand identity (colors, fonts, logo, voice).
+2. **Hub** (`UI UX guidelines …md`) — authoritative UI/UX summary referencing your brandbook tokens.
+3. **Standards** [`UI UX Guidelines/Standards/`](UI%20UX%20Guidelines/Standards/) — binding detail for tokens, patterns, accessibility.
+4. **Process & Governance** — how to ship, exceptions, playbooks (adapt to your org).
 
 ---
 
@@ -45,21 +45,22 @@ Some pages retain **`notion.so`** references for stakeholder context, approvals,
 
 | Path | Purpose |
 | --- | --- |
-| [`UI UX Guidelines/`](UI%20UX%20Guidelines/UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) | Hub, chapters, exports |
-| [`Standards/`](UI%20UX%20Guidelines/Standards/) | Numbered binding chapters |
-| [`Workflow & Tooling/`](UI%20UX%20Guidelines/Workflow%20%26%20Tooling/) | Consolidation · Claude loop · catalogs |
-| [`Projects/`](UI%20UX%20Guidelines/Projects/README.md) | Pilots · prototypes |
-| **`DESIGN.md`** (repo root) | Compressed rules for Stitch / agents — [**refresh**](UI%20UX%20Guidelines/Workflow%20%26%20Tooling/9%20%C2%B7%20Consolidation%20map%20%E2%80%94%20Notion%20%C2%B7%20Repo%20%C2%B7%20Stitch%20%C2%B7%20F%2034a4544eeb4281b5a45bd1d1321b52bf.md) when tokens flip |
-| **`AGENTS.md`** | Claude / Cursor entry contract |
+| [`BRANDBOOK.md`](BRANDBOOK.md) | **Your brand** — colors, fonts, logo, voice |
+| [`assets/`](assets/) | Logo, brandbook PDF, favicon |
+| [`UI UX Guidelines/Standards/`](UI%20UX%20Guidelines/Standards/) | Numbered binding chapters |
+| [`UI UX Guidelines/Workflow & Tooling/`](UI%20UX%20Guidelines/Workflow%20%26%20Tooling/) | Tool workflows (Claude, Figma, Stitch) |
+| [`UI UX Guidelines/Process & Governance/`](UI%20UX%20Guidelines/Process%20&%20Governance/) | Shipping, exceptions, governance |
+| [`DESIGN.md`](DESIGN.md) | Compressed rules for AI codegen |
+| [`AGENTS.md`](AGENTS.md) | Agent entry contract |
 
 ---
 
 ## Using this inside an application repository
 
-Point **squads’ `docs/design.md`** at anchored sections via permalinks, or subtree / submodule checkout. Preserve **semantic token names** in code (`globals.css`, Tailwind, Figma matching variables).
+Point your app's `docs/design.md` at anchored sections via permalinks, or add this repo as a git submodule. Preserve **semantic token names** in code (`globals.css`, Tailwind, Figma variables) — swap values in `BRANDBOOK.md`, not names in code.
 
 ---
 
-## GitHub ergonomics & governance
+## Contributing
 
-Paths include spaces and punctuation; **`NAVIGATION.md`** exposes stable anchors. **`CODEOWNERS`** is stubbed comment-only under [`.github/`](.github/CODEOWNERS) — uncomment with your teams. **`LICENSE`** asserts internal proprietary default; substitute org counsel text if publishing publicly.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md). Improvements to the **template structure** are welcome via PR. Keep your brand-specific values in your fork only.

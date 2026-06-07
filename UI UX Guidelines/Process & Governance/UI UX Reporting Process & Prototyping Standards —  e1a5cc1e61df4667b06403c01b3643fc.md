@@ -5,7 +5,7 @@
 
 **TO: All Project Managers**
 
-**FROM: Jorge (CTO)**
+**FROM: [project-name] (CTO)**
 
 **DATE: March 16, 2026**
 
@@ -66,7 +66,7 @@ Every project must have prototypes that meet the following baseline **before ent
     - [x]  **Navigation flow** — how the user gets to and from this screen
     - [x]  **Responsive breakpoints** — at minimum, desktop (1440px) and tablet (1024px) layouts
 - **Tool:** Figma, Excalidraw, or Notion-embedded sketches. The tool does not matter — the output does.
-- **Naming convention:** `[Project]-WF-[ScreenName]-v[X.X]` (e.g., `StakeAI-WF-GraphExplorer-v0.1`)
+- **Naming convention:** `[Project]-WF-[ScreenName]-v[X.X]` (e.g., `[project-name]-WF-GraphExplorer-v0.1`)
 
 ### Phase 2: Hi-Fi Prototypes (Required Before Client Demo or UAT)
 
@@ -77,7 +77,7 @@ Every project must have prototypes that meet the following baseline **before ent
     - [x]  **Real copy** — actual labels, placeholders, error messages, and tooltips in the project's primary language
     - [x]  **Component specifications** — padding, margin, font size, color hex values annotated for developer handoff
     - [x]  **Clickable flow** — at minimum, the primary happy-path user journey must be interactive
-- **Naming convention:** `[Project]-HF-[ScreenName]-v[X.X]` (e.g., `Woodside-HF-CaseDetail-v1.0`)
+- **Naming convention:** `[Project]-HF-[ScreenName]-v[X.X]` (e.g., `[project-name]-HF-CaseDetail-v1.0`)
 
 <aside>
 ⚠️
@@ -105,7 +105,7 @@ For **every screen** in your project, you must define and design the following f
 
 - Error messages must be **human-readable** — no raw error codes, no "Something went wrong."
 - Empty states must include a **call to action** — tell the user what to do next, not just that there is nothing to see.
-- All copy must be written in the **project's primary language** (e.g., Spanish for Woodside).
+- All copy must be written in the **project's primary language** (e.g., Spanish for [project-name]).
 - Copy must be stored in an **i18n-ready string table** within the project repository.
 
 ---
@@ -123,7 +123,7 @@ Effective immediately, **WCAG 2.1 AA** is the mandatory accessibility target for
 - [x]  **ARIA roles:** Key components (modals, dropdowns, tabs, data tables) have appropriate ARIA roles and labels
 - [x]  **Alt text:** All images, icons, and charts have descriptive alt text
 - [x]  **Form labels:** Every input field has an associated label (not just placeholder text)
-- [x]  **Touch targets:** Minimum 44×44px for all clickable elements (especially for mobile-first projects like Woodside)
+- [x]  **Touch targets:** Minimum 44×44px for all clickable elements (especially for mobile-first projects like [project-name])
 
 <aside>
 📌
@@ -146,12 +146,12 @@ Every project must maintain a **Design Token Reference Sheet** within its projec
 - [x]  **Typography scale** — font families, sizes, weights, and line heights for headings, body, captions, labels
 - [x]  **Spacing scale** — padding and margin values used across components
 - [x]  **Component inventory** — list of all shadcn/ui components used, with any customizations documented
-- [x]  **Brand-specific overrides** — any project-specific tokens that differ from the aosenuma base palette
+- [x]  **Brand-specific overrides** — any project-specific tokens that differ from the [YOUR_COMPANY_NAME] base palette
 
 ### Cross-Project Alignment
 
-- All internal-facing projects (StakeAI, Executive Dashboard, RapdAI, AI PMO) must use the **aosenuma brand tokens** (teal/lime palette, Bricolage Grotesque + Inter + Barlow).
-- Client-facing projects (Woodside) use the **client's brand guide** but must still document tokens in the same format.
+- All internal-facing projects ([project-name], Executive Dashboard, [project-name], AI PMO) must use the **[YOUR_COMPANY_NAME] brand tokens** (teal/lime palette, Bricolage Grotesque + Inter + Barlow).
+- Client-facing projects ([project-name]) use the **client's brand guide** but must still document tokens in the same format.
 - Any new component not in shadcn/ui must be **documented with specs** before use and shared across projects where applicable.
 
 ---
@@ -226,4 +226,4 @@ The audit showed that every project is building from text specs alone. Text spec
 
 Get it together. I will be reviewing each project's UI/UX compliance personally starting March 21.
 
-**Jorge**
+**[project-name]**

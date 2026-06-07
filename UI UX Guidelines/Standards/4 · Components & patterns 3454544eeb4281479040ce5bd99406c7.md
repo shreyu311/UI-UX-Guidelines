@@ -43,49 +43,49 @@ Use **semantic variables** in Figma and code (`primary`, `deep`, `background`, �
 
 <aside>
 
-**#208692** `primary` · `ring`
+**[YOUR_PRIMARY]** `primary` · `ring`
 
 </aside>
 
 <aside>
 
-**#164F5B** `deep`
+**[YOUR_PRIMARY_DARK]** `deep`
 
 </aside>
 
 <aside>
 
-**#D4D970** `accent`
+**[YOUR_ACCENT]** `accent`
 
 </aside>
 
 <aside>
 
-**#F4F5F0** `background`
+**[YOUR_BACKGROUND]** `background`
 
 </aside>
 
 <aside>
 
-**#26272A** `foreground`
+**[YOUR_TEXT]** `foreground`
 
 </aside>
 
 <aside>
 
-**#527779** `muted-foreground`
+**[YOUR_COMPLEMENTARY_3]** `muted-foreground`
 
 </aside>
 
 <aside>
 
-**#CFD0BF** `border` · `muted`
+**[YOUR_COMPLEMENTARY_1]** `border` · `muted`
 
 </aside>
 
 <aside>
 
-**#C7D8D0** `secondary`
+**[YOUR_COMPLEMENTARY_2]** `secondary`
 
 </aside>
 
@@ -126,10 +126,10 @@ Use **semantic variables** in Figma and code (`primary`, `deep`, `background`, �
 
 ### Matrices (token-aligned)
 
-- Primary: default **#208692** · hover **#164F5B** · pressed **#145A66** · loading spinner on **#208692**.
+- Primary: default **[YOUR_PRIMARY]** · hover **[YOUR_PRIMARY_DARK]** · pressed **#145A66** · loading spinner on **[YOUR_PRIMARY]**.
 - Destructive: **#DC2626** / **#B91C1C** / **#991B1B**; disabled **#D1D5DB** text **#9CA3AF**; soft **#FEE2E2** / **#FECACA**.
-- Secondary (outline): border muted neutrals; label/icon **deep primary**; hover uses light wash **`#E5EADF`** with border discipline from Figma.
-- Ghost / text: transparent default; hover/pressed washes **`#E5EADF`** / **`#C7D8D0`** per variant—never imply error with red.
+- Secondary (outline): border muted neutrals; label/icon **deep primary**; hover uses light wash **`[YOUR_SURFACE_WASH]`** with border discipline from Figma.
+- Ghost / text: transparent default; hover/pressed washes **`[YOUR_SURFACE_WASH]`** / **`[YOUR_COMPLEMENTARY_2]`** per variant—never imply error with red.
 
 ### Authoritative button state matrix (color + interaction)
 
@@ -137,9 +137,9 @@ Reference labels **Contained / Outlined / Text** map to ShadCN **primary / secon
 
 | Variant | Default | Hover | Pressed | Focus-visible | Disabled | Loading | Selected / toggle (if used) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Primary (Contained) | Fill **#208692**, label **white** | Fill **#164F5B** | Fill **#145A66** | **#208692** ring (`--ring`) | Fill **#D1D5DB**, label **#9CA3AF** | Spinner on **#208692** fill | Use **deep** fill or muted wash—define per component in library |
-| Secondary (Outlined) | Border muted, label **#164F5B** | Background **#E5EADF** | Background **#C7D8D0** | **#208692** ring | Border/label muted **#D1D5DB** / **#9CA3AF** | Spinner on transparent or light wash | Border + background emphasis per pattern |
-| Ghost (Text) | Transparent, label **#164F5B** | Background **#E5EADF** | Background **#C7D8D0** | **#208692** ring | Label **#9CA3AF** | Spinner adjacent to label | Light selected wash without heavy fill |
+| Primary (Contained) | Fill **[YOUR_PRIMARY]**, label **white** | Fill **[YOUR_PRIMARY_DARK]** | Fill **#145A66** | **[YOUR_PRIMARY]** ring (`--ring`) | Fill **#D1D5DB**, label **#9CA3AF** | Spinner on **[YOUR_PRIMARY]** fill | Use **deep** fill or muted wash—define per component in library |
+| Secondary (Outlined) | Border muted, label **[YOUR_PRIMARY_DARK]** | Background **[YOUR_SURFACE_WASH]** | Background **[YOUR_COMPLEMENTARY_2]** | **[YOUR_PRIMARY]** ring | Border/label muted **#D1D5DB** / **#9CA3AF** | Spinner on transparent or light wash | Border + background emphasis per pattern |
+| Ghost (Text) | Transparent, label **[YOUR_PRIMARY_DARK]** | Background **[YOUR_SURFACE_WASH]** | Background **[YOUR_COMPLEMENTARY_2]** | **[YOUR_PRIMARY]** ring | Label **#9CA3AF** | Spinner adjacent to label | Light selected wash without heavy fill |
 | Destructive (Contained / Outlined / Text) | Fill or border **#DC2626** per variant | **#B91C1C** (fill) / **#FEE2E2** (soft surfaces) | **#991B1B** / **#FECACA** | Visible ring using token-backed focus | Muted neutrals as primary disabled | Spinner on destructive fill | Avoid destructive toggles unless explicitly designed |
 
 ### Button sizing and spacing
@@ -151,9 +151,9 @@ Reference labels **Contained / Outlined / Text** map to ShadCN **primary / secon
 
 ### Controls & inputs
 
-- Checkbox/radio selected: **#208692**; switch active: **#208692**; inactive uses muted neutrals.
-- **Chips:** Primary **#208692**, Success **#16A34A**, Error **#DC2626**, Warning **#F59E0B**, Disabled **#D1D5DB**.
-- Inputs: focus **#208692**; errors **destructive**; **default input corner radius 8px** on **`#FFFFFF`** fields (dense controls); dropdown rows **36px** tall, **12px** padding, **shadow lv2**.
+- Checkbox/radio selected: **[YOUR_PRIMARY]**; switch active: **[YOUR_PRIMARY]**; inactive uses muted neutrals.
+- **Chips:** Primary **[YOUR_PRIMARY]**, Success **#16A34A**, Error **#DC2626**, Warning **#F59E0B**, Disabled **#D1D5DB**.
+- Inputs: focus **[YOUR_PRIMARY]**; errors **destructive**; **default input corner radius 8px** on **`#FFFFFF`** fields (dense controls); dropdown rows **36px** tall, **12px** padding, **shadow lv2**.
 
 ### Forks
 
@@ -178,7 +178,7 @@ If you fork ShadCN, capture in-repo and in the PR description:
 
 ### Primary app navigation
 
-- **Persistent nav** (side or top) uses **deep (#164F5B)** for the bar; active item uses **primary** or **white-on-deep** only after a **contrast check** on labels and icons.
+- **Persistent nav** (side or top) uses **deep ([YOUR_PRIMARY_DARK])** for the bar; active item uses **primary** or **white-on-deep** only after a **contrast check** on labels and icons.
 - **Mobile:** collapse into sheet or drawer (**shadow lv3**, **12px** corners on the sheet container unless full-bleed). Provide a **single clear entry** (menu icon) with **≥ 44×44px** hit target.
 - **Depth:** one clearly **primary** navigation model per app (do not stack unrelated primary nav systems).
 
@@ -203,22 +203,22 @@ If you fork ShadCN, capture in-repo and in the PR description:
 
 ### Tables and dense lists
 
-- Prefer **token** backgrounds (**#FFFFFF** rows on **#F4F5F0**); optional muted zebra using **muted** / **border** tokens—never red striping except true error row state.
+- Prefer **token** backgrounds (**#FFFFFF** rows on **[YOUR_BACKGROUND]**); optional muted zebra using **muted** / **border** tokens—never red striping except true error row state.
 - **Sticky headers** may use **#FFFFFF** with **shadow lv1** divider; sort affordances use **muted-foreground** token, active sort **primary**.
 - **Numeric columns** right-align; **status** uses **semantic chips** (see **Controls & inputs**) instead of raw colored text without meaning.
 
 ### KPI tiles and sparklines
 
 - Structure: **label · value · change**. Positive business change may use **success** green; negative business change uses **foreground** or **muted** unless the metric is literally a **blocking error** (then **destructive** is allowed with copy that explains risk).
-- **Sparklines** should draw series with **primary**, **brand-c4 (#527779)**, **secondary**, and **muted** before introducing new hues. Reserve **red** for series that mean **failure/threshold breach**, and label that meaning in the legend.
+- **Sparklines** should draw series with **primary**, **brand-c4 ([YOUR_COMPLEMENTARY_3])**, **secondary**, and **muted** before introducing new hues. Reserve **red** for series that mean **failure/threshold breach**, and label that meaning in the legend.
 
 ### Charts and maps (in-product)
 
-- **Categorical color order:** **#208692 → #527779 → #C7D8D0 → #CFD0BF → #164F5B** before adding new colors. Avoid **#DC2626** except for **error** or **danger** series.
+- **Categorical color order:** **[YOUR_PRIMARY] → [YOUR_COMPLEMENTARY_3] → [YOUR_COMPLEMENTARY_2] → [YOUR_COMPLEMENTARY_1] → [YOUR_PRIMARY_DARK]** before adding new colors. Avoid **#DC2626** except for **error** or **danger** series.
 
 #### Chart series swatches (visual order — Figma / PNG)
 
-Embed a **single chart frame** showing series **1 → 5** in order (**#208692 → #527779 → #C7D8D0 → #CFD0BF → #164F5B**) on a real plot—not numbered placeholder tiles.
+Embed a **single chart frame** showing series **1 → 5** in order (**[YOUR_PRIMARY] → [YOUR_COMPLEMENTARY_3] → [YOUR_COMPLEMENTARY_2] → [YOUR_COMPLEMENTARY_1] → [YOUR_PRIMARY_DARK]**) on a real plot—not numbered placeholder tiles.
 
 <aside>
 🖼️
@@ -253,7 +253,7 @@ Paste **Figma** or a **PNG** of a categorical chart using the sequence above; la
 <aside>
 🖼️
 
-Replace hero image with final PNG from Figma (or `aosenuma-ui-styleguide-poster.png` from `assets`).
+Replace hero image with final PNG from Figma (or `[YOUR_COMPANY_NAME]-ui-styleguide-poster.png` from `assets`).
 
 </aside>
 
@@ -261,49 +261,49 @@ Replace hero image with final PNG from Figma (or `aosenuma-ui-styleguide-poster.
 
 <aside>
 
-**#208692** `primary` · `ring`
+**[YOUR_PRIMARY]** `primary` · `ring`
 
 </aside>
 
 <aside>
 
-**#164F5B** `deep`
+**[YOUR_PRIMARY_DARK]** `deep`
 
 </aside>
 
 <aside>
 
-**#D4D970** `accent`
+**[YOUR_ACCENT]** `accent`
 
 </aside>
 
 <aside>
 
-**#F4F5F0** `background`
+**[YOUR_BACKGROUND]** `background`
 
 </aside>
 
 <aside>
 
-**#26272A** `foreground`
+**[YOUR_TEXT]** `foreground`
 
 </aside>
 
 <aside>
 
-**#527779** `muted-foreground`
+**[YOUR_COMPLEMENTARY_3]** `muted-foreground`
 
 </aside>
 
 <aside>
 
-**#CFD0BF** `border` · `muted`
+**[YOUR_COMPLEMENTARY_1]** `border` · `muted`
 
 </aside>
 
 <aside>
 
-**#C7D8D0** `secondary`
+**[YOUR_COMPLEMENTARY_2]** `secondary`
 
 </aside>
 
@@ -405,7 +405,7 @@ Every screen/component defines **loading**, **empty**, **error**, and **success*
 
 ## Content & UX writing
 
-- Warm, accessible tone; **aosenuma** always lowercase.
+- Warm, accessible tone; **[YOUR_COMPANY_NAME]** always lowercase.
 - Default voice: first-person plural where appropriate ("We…").
 - **Buttons:** verb-first labels (`Invite teammate`, `Download report`); avoid vague **OK** / **Submit** when a specific verb works.
 - **Links:** describe the destination; avoid **click here**.

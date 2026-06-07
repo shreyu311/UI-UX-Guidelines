@@ -1,6 +1,6 @@
 # UI/UX guidelines
 
-## aosenuma UI/UX guidelines
+## UI/UX guidelines
 
 This page is the **canonical entry** for product UI: **color, typography, layout, components, states, accessibility, and in-product language**. Engineering pins the same rules in **`design.md`** (`docs/design.md` or repo root). Approved deviations live in **`docs/design-exceptions.md`**.
 
@@ -8,7 +8,7 @@ This page is the **canonical entry** for product UI: **color, typography, layout
 
 - **Comprehensive UI coverage:** rules apply to **every shipped UI primitive** (actions, forms, selection, navigation, feedback, data display, overlays, layout). Missing guidance is **missing spec**, not optional taste—see the **UI element inventory** in [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) and the authoritative specs in [4 · Components & patterns](Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
 - **Visual documentation for color:** recurring patterns ship with **Figma frames or PNGs on real components** (hero/gradient, chrome, cards on background, primary vs secondary CTAs, accent discipline). Example slots + checklist: **Brand, layout & tokens** and **Style Card**; **new frame** hygiene: [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) → *New project / new frame checklist (Apr 14 baseline)*.
-- **Gradients:** only the **approved primary gradient** (**135deg**, **#164F5B → #208692**), token-backed—no decorative one-offs unless logged as an exception.
+- **Gradients:** only the **approved primary gradient** (**135deg**, **`primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**), token-backed—no decorative one-offs unless logged as an exception.
 
 ### Visual swatches (hub — link out)
 
@@ -25,9 +25,9 @@ The hub stays text-first; **Figma / PNG proof** for palette application lives in
 
 | Swatch name | Hex | Usage |
 | --- | --- | --- |
-| Teal 700 (Primary hover) | **#164F5B** | Gradient start, hover fill for primary buttons |
-| Teal 500 (Primary default) | **#208692** | Gradient end, default CTA fill, links |
-| Sage wash | **#E5EADF** | Hover wash for outlined/ghost buttons, subtle surface |
+| Teal 700 (Primary hover) | **`primary-dark` (see BRANDBOOK.md)** | Gradient start, hover fill for primary buttons |
+| Teal 500 (Primary default) | **`primary` (see BRANDBOOK.md)** | Gradient end, default CTA fill, links |
+| Sage wash | **`surface-wash` (see BRANDBOOK.md)** | Hover wash for outlined/ghost buttons, subtle surface |
 | Destructive default | **#DC2626** | Destructive button fill, error icon color |
 | Destructive hover | **#B91C1C** | Destructive button hover |
 | Disabled fill | **#D1D5DB** | Disabled button background |
@@ -39,7 +39,7 @@ The hub stays text-first; **Figma / PNG proof** for palette application lives in
 
 | Role | Token family | Hex | Use for | Never use for |
 | --- | --- | --- | --- | --- |
-| **Primary / Teal** | `primary` | **#208692** (default) · **#164F5B** (hover/dark) | CTAs, links, focus rings, active states | Errors, failure states |
+| **Primary / Teal** | `primary` | **`primary` (see BRANDBOOK.md)** (default) · **`primary-dark` (see BRANDBOOK.md)** (hover/dark) | CTAs, links, focus rings, active states | Errors, failure states |
 | **Success / Green** | `success` | **#16A34A** (base) · **#DCFCE7** (bg) | Confirmation, completed states, success toasts | Warning or error messaging |
 | **Warning / Amber** | `warning` | **#F59E0B** (base) · **#FEF3C7** (bg) | Non-blocking risk, missing required info before submit | Substitute for red / blocking errors |
 | **Destructive / Red** | `destructive` | **#DC2626** (base) · **#B91C1C** (hover) · **#FEE2E2** (bg) | Blocking errors, validation failures, irreversible danger, critical alerts | Marketing emphasis, success, routine info |
@@ -64,9 +64,9 @@ Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [4
 
 | Reference label | ShadCN variant | Default | Hover (fill) | Disabled (summary) |
 | --- | --- | --- | --- | --- |
-| Contained | primary | **#208692** on white label | **#164F5B** | **#D1D5DB** / **#9CA3AF** |
-| Outlined | secondary | muted border, deep text | wash **#E5EADF** | muted border + **#9CA3AF** text |
-| Text | ghost | transparent, deep text | wash **#E5EADF** | **#9CA3AF** text |
+| Contained | primary | **`primary` (see BRANDBOOK.md)** on white label | **`primary-dark` (see BRANDBOOK.md)** | **#D1D5DB** / **#9CA3AF** |
+| Outlined | secondary | muted border, deep text | wash **`surface-wash` (see BRANDBOOK.md)** | muted border + **#9CA3AF** text |
+| Text | ghost | transparent, deep text | wash **`surface-wash` (see BRANDBOOK.md)** | **#9CA3AF** text |
 | Destructive | destructive | **#DC2626** | **#B91C1C** | muted neutrals |
 
 ### Principles
@@ -76,24 +76,24 @@ Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [4
 - **States required:** loading, empty, error, and success on meaningful **surfaces**; **controls** also define interaction states (see Components).
 - **Accessible by default:** keyboard paths, visible focus, meaningful contrast, respectful motion.
 - **Figma matches code:** semantic variables and component names mirror `globals.css` and the implementation library.
-- **Aosenuma-branded by default:** anything produced from this hub — prototypes from **Claude Design / Claude Code, Figma, Stitch**, plus **PPTs, templates, decks, and exported prototypes** — ships with **Aosenuma branding applied by default** (logo, brand palette, gradient, typography) on **every page, slide, frame, or template variant**. Unbranded output is treated as a defect, not a draft.
+- **[YOUR_COMPANY_NAME]-branded by default:** anything produced from this hub — prototypes from **Claude Design / Claude Code, Figma, Stitch**, plus **PPTs, templates, decks, and exported prototypes** — ships with **[YOUR_COMPANY_NAME] branding applied by default** (logo, brand palette, gradient, typography) on **every page, slide, frame, or template variant**. Unbranded output is treated as a defect, not a draft.
 
-### Aosenuma branding rule (binding)
+### [YOUR_COMPANY_NAME] branding rule (binding)
 
 <aside>
 🦆
 
-**Scope:** every artifact created using this UI/UX guidelines page — including AI-generated prototypes (**Claude Design, Claude Code, Figma, Stitch**), **PowerPoint / Keynote decks, templates, design files, and exported prototypes** — must carry **Aosenuma branding by default**.
+**Scope:** every artifact created using this UI/UX guidelines page — including AI-generated prototypes (**Claude Design, Claude Code, Figma, Stitch**), **PowerPoint / Keynote decks, templates, design files, and exported prototypes** — must carry **[YOUR_COMPANY_NAME] branding by default**.
 
 </aside>
 
 **Required on every page / slide / frame / template:**
 
-- [ ]  **Aosenuma logo** placed per the brand assets page (see [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md)) — title slide / cover frame, and a smaller mark on subsequent pages.
-- [ ]  **Brand palette** — semantic teal **#208692** for primary, hover **#164F5B**, approved gradient **135deg #164F5B → #208692**, plus the full semantic table above. No off-brand accents.
+- [ ]  **company logo** placed per the brand assets page (see [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md)) — title slide / cover frame, and a smaller mark on subsequent pages.
+- [ ]  **Brand palette** — semantic teal **`primary` (see BRANDBOOK.md)** for primary, hover **`primary-dark` (see BRANDBOOK.md)**, approved gradient **135deg `primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**, plus the full semantic table above. No off-brand accents.
 - [ ]  **Typography** — Inter (sans) and the documented type scale; mono only where specified.
 - [ ]  **Surface treatment** — backgrounds, cards, and chrome match the **Style Card** proof in [3 · Style Card for UI/UX](Standards/3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md).
-- [ ]  **Footer / metadata** — workspace label "[aosenuma.AI](http://aosenuma.AI)" and document owner where the artifact format supports it (decks, templates, exported PDFs).
+- [ ]  **Footer / metadata** — workspace label "[[YOUR_COMPANY_NAME]](http://[YOUR_COMPANY_NAME])" and document owner where the artifact format supports it (decks, templates, exported PDFs).
 
 **Where it applies:**
 
@@ -102,7 +102,7 @@ Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [4
 | **Claude Design / Claude Code prototypes** | Every frame and exported screen — logo in app chrome or cover, tokens from `globals.css` | Ch. 2 + 4, this hub |
 | **Figma files & libraries** | Cover page, every frame title block, component thumbnails | Canonical Figma library |
 | **Stitch prototypes** | App shell + first/last screen of every flow | This hub + brand assets |
-| **PPT / Keynote decks** | Title slide, every content slide footer, closing slide | Aosenuma deck template |
+| **PPT / Keynote decks** | Title slide, every content slide footer, closing slide | [YOUR_COMPANY_NAME] deck template |
 | **Templates (Notion, doc, deck, repo scaffolds)** | Header / cover, plus any repeating page or section header | Brand assets + this hub |
 | **Exported prototypes / PDFs** | Cover, page header or footer on every page | Brand assets |
 
@@ -127,7 +127,7 @@ The full **operating loop** for the system has its own chapter: [6 · Workflow �
 
 | Step | What happens | Bound by |
 | --- | --- | --- |
-| **0 · Onboard** | One-time per project: point Claude Design at the **repo**  • this hub (chapters 2 + 4) so it learns the **aosenuma design system** (semantic teal `#208692`, destructive `#DC2626`, gradient 135° **#164F5B → #208692**, 8pt grid, ShadCN component variants). Confirm inferred system matches the **Semantic color** table. | Ch. 2 + 4 |
+| **0 · Onboard** | One-time per project: point Claude Design at the **repo**  • this hub (chapters 2 + 4) so it learns the **[YOUR_COMPANY_NAME] design system** (semantic teal ``primary` (see BRANDBOOK.md)`, destructive `#DC2626`, gradient 135° **`primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**, 8pt grid, ShadCN component variants). Confirm inferred system matches the **Semantic color** table. | Ch. 2 + 4 |
 | **1 · Brief** | Capture intent in plain language **or** import (PRD doc, Notion page, web capture). Use **named elements** from the **UI element inventory** (ch. 1) — e.g. *“KPI card”*, *“directory grid card”*, *“slide-over panel”*. | Ch. 1 |
 | **2 · Generate** | Claude Design returns initial frames using the onboarded system. Reject any output that uses **raw hex**, off-token spacing, or non-ShadCN variants — re-prompt with the token name. | Ch. 2 |
 | **3 · Refine** | Use inline comments + AI sliders to adjust **layout / color / spacing**. Snap spacing to **4 / 8 / 16 / 24 / 32 / 48 / 64**. Require all interactive states from the **button state matrix** (default, hover, pressed, focus, disabled, loading, selected where relevant). Verify **focus ring** is visible and **hit area ≥ 44×44px**. | Ch. 4 |
@@ -147,23 +147,23 @@ The full **operating loop** for the system has its own chapter: [6 · Workflow �
 
 #### Guardrails (do not bypass)
 
-- **Semantic color** is the law: red **only** for destructive/blocking errors; teal `#208692` for CTA/links/focus; warning amber, success green, info calm-blue per the **Semantic color** table. Any divergence = exception.
+- **Semantic color** is the law: red **only** for destructive/blocking errors; teal ``primary` (see BRANDBOOK.md)` for CTA/links/focus; warning amber, success green, info calm-blue per the **Semantic color** table. Any divergence = exception.
 - **Tokens, not hex:** Claude Design output must reference token names. If a generated frame ships raw hex, fix in chat (“use `primary` and `border` tokens”) before handoff.
 - **States required:** loading / empty / error / success on surfaces; full interaction matrix on controls.
 - **Accessibility:** keyboard path, visible focus, contrast, motion respect — verified before step 5.
 - **Spacing & radius:** 8pt grid; default radius **12px** (`--radius` 0.75rem) unless excepted.
-- **Aosenuma branding by default:** anything generated from this hub — Claude Design / Claude Code prototypes, Figma frames, Stitch flows, PPT/Keynote decks, templates, exported prototypes — must include the **Aosenuma logo, brand palette, gradient, and typography** on **every page, slide, frame, or template variant**. Unbranded output = defect; log under exceptions if intentional.
+- **[YOUR_COMPANY_NAME] branding by default:** anything generated from this hub — Claude Design / Claude Code prototypes, Figma frames, Stitch flows, PPT/Keynote decks, templates, exported prototypes — must include the **company logo, brand palette, gradient, and typography** on **every page, slide, frame, or template variant**. Unbranded output = defect; log under exceptions if intentional.
 
 #### Governance & privacy
 
-- **Owner:** Shreyas Shirke (UI/UX Standards Owner). Pilots: one project per chapter (suggested: Executive Dashboard for ch. 4 components; Woodside for ch. 2 tokens).
+- **Owner:** [project-name]as Shirke (UI/UX Standards Owner). Pilots: one project per chapter (suggested: Executive Dashboard for ch. 4 components; [project-name] for ch. 2 tokens).
 - **Privacy posture:** Claude Design stores **design-system representations** (not raw source files); when linked to a codebase, repo data stays local and is not used for training. Enterprise admins can keep the tool disabled by default.
 - **Exceptions:** any Claude Design output that breaks tokens, states, or semantic color is logged in **`docs/design-exceptions.md`** with screenshot + reason, per chapter **5 · Governance**.
 - **Status:** Claude Design is in **research preview** (Apr 2026) — treat it as **assistive**; this hub + Figma library remain the **binding** sources.
 
 #### One-paragraph summary
 
-Briefs (ch. 1) → Claude Design generates against the onboarded **aosenuma** system (ch. 2) → reviewers refine against state matrices (ch. 4) and visual proof (ch. 3) → one-command handoff to **Claude Code** for ShadCN-first implementation (ch. 5) → frames mirrored back into the **Figma library** so design, code, and Notion stay one system. **Full templates, prompts, FAQ, and pilot plan:** [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md).
+Briefs (ch. 1) → Claude Design generates against the onboarded **[YOUR_COMPANY_NAME]** system (ch. 2) → reviewers refine against state matrices (ch. 4) and visual proof (ch. 3) → one-command handoff to **Claude Code** for ShadCN-first implementation (ch. 5) → frames mirrored back into the **Figma library** so design, code, and Notion stay one system. **Full templates, prompts, FAQ, and pilot plan:** [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md).
 
 ### Reading order
 
@@ -521,7 +521,7 @@ TODO: design file URL, library URL, prototype — for engineers who skip Notion.
 
 ## Reference documents (read in sequence)
 
-Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5 are the standards, chapter 6 is the operating loop, chapter 7 is brand assets (source for the Aosenuma branding rule), chapter 8 is engineering workflows, and chapter 9 is the consolidation map across Notion / Repo / Stitch / Figma.
+Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5 are the standards, chapter 6 is the operating loop, chapter 7 is brand assets (source for the [YOUR_COMPANY_NAME] branding rule), chapter 8 is engineering workflows, and chapter 9 is the consolidation map across Notion / Repo / Stitch / Figma.
 
 ### Standards (chapters 1–5)
 
@@ -538,7 +538,7 @@ Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5
 | # | Chapter | What it covers |
 | --- | --- | --- |
 | **6** | [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) | Operating loop: brief → generate → refine → handoff → mirror |
-| **7** | [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md) | Logo files, clear space, brandbook — source for the Aosenuma branding rule |
+| **7** | [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md) | Logo files, clear space, brandbook — source for the [YOUR_COMPANY_NAME] branding rule |
 | **8** | [8 · Github Workflows Code](Workflow%20&%20Tooling/8%20%C2%B7%20Github%20Workflows%20Code%2034a4544eeb4280e19b6cd7a29d505a51.md) | CI/CD checks, PR automation, design-system gates in GitHub Actions |
 | **9** | [9 · Consolidation map — Notion · Repo · Stitch · Figma](Workflow%20&%20Tooling/9%20%C2%B7%20Consolidation%20map%20%E2%80%94%20Notion%20%C2%B7%20Repo%20%C2%B7%20Stitch%20%C2%B7%20F%2034a4544eeb4281b5a45bd1d1321b52bf.md) | Crosswalk of where each artifact lives and which is canonical |
 
@@ -551,7 +551,7 @@ Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5
 | [Process & Governance](Process%20&%20Governance%2082a235b3f3ae44e184dac8cad68e797c.md) | Parent of chapter 5 + governance playbooks |
 | [Workflow & Tooling](Workflow%20&%20Tooling%205ec6517d3604407fb22045305046ba1c.md) | Parent of chapters 6, 8, 9 + design catalog |
 | [Planning & Meetings](Planning%20&%20Meetings%20600f402b0ea7461b9ec77523708de715.md) | Working plans, meeting notes, system-plan SSOT |
-| [Projects](Projects%20806da2d7b16e4d29bca33f66a6e194ae.md) | Per-project UI/UX compliance trackers (Executive Dashboard, Woodside, RapdAI, StakeAI, etc.) |
+| [Projects](Projects%20806da2d7b16e4d29bca33f66a6e194ae.md) | Per-project UI/UX compliance trackers (Executive Dashboard, [project-name], [project-name], [project-name], etc.) |
 
 ### Companion references (CSV-ready + onboarding + history)
 

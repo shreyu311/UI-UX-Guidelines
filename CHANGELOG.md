@@ -125,7 +125,7 @@
 - **Performance targets:** Bundle size limits per component
 
 ### Changed
-- **Focus indicator:** All interactive elements now have consistent focus ring (`2px solid #208692`)
+- **Focus indicator:** All interactive elements now have consistent focus ring (`2px solid [YOUR_PRIMARY]`)
 
 ---
 

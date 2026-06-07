@@ -1,8 +1,9 @@
 # Code owners — optional but recommended for review routing.
 # Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 #
-# Repository owner: shreyu311
-* @shreyu311
-/UI UX Guidelines/Standards/ @shreyu311
-/DESIGN.md @shreyu311
-/AGENTS.md @shreyu311
+# Replace with your GitHub username or team
+# * @YOUR_GITHUB_USERNAME
+# /BRANDBOOK.md @YOUR_GITHUB_USERNAME
+# /UI UX Guidelines/Standards/ @YOUR_GITHUB_USERNAME
+# /DESIGN.md @YOUR_GITHUB_USERNAME
+# /AGENTS.md @YOUR_GITHUB_USERNAME

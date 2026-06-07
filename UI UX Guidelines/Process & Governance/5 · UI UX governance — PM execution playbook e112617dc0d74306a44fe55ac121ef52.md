@@ -1,12 +1,12 @@
 # 5 · UI/UX governance — PM execution playbook
 
-**Type:** Operational Playbook · **Effective:** 16th March · **Review Deadline:** March 20, 2026 · **Owners:** @Shreyas Shirke, @Vraj Patel
+**Type:** Operational Playbook · **Effective:** 16th March · **Review Deadline:** March 20, 2026 · **Owners:** @[project-name]as Shirke, @[project-name] Patel
 
 ---
 
 # 1 · Executive Summary
 
-All 4 active projects (Executive Dashboard, Woodside, StakeAI, RapdAI) ship specs without visual validation. Zero projects have wireframes, none declare WCAG 2.1 AA, and interaction states are text-only or missing. The CTO mandate requires strict UI/UX compliance by the March 20 review.
+All 4 active projects (Executive Dashboard, [project-name], [project-name], [project-name]) ship specs without visual validation. Zero projects have wireframes, none declare WCAG 2.1 AA, and interaction states are text-only or missing. The CTO mandate requires strict UI/UX compliance by the March 20 review.
 
 This document converts the 8-phase compliance plan into an **executable system**: daily actions, weekly reporting cadences, hard gates that block sprint progression, and a 7-day action plan to reach minimum compliance. PMs copy-paste the reporting template into RAD logs every Friday. The Steward PM enforces gates at Monday meetings. Non-compliant projects cannot enter build phase. The goal is not perfection — it is **verifiable minimum standards** (wireframes exist, WCAG declared, interaction states spec'd, tokens defined) before any code ships.
 
@@ -40,7 +40,7 @@ This document converts the 8-phase compliance plan into an **executable system**
 | **Agenda Item** | **Duration** | **Output** |
 | --- | --- | --- |
 | UI/UX Compliance Roll-Call — each PM states wireframe count, interaction states %, WCAG status | 5 min | Verbal status captured in meeting notes |
-| Blockers & Escalations — any UI/UX blocker older than 3 days is escalated | 5 min | Escalation assigned to Jorge or CTO |
+| Blockers & Escalations — any UI/UX blocker older than 3 days is escalated | 5 min | Escalation assigned to [project-name] or CTO |
 | Decision Lock Review — any decision past due date is force-escalated | 3 min | Overdue decisions assigned resolution owner + 48hr deadline |
 | Gate Check — Steward PM confirms which projects pass/fail current gate | 2 min | Gate status recorded in RAD log |
 
@@ -50,7 +50,7 @@ This document converts the 8-phase compliance plan into an **executable system**
 | --- | --- | --- |
 | Submit UI/UX status section in RAD log (use template in Section 3) | Friday 5:00 PM | Missing submission = auto-flag at Monday meeting |
 | Update wireframe links in project task database | Friday 5:00 PM | Tasks without wireframe links cannot move to "In Progress" |
-| Log all open UI/UX decisions with owner + due date | Friday 5:00 PM | Unowned decisions = escalation to Jorge |
+| Log all open UI/UX decisions with owner + due date | Friday 5:00 PM | Unowned decisions = escalation to [project-name] |
 | Update interaction states coverage % | Friday 5:00 PM | 0% coverage after Gate 1 = project flagged |
 
 ## Gate-Based Milestones
@@ -58,10 +58,10 @@ This document converts the 8-phase compliance plan into an **executable system**
 | **Gate** | **Name** | **Entry Criteria (ALL must pass)** | **Failure Action** |
 | --- | --- | --- | --- |
 | **G0** | Spec Approval | ✅ UI/UX audit completed · ✅ Scorecard assessment done · ✅ Systemic gaps documented | Spec rejected — PM must complete audit before proceeding |
-| **G1** | Wireframe Sign-off | ✅ Lo-fi wireframes for top 3 screens exist · ✅ Each wireframe has layout grid + sample data + responsive notes · ✅ Naming convention followed | **Build cannot start.** Project stays in Spec phase. Escalation to Jorge if blocked >48hr. |
+| **G1** | Wireframe Sign-off | ✅ Lo-fi wireframes for top 3 screens exist · ✅ Each wireframe has layout grid + sample data + responsive notes · ✅ Naming convention followed | **Build cannot start.** Project stays in Spec phase. Escalation to [project-name] if blocked >48hr. |
 | **G2** | Interaction & A11y Ready | ✅ ≥1 reference screen has all 4 states (Loading/Empty/Error/Success) · ✅ WCAG 2.1 AA declared · ✅ Per-screen a11y checklist created · ✅ Design token sheet exists with hex values | **Dev tickets for UI screens are blocked.** Cannot assign UI tasks to engineers until G2 passes. |
 | **G3** | Build Readiness | ✅ All G1 + G2 criteria met · ✅ All open UI/UX decisions have owners + due dates · ✅ Zero overdue decisions · ✅ RAD log UI/UX section submitted for 2 consecutive weeks | **Sprint planning excludes UI tasks.** PM must remediate before next sprint. |
-| **G4** | Ship Readiness | ✅ Hi-fi prototypes for all primary screens · ✅ Lighthouse score ≥ 90 · ✅ All a11y checklist items verified · ✅ Stakeholder sign-off from Jorge | **Release blocked.** Must pass all items before deploy. |
+| **G4** | Ship Readiness | ✅ Hi-fi prototypes for all primary screens · ✅ Lighthouse score ≥ 90 · ✅ All a11y checklist items verified · ✅ Stakeholder sign-off from [project-name] | **Release blocked.** Must pass all items before deploy. |
 
 ---
 
@@ -117,7 +117,7 @@ Date: [YYYY-MM-DD] | PM: [Your Name] | Gate: G[0/1/2/3/4]
 
 1. **Every field is mandatory.** "N/A" is not an acceptable value — if something is not started, write "Not Started."
 2. **Wireframe links must be real URLs.** "Will add later" is a failure.
-3. **Open decisions with no owner are auto-escalated** to Jorge at the next Monday meeting.
+3. **Open decisions with no owner are auto-escalated** to [project-name] at the next Monday meeting.
 4. **Blockers older than 3 days** without a resolution plan trigger CTO escalation.
 5. **The Steward PM reviews all 4 project submissions** before Monday meeting and prepares a 1-line status per project.
 
@@ -178,7 +178,7 @@ Every UI dev ticket **must** include:
 | --- | --- | --- |
 | **Project PM** | Creates wireframes, specs interaction states, declares WCAG, defines tokens, submits weekly report, resolves blockers | Daily + Friday EOD |
 | **Steward PM** | Reviews all 4 project submissions, enforces gates at Monday meeting, escalates overdue decisions, validates RAD log compliance | Monday meeting + Friday review |
-| **Jorge (Reviewer)** | Signs off on gate transitions, resolves escalated decisions, approves hi-fi prototypes, conducts final compliance review | Gate reviews + Mar 20 final review |
+| **[project-name] (Reviewer)** | Signs off on gate transitions, resolves escalated decisions, approves hi-fi prototypes, conducts final compliance review | Gate reviews + Mar 20 final review |
 | **CTO** | Receives escalations for blockers >5 days, approves exceptions to gates | As needed |
 
 ## Escalation Ladder
@@ -186,17 +186,17 @@ Every UI dev ticket **must** include:
 | **Trigger** | **Escalation Level** | **Action** | **SLA** |
 | --- | --- | --- | --- |
 | UI/UX decision unowned for >24hr | Steward PM | Assigns owner at next Monday meeting or ad-hoc | 24hr |
-| Blocker unresolved for >3 days | Jorge | Shreyas/Vraj reviews and either resolves or assigns resource | 48hr |
-| Gate failure for >1 sprint | Jorge | Project review meeting — assess if project scope needs adjustment | 5 business days |
+| Blocker unresolved for >3 days | [project-name] | [project-name]as/[project-name] reviews and either resolves or assigns resource | 48hr |
+| Gate failure for >1 sprint | [project-name] | Project review meeting — assess if project scope needs adjustment | 5 business days |
 | Friday report not submitted | Steward PM | PM named at Monday meeting. 2nd consecutive miss = CTO notification | Next Monday |
-| Blocker unresolved for >5 days | Jorge | CTO intervenes directly — resource reallocation or scope decision | 48hr |
+| Blocker unresolved for >5 days | [project-name] | CTO intervenes directly — resource reallocation or scope decision | 48hr |
 
 ## Gate Exception Process
 
 If a project cannot meet a gate criterion:
 
 1. PM submits a written **Gate Exception Request** (1 paragraph: what's blocked, why, proposed resolution, timeline)
-2. Jorge reviews within 24hr
+2. [project-name] reviews within 24hr
 3. If approved: exception is logged in RAD log with expiration date (max 1 sprint)
 4. If denied: PM must remediate before next gate check
 5. **No more than 1 active exception per project.** Second exception triggers CTO review.
@@ -208,7 +208,7 @@ If a project cannot meet a gate criterion:
 <aside>
 📅
 
-**Goal:** All 4 projects pass Gate G2 (Interaction & A11y Ready) by March 20, 2026 for Jorge's review.
+**Goal:** All 4 projects pass Gate G2 (Interaction & A11y Ready) by March 20, 2026 for [project-name]'s review.
 
 </aside>
 
@@ -216,54 +216,54 @@ If a project cannot meet a gate criterion:
 
 | **Action** | **Owner** | **Output** |
 | --- | --- | --- |
-| Finalize wireframe layout specs for Exec Dashboard + StakeAI (3 screens each) | Shreyas | 6 wireframe specs documented in project pages |
-| Finalize wireframe layout specs for Woodside + RapdAI (3 screens each) | Vraj | 6 wireframe specs documented in project pages |
-| Declare WCAG 2.1 AA for Exec Dashboard + StakeAI | Shreyas | Declaration + per-screen a11y checklists |
-| Declare WCAG 2.1 AA for Woodside + RapdAI | Vraj | Declaration + per-screen a11y checklists |
-| Fill design token hex values for Exec Dashboard | Shreyas | Token sheet with RAG colors, typography, spacing, backgrounds |
-| Fill design token hex values for Woodside | Vraj | Token sheet with KIPS colors, traffic lights, brand palette |
+| Finalize wireframe layout specs for Exec Dashboard + [project-name] (3 screens each) | [project-name]as | 6 wireframe specs documented in project pages |
+| Finalize wireframe layout specs for [project-name] + [project-name] (3 screens each) | [project-name] | 6 wireframe specs documented in project pages |
+| Declare WCAG 2.1 AA for Exec Dashboard + [project-name] | [project-name]as | Declaration + per-screen a11y checklists |
+| Declare WCAG 2.1 AA for [project-name] + [project-name] | [project-name] | Declaration + per-screen a11y checklists |
+| Fill design token hex values for Exec Dashboard | [project-name]as | Token sheet with RAG colors, typography, spacing, backgrounds |
+| Fill design token hex values for [project-name] | [project-name] | Token sheet with KIPS colors, traffic lights, brand palette |
 
 ## Day 2 — Tuesday Mar 18
 
 | **Action** | **Owner** | **Output** |
 | --- | --- | --- |
-| Fill design token values for StakeAI | Shreyas | Token sheet with node types, edge weights, confidence tiers |
-| Fill design token values for RapdAI | Vraj | Token sheet with status colors, chat tokens, file type accents |
-| Spec interaction states for Exec Dashboard (Financial + Projects tabs) + StakeAI (all 3 screens) | Shreyas | 100% interaction state coverage for Exec Dashboard + StakeAI |
-| Spec interaction states for Woodside (all 3 screens) + RapdAI (all 3 screens) | Vraj | 100% interaction state coverage for Woodside + RapdAI |
-| Assign owners + due dates to Exec Dashboard + StakeAI open decisions | Shreyas | 8 decisions populated (M1-M3 + S1-S5) |
-| Assign owners + due dates to Woodside open decisions | Vraj | 7 UI/UX + 10 client decisions populated (W1-W7) |
+| Fill design token values for [project-name] | [project-name]as | Token sheet with node types, edge weights, confidence tiers |
+| Fill design token values for [project-name] | [project-name] | Token sheet with status colors, chat tokens, file type accents |
+| Spec interaction states for Exec Dashboard (Financial + Projects tabs) + [project-name] (all 3 screens) | [project-name]as | 100% interaction state coverage for Exec Dashboard + [project-name] |
+| Spec interaction states for [project-name] (all 3 screens) + [project-name] (all 3 screens) | [project-name] | 100% interaction state coverage for [project-name] + [project-name] |
+| Assign owners + due dates to Exec Dashboard + [project-name] open decisions | [project-name]as | 8 decisions populated (M1-M3 + S1-S5) |
+| Assign owners + due dates to [project-name] open decisions | [project-name] | 7 UI/UX + 10 client decisions populated (W1-W7) |
 
 ## Day 3 — Wednesday Mar 19
 
 | **Action** | **Owner** | **Output** |
 | --- | --- | --- |
-| Lock Exec Dashboard decisions (M1, M2, M3) | Shreyas | 3 decisions moved from "Open" to "Locked" with rationale |
-| Lock StakeAI decisions (S1-S5: confidence, graph library, MVP views, RBAC, performance) | Shreyas | 5 StakeAI decisions locked |
-| Lock Woodside decisions (W1-W7) + follow up on client decisions | Vraj | 7 UI/UX decisions locked + client decision follow-up sent |
-| Create visual wireframe export for Exec Dashboard Overview tab | Shreyas + Design | 1 visual wireframe in design tool |
-| Create visual wireframe export for Woodside Dashboard | Vraj + Design | 1 visual wireframe in design tool |
+| Lock Exec Dashboard decisions (M1, M2, M3) | [project-name]as | 3 decisions moved from "Open" to "Locked" with rationale |
+| Lock [project-name] decisions (S1-S5: confidence, graph library, MVP views, RBAC, performance) | [project-name]as | 5 [project-name] decisions locked |
+| Lock [project-name] decisions (W1-W7) + follow up on client decisions | [project-name] | 7 UI/UX decisions locked + client decision follow-up sent |
+| Create visual wireframe export for Exec Dashboard Overview tab | [project-name]as + Design | 1 visual wireframe in design tool |
+| Create visual wireframe export for [project-name] Dashboard | [project-name] + Design | 1 visual wireframe in design tool |
 
 ## Day 4 — Thursday Mar 19
 
 | **Action** | **Owner** | **Output** |
 | --- | --- | --- |
-| Submit EOD report for Exec Dashboard + StakeAI | Shreyas | 2 RAD log UI/UX sections submitted using template |
-| Submit EOD report for Woodside + RapdAI | Vraj | 2 RAD log UI/UX sections submitted using template |
-| Run Lighthouse audit on Exec Dashboard V1.0 | Shreyas | Lighthouse score recorded (target ≥ 90) |
-| Validate wireframe specs for Exec Dashboard + StakeAI against LF-1 through LF-7 | Shreyas | 6 wireframes pass all 7 criteria or exceptions documented |
-| Validate wireframe specs for Woodside + RapdAI against LF-1 through LF-7 | Vraj | 6 wireframes pass all 7 criteria or exceptions documented |
-| Resolve remaining Woodside client decisions (10 pending) | Vraj + Client PM | Decisions logged with rationale or exception requested |
+| Submit EOD report for Exec Dashboard + [project-name] | [project-name]as | 2 RAD log UI/UX sections submitted using template |
+| Submit EOD report for [project-name] + [project-name] | [project-name] | 2 RAD log UI/UX sections submitted using template |
+| Run Lighthouse audit on Exec Dashboard V1.0 | [project-name]as | Lighthouse score recorded (target ≥ 90) |
+| Validate wireframe specs for Exec Dashboard + [project-name] against LF-1 through LF-7 | [project-name]as | 6 wireframes pass all 7 criteria or exceptions documented |
+| Validate wireframe specs for [project-name] + [project-name] against LF-1 through LF-7 | [project-name] | 6 wireframes pass all 7 criteria or exceptions documented |
+| Resolve remaining [project-name] client decisions (10 pending) | [project-name] + Client PM | Decisions logged with rationale or exception requested |
 
 ## Day 5 — Friday Mar 20 (Review Day)
 
 | **Action** | **Owner** | **Output** |
 | --- | --- | --- |
-| Final RAD log review — cross-validate each other's 2 project submissions | Shreyas reviews Vraj's · Vraj reviews Shreyas's | Compliance confirmation or remediation list |
-| Pre-stage Jorge review package — compile Exec Dashboard + StakeAI pages | Shreyas | Review-ready package for 2 projects |
-| Pre-stage Jorge review package — compile Woodside + RapdAI pages | Vraj | Review-ready package for 2 projects |
-| Final compliance review (present all 4 projects to Jorge for sign-off) | Shreyas + Vraj | Pass / Conditional Pass / Fail per project |
-| Gate G2 status recorded for all 4 projects | Shreyas (Steward PM) | Gate status in RAD log — projects cleared for build phase |
+| Final RAD log review — cross-validate each other's 2 project submissions | [project-name]as reviews [project-name]'s · [project-name] reviews [project-name]as's | Compliance confirmation or remediation list |
+| Pre-stage [project-name] review package — compile Exec Dashboard + [project-name] pages | [project-name]as | Review-ready package for 2 projects |
+| Pre-stage [project-name] review package — compile [project-name] + [project-name] pages | [project-name] | Review-ready package for 2 projects |
+| Final compliance review (present all 4 projects to [project-name] for sign-off) | [project-name]as + [project-name] | Pass / Conditional Pass / Fail per project |
+| Gate G2 status recorded for all 4 projects | [project-name]as (Steward PM) | Gate status in RAD log — projects cleared for build phase |
 
 ---
 
@@ -297,7 +297,7 @@ Uber's engineering org has undergone a fundamental shift that directly validates
 | Microsoft | 20-30% of repo code | CEO Satya Nadella (2025) |
 | Anthropic | ~100% (AI-native) | Internal tooling reports |
 
-## What This Means for aosenuma
+## What This Means for [YOUR_COMPANY_NAME]
 
 <aside>
 💡
@@ -321,10 +321,10 @@ Uber's engineering org has undergone a fundamental shift that directly validates
 | **#** | **Risk** | **Likelihood** | **Impact** | **Mitigation** |
 | --- | --- | --- | --- | --- |
 | R1 | **PMs treat wireframe specs as optional** — submit text descriptions instead of structured layout specs with dimensions and sample data | High | High | Hard gate G1: wireframes must pass LF-1 through LF-7 acceptance criteria. Steward PM validates at Monday meeting. Non-compliant wireframes are rejected same-day. |
-| R2 | **Decisions stay "Open" indefinitely** — no owner takes responsibility, decisions drift past deadline | High | High | Escalation ladder: unowned >24hr → Steward PM assigns. >3 days → Jorge. >5 days → CTO. Friday report makes open decisions visible weekly. |
-| R3 | **Accessibility becomes checkbox theater** — WCAG declared but never tested, checklists created but never verified | Medium | High | Gate G4 requires Lighthouse ≥ 90 before ship. Per-screen a11y checklists are verified during QA, not just PM sign-off. Random spot-checks by Jorge. |
+| R2 | **Decisions stay "Open" indefinitely** — no owner takes responsibility, decisions drift past deadline | High | High | Escalation ladder: unowned >24hr → Steward PM assigns. >3 days → [project-name]. >5 days → CTO. Friday report makes open decisions visible weekly. |
+| R3 | **Accessibility becomes checkbox theater** — WCAG declared but never tested, checklists created but never verified | Medium | High | Gate G4 requires Lighthouse ≥ 90 before ship. Per-screen a11y checklists are verified during QA, not just PM sign-off. Random spot-checks by [project-name]. |
 | R4 | **Friday reports become copy-paste with stale data** — PMs submit same numbers week over week | Medium | Medium | Steward PM cross-checks wireframe links in report against actual project repo. Any discrepancy flagged at Monday meeting. Require delta from previous week. |
-| R5 | **Woodside client decisions block compliance** — 10 pending decisions depend on client response outside PM control | Medium | High | Gate Exception Process allows 1-sprint exception per project. PM documents "decision assumed as X" with client notification. If client overrides, rework is scoped as change request. |
+| R5 | **[project-name] client decisions block compliance** — 10 pending decisions depend on client response outside PM control | Medium | High | Gate Exception Process allows 1-sprint exception per project. PM documents "decision assumed as X" with client notification. If client overrides, rework is scoped as change request. |
 
 ### Failure Mode Prevention Checklist
 
@@ -346,6 +346,6 @@ Uber's engineering org has undergone a fundamental shift that directly validates
 <aside>
 🎯
 
-**Success Criteria for March 20:** All 4 projects pass Gate G2. All Friday reports submitted. All decisions have owners. Zero overdue blockers. Jorge approves or conditionally approves each project for the next phase.
+**Success Criteria for March 20:** All 4 projects pass Gate G2. All Friday reports submitted. All decisions have owners. Zero overdue blockers. [project-name] approves or conditionally approves each project for the next phase.
 
 </aside>

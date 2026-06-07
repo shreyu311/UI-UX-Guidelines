@@ -4,9 +4,9 @@
 
 ### Source palette (HEX)
 
-- Primary: **#208692** · Deep primary: **#164F5B** · Accent: **#D4D970**
-- Complementary: **#E5EADF**, **#CFD0BF**, **#C7D8D0**, **#527779**
-- Background: **#F4F5F0** · Text: **#26272A**
+- Primary: **[YOUR_PRIMARY]** · Deep primary: **[YOUR_PRIMARY_DARK]** · Accent: **[YOUR_ACCENT]**
+- Complementary: **[YOUR_SURFACE_WASH]**, **[YOUR_COMPLEMENTARY_1]**, **[YOUR_COMPLEMENTARY_2]**, **[YOUR_COMPLEMENTARY_3]**
+- Background: **[YOUR_BACKGROUND]** · Text: **[YOUR_TEXT]**
 
 ### Visual swatches (Figma / PNG — Apr 14 standard)
 
@@ -21,10 +21,10 @@ Until each frame is linked: export from the canonical library with filenames lik
 
 ### UI usage rules
 
-- Default background **#F4F5F0**; default text **#26272A**.
-- Primary actions / focus ring: **#208692**.
-- Deep surfaces (nav, headers, hero bands): **#164F5B**.
-- Accent **#D4D970**: sparing highlights only — **not** a primary CTA.
+- Default background **[YOUR_BACKGROUND]**; default text **[YOUR_TEXT]**.
+- Primary actions / focus ring: **[YOUR_PRIMARY]**.
+- Deep surfaces (nav, headers, hero bands): **[YOUR_PRIMARY_DARK]**.
+- Accent **[YOUR_ACCENT]**: sparing highlights only — **not** a primary CTA.
 
 ### Semantic palette (errors, warnings, missing information)
 
@@ -32,7 +32,7 @@ Until each frame is linked: export from the canonical library with filenames lik
 - **Warning / attention (#F59E0B family)** is for **non-blocking risk**, **incomplete or missing required information** before submit, **policy reminders**, and **degradable experiences** (for example stale data). Pair with concise copy and a clear next step. **Do not** use red for these—reserve red for errors and danger.
 - **Success (#16A34A family)** confirms completed actions and positive system states (including success **chips**). Never use destructive red for success.
 - **Info / neutral** feedback uses **muted neutrals + primary text**; keep routine information visually calm so it does not read like an error.
-- **Psychology and consistency:** users associate **red with “something is wrong or unsafe.”** Primary teal (**#208692**) must **never** communicate failure or destructive outcomes.
+- **Psychology and consistency:** users associate **red with “something is wrong or unsafe.”** Primary teal (**[YOUR_PRIMARY]**) must **never** communicate failure or destructive outcomes.
 - **Ship with visual proof in Figma:** maintain frames that show (1) field error vs (2) page-level blocking alert vs (3) “profile incomplete” style banner using **warning** tokens vs (4) inline success after save. Cross-reference **chips, alerts, and notifications** in [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
 
 ### Do / Don't for deep primary
@@ -42,7 +42,7 @@ Until each frame is linked: export from the canonical library with filenames lik
 
 ### Gradients and shadows
 
-- **Primary gradient:** linear **135deg**, **#164F5B → #208692** — **token-backed** (deep → primary stops only). Use on **approved** CTA bands, heroes, or marketing surfaces—not as generic decoration. Show the gradient on **real components** in Figma so usage is unambiguous.
+- **Primary gradient:** linear **135deg**, **[YOUR_PRIMARY_DARK] → [YOUR_PRIMARY]** — **token-backed** (deep → primary stops only). Use on **approved** CTA bands, heroes, or marketing surfaces—not as generic decoration. Show the gradient on **real components** in Figma so usage is unambiguous.
 - **No ad-hoc gradients:** do not invent new angles, stops, or rainbow blends outside this spec unless logged in `docs/design-exceptions.md`.
 - **Shadows:** lv1 cards · lv2 menus · lv3 modals (exact CSS in **Shadow specs** below).
 
@@ -52,11 +52,11 @@ Shipped patterns must ship with **visual documentation**: Figma frames (preferre
 
 ### Minimum example set
 
-- **Marketing / hero band:** primary gradient **#164F5B → #208692** on a CTA strip with accessible label contrast.
-- **App chrome:** deep primary **#164F5B** nav or header with long-form readable foreground (verify contrast).
-- **Default surface:** card on **#F4F5F0** using `border` / `muted` tokens + **shadow lv1**.
+- **Marketing / hero band:** primary gradient **[YOUR_PRIMARY_DARK] → [YOUR_PRIMARY]** on a CTA strip with accessible label contrast.
+- **App chrome:** deep primary **[YOUR_PRIMARY_DARK]** nav or header with long-form readable foreground (verify contrast).
+- **Default surface:** card on **[YOUR_BACKGROUND]** using `border` / `muted` tokens + **shadow lv1**.
 - **Primary vs secondary actions:** primary filled vs outline/secondary on the **same** surface.
-- **Accent discipline:** accent **#D4D970** as highlight only—not the sole CTA fill.
+- **Accent discipline:** accent **[YOUR_ACCENT]** as highlight only—not the sole CTA fill.
 
 ### Do / Don't (documentation)
 
@@ -70,7 +70,7 @@ For each shipped pattern below, keep **one living frame** in the canonical Figma
 <aside>
 🖼️
 
-**1 · Hero / marketing CTA band** — gradient **#164F5B → #208692** on real buttons + headline. Paste link or image.
+**1 · Hero / marketing CTA band** — gradient **[YOUR_PRIMARY_DARK] → [YOUR_PRIMARY]** on real buttons + headline. Paste link or image.
 
 </aside>
 
@@ -117,7 +117,7 @@ For each shipped pattern below, keep **one living frame** in the canonical Figma
 
 ### Product copy & imagery
 
-Voice, **aosenuma** lowercase rule, and imagery live in **4 · Components & patterns** with accessibility guidance.
+Voice, **[YOUR_COMPANY_NAME]** lowercase rule, and imagery live in **4 · Components & patterns** with accessibility guidance.
 
 ---
 
@@ -141,28 +141,28 @@ Voice, **aosenuma** lowercase rule, and imagery live in **4 · Components & patt
 
 Canonical keys (values must match Figma semantic vars):
 
-- `--background` → **#F4F5F0**
-- `--foreground` → **#26272A**
-- `--primary` → **#208692**
-- `--ring` → **#208692**
-- `--secondary` → **#C7D8D0**
-- `--muted` → **#CFD0BF**
-- `--muted-foreground` → **#527779**
-- `--accent` → **#D4D970**
-- `--border` → **#CFD0BF**
+- `--background` → **[YOUR_BACKGROUND]**
+- `--foreground` → **[YOUR_TEXT]**
+- `--primary` → **[YOUR_PRIMARY]**
+- `--ring` → **[YOUR_PRIMARY]**
+- `--secondary` → **[YOUR_COMPLEMENTARY_2]**
+- `--muted` → **[YOUR_COMPLEMENTARY_1]**
+- `--muted-foreground` → **[YOUR_COMPLEMENTARY_3]**
+- `--accent` → **[YOUR_ACCENT]**
+- `--border` → **[YOUR_COMPLEMENTARY_1]**
 - `--radius` → **0.75rem** (12px when `1rem` = 16px)
 
 ```css
 :root {
-  --background: #F4F5F0;
-  --foreground: #26272A;
-  --primary: #208692;
-  --ring: #208692;
-  --secondary: #C7D8D0;
-  --muted: #CFD0BF;
-  --muted-foreground: #527779;
-  --accent: #D4D970;
-  --border: #CFD0BF;
+  --background: [YOUR_BACKGROUND];
+  --foreground: [YOUR_TEXT];
+  --primary: [YOUR_PRIMARY];
+  --ring: [YOUR_PRIMARY];
+  --secondary: [YOUR_COMPLEMENTARY_2];
+  --muted: [YOUR_COMPLEMENTARY_1];
+  --muted-foreground: [YOUR_COMPLEMENTARY_3];
+  --accent: [YOUR_ACCENT];
+  --border: [YOUR_COMPLEMENTARY_1];
   --radius: 0.75rem;
 }
 ```
@@ -175,15 +175,15 @@ Canonical keys (values must match Figma semantic vars):
 
 | Token name in Figma | Value | Code (`globals.css`) |
 | --- | --- | --- |
-| background | #F4F5F0 | `--background` |
-| foreground | #26272A | `--foreground` |
-| primary | #208692 | `--primary` |
-| ring | #208692 | `--ring` |
-| secondary | #C7D8D0 | `--secondary` |
-| muted | #CFD0BF | `--muted` |
-| muted-foreground | #527779 | `--muted-foreground` |
-| accent | #D4D970 | `--accent` |
-| border | #CFD0BF | `--border` |
+| background | [YOUR_BACKGROUND] | `--background` |
+| foreground | [YOUR_TEXT] | `--foreground` |
+| primary | [YOUR_PRIMARY] | `--primary` |
+| ring | [YOUR_PRIMARY] | `--ring` |
+| secondary | [YOUR_COMPLEMENTARY_2] | `--secondary` |
+| muted | [YOUR_COMPLEMENTARY_1] | `--muted` |
+| muted-foreground | [YOUR_COMPLEMENTARY_3] | `--muted-foreground` |
+| accent | [YOUR_ACCENT] | `--accent` |
+| border | [YOUR_COMPLEMENTARY_1] | `--border` |
 
 **Radius (shells):** Figma semantic `radius` for **cards, modals, panels, and page shells** = **12px**, matching `--radius` **0.75rem** at a **16px** root.
 
@@ -226,4 +226,4 @@ Canonical keys (values must match Figma semantic vars):
 
 ## Brand-only Figma variables
 
-Add **Color** variables for nav/hero/marketing without raw hex drift: **`deep`** `#164F5B`, **`brand-c1`** `#E5EADF`, **`brand-c2`** `#CFD0BF`, **`brand-c3`** `#C7D8D0`, **`brand-c4`** `#527779`. Use `deep` for dark bands and pair with accessible foreground per contrast rules.
+Add **Color** variables for nav/hero/marketing without raw hex drift: **`deep`** `[YOUR_PRIMARY_DARK]`, **`brand-c1`** `[YOUR_SURFACE_WASH]`, **`brand-c2`** `[YOUR_COMPLEMENTARY_1]`, **`brand-c3`** `[YOUR_COMPLEMENTARY_2]`, **`brand-c4`** `[YOUR_COMPLEMENTARY_3]`. Use `deep` for dark bands and pair with accessible foreground per contrast rules.
