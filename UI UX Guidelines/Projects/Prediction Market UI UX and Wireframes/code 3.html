@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#66c4cd",
+              "surface-container-highest": "#e0e3e3",
+              "surface-container-high": "#e6e9e9",
+              "surface-tint": "#006970",
+              "primary-fixed": "#94f1fa",
+              "surface": "#f7fafa",
+              "surface-dim": "#d7dbdb",
+              "secondary-container": "#b3e8fb",
+              "surface-bright": "#f7fafa",
+              "on-secondary-container": "#35697a",
+              "tertiary": "#0a3833",
+              "surface-container-low": "#f1f4f4",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#124d5d",
+              "secondary-fixed": "#b6ebfe",
+              "outline": "#70787c",
+              "primary-fixed-dim": "#77d5dd",
+              "inverse-surface": "#2d3131",
+              "on-tertiary-container": "#94bfb8",
+              "on-secondary-fixed": "#001f28",
+              "tertiary-fixed-dim": "#a4cfc8",
+              "error": "#ba1a1a",
+              "surface-container": "#ebeeee",
+              "background": "#f7fafa",
+              "tertiary-fixed": "#bfebe4",
+              "on-background": "#181c1d",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "primary": "#00373b",
+              "on-primary-fixed-variant": "#004f54",
+              "on-surface": "#181c1d",
+              "surface-variant": "#e0e3e3",
+              "outline-variant": "#c0c8cb",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#eef1f1",
+              "secondary-fixed-dim": "#9acee1",
+              "inverse-primary": "#77d5dd",
+              "tertiary-container": "#254f4a",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#306576",
+              "primary-container": "#005055",
+              "on-tertiary-fixed": "#00201d",
+              "on-surface-variant": "#40484b",
+              "on-tertiary-fixed-variant": "#244e48",
+              "on-primary-fixed": "#002022",
+              "on-secondary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.25rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .edge-pattern {
+        background-image: radial-gradient(circle at 2px 2px, #c0c8cb 1px, transparent 0);
+        background-size: 24px 24px;
+        opacity: 0.15;
+      }
+      .wave-motif {
+        mask-image: linear-gradient(to bottom, black, transparent);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar Implementation -->
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-full mx-auto sticky top-0 z-50 bg-[#f7fafa] dark:bg-[#00373b]">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black text-[#00373b] dark:text-[#ffffff] font-headline tracking-tighter">Fluid Analyst</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Manrope'] font-bold text-sm tracking-tight text-[#306576] dark:text-[#b3e8fb] hover:text-[#00373b] hover:bg-[#f1f4f4] transition-colors duration-300 px-3 py-1 rounded-lg" href="{{DATA:SCREEN:SCREEN_7}}">Home</a>
+<a class="font-['Manrope'] font-bold text-sm tracking-tight text-[#00373b] dark:text-[#77d5dd] border-b-2 border-[#00373b] dark:border-[#77d5dd] pb-1 px-3 py-1" href="{{DATA:SCREEN:SCREEN_34}}">Markets</a>
+<a class="font-['Manrope'] font-bold text-sm tracking-tight text-[#306576] dark:text-[#b3e8fb] hover:text-[#00373b] hover:bg-[#f1f4f4] transition-colors duration-300 px-3 py-1 rounded-lg" href="{{DATA:SCREEN:SCREEN_16}}">Portfolio</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#f1f4f4] transition-colors duration-300 scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined text-[#306576]">star</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden border border-outline-variant/20">
+<img alt="Analyst Profile" data-alt="professional portrait of a financial analyst in a modern office setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsRha1DFe4g4EFnkwebTuuTf_bs70JmY9y2KaKuqc0ICwtdEwlpobGgJL1rUgbfedKK2fjDXRrYB6kp9xBX-f1PFLqBevIGGJmaqb1BGuI_K7BvH9XvZQ3ETRFZXnky9FauSFwOGA8lul9m41SqeE3oOFIojtcPiBPVbiYUjK7hrO_6wZm6wdY5SHGwVlT6D3FsDTTOZmUmdTbU6gKACGgXCi6s8e7vaFNqrYPN9UL6D4aDMOdglmX6O-hBExDruL4G913dTsVu8c"/>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-8 py-12 relative">
+<!-- Background Motif -->
+<div class="absolute top-0 right-0 w-1/2 h-full edge-pattern -z-10 pointer-events-none"></div>
+<!-- Editorial Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div class="max-w-2xl"><a class="flex items-center gap-2 text-secondary font-bold text-sm mb-4 hover:underline transition-all" href="{{DATA:SCREEN:SCREEN_4}}">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+                    Back to market
+                </a>
+<span class="font-label text-xs font-semibold uppercase tracking-[0.2em] text-secondary mb-4 block">Executive Briefing / Alpha Insight</span>
+<h1 class="font-headline text-5xl md:text-6xl font-black text-primary leading-[1.1] tracking-tight mb-6">
+                    Recommendation: <span class="text-secondary italic">Buy YES</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                    Our fluid analysis engine has detected a significant structural mispricing in the current market cycle. Convergence towards fair value is expected within the 14-day window.
+                </p>
+</div>
+<div class="flex flex-col items-start md:items-end gap-2">
+<div class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full flex items-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline font-bold text-lg">Confidence: High</span>
+</div>
+<span class="text-sm font-medium text-outline">Last updated: Oct 24, 14:02 UTC</span>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Analysis Summary - Bento Left -->
+<div class="md:col-span-7 space-y-8">
+<!-- Data Delta Card -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_24px_40px_rgba(24,28,29,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-9xl">trending_up</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-8">Edge Delta Analysis</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-10">
+<div>
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Market Probability</span>
+<div class="text-4xl font-headline font-black text-primary">62%</div>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Fair Value</span>
+<div class="text-4xl font-headline font-black text-primary">55%</div>
+</div>
+</div>
+<!-- Bar Chart Visualization -->
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold font-label text-on-surface-variant">
+<span>MARKET SENTIMENT</span>
+<span>62%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all" style="width: 62%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-bold font-label text-on-surface-variant">
+<span>FAIR VALUE MODEL</span>
+<span>55%</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all" style="width: 55%"></div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-2 text-error font-bold">
+<span class="material-symbols-outlined">info</span>
+<span class="text-sm">Overpriced by 7%</span>
+</div>
+<span class="text-xs text-outline italic">Adjusted for liquidity slippage</span>
+</div>
+</div>
+</section>
+<!-- Why Section -->
+<section class="bg-surface-container-low rounded-xl p-8">
+<h2 class="font-headline text-xl font-bold text-primary mb-6">Strategic Rationale</h2>
+<div class="grid gap-6">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-primary mb-1 text-sm">Recent volume spike...</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Abnormal whale activity detected in late-session trading. Order flow suggests institutional accumulation beneath the current resistance levels.
+                                </p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">compare_arrows</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-primary mb-1 text-sm">Comparable markets...</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Cross-sector correlation suggests this asset is lagging its peers by approximately 140 basis points, creating a narrow catch-up window.
+                                </p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">warning</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-primary mb-1 text-sm">Momentum reversal risk</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Volatility indices are compressing. A breakout is statistically favored towards the upside given the current macro liquidity environment.
+                                </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bento Right - Actions & Insights -->
+<div class="md:col-span-5 space-y-8">
+<!-- Execution Card -->
+<section class="bg-primary rounded-xl p-8 text-white relative overflow-hidden group">
+<!-- Subtle Gradient Background -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-90"></div>
+<div class="relative z-10 flex flex-col h-full">
+<h2 class="font-headline text-2xl font-bold mb-6">Position Strategy</h2>
+<div class="space-y-4 mb-10">
+<div class="flex justify-between items-center py-3 border-b border-white/10">
+<span class="text-sm opacity-70">Entry Target</span>
+<span class="font-headline font-bold">$0.55 - $0.58</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-white/10">
+<span class="text-sm opacity-70">Risk/Reward</span>
+<span class="font-headline font-bold text-on-primary-container">1:4.2</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-sm opacity-70">Stop Loss</span>
+<span class="font-headline font-bold text-error-container">$0.51</span>
+</div>
+</div>
+<a class="w-full bg-white text-primary font-headline font-black py-4 rounded-full flex items-center justify-center gap-2 hover:bg-secondary-container transition-all active:scale-95" href="{{DATA:SCREEN:SCREEN_21}}">
+                            Build position
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Visualization Inset -->
+<section class="bg-surface-container-highest rounded-xl p-6 relative overflow-hidden">
+<img alt="Market data chart" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale mix-blend-multiply" data-alt="abstract artistic visualization of financial stock market charts and candlestick patterns in deep teal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzr6fS_o9VxhqJlZRGeT9oeCMZqCmb3oRlVEWoKEH-eTynuMa2uDvnUCqz4d5QoLFr_N7ChK3_5fVakh3ACnyyYenx0MgtmggPBZF00ZEcWcZERPX435_ULjjf4_qhJrBbmTGX2wyqFTUCqhYVU0owxdu4rQNu6H5ou7r0f50gavJaJj8v7-617kI5v2Vwmjt36HwaAHksozc-ELmTt4zEN3R-5jEEWlnTtDlwgR-JXicoS7ha9H-u8suMIQIB0Z3wGpECHeV6PFU"/>
+<div class="relative z-10">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">Historical Convergence</h3>
+<div class="h-40 flex items-end gap-2 pb-2">
+<div class="w-full bg-primary/20 h-[30%] rounded-t-sm"></div>
+<div class="w-full bg-primary/20 h-[45%] rounded-t-sm"></div>
+<div class="w-full bg-primary/20 h-[60%] rounded-t-sm"></div>
+<div class="w-full bg-primary/20 h-[55%] rounded-t-sm"></div>
+<div class="w-full bg-primary/40 h-[75%] rounded-t-sm"></div>
+<div class="w-full bg-primary h-[90%] rounded-t-sm"></div>
+<div class="w-full bg-secondary h-[95%] rounded-t-sm"></div>
+</div>
+<p class="text-[10px] text-outline-variant font-medium uppercase tracking-widest mt-4">Last 7 Trading Cycles</p>
+</div>
+</section>
+<!-- Quick Intel -->
+<div class="bg-white/70 backdrop-blur-md rounded-xl p-6 border border-outline-variant/15">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<h4 class="font-headline font-bold text-primary">Analyst Note</h4>
+</div>
+<p class="text-sm text-on-surface-variant italic">
+                        "The 'Fluid Edge' indicator reached its peak yesterday. We expect a slow trickle of retail capital before the primary price discovery event on Tuesday."
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Implementation -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-12 w-full mt-24 border-t border-[#c0c8cb]/15 bg-[#f1f4f4] dark:bg-[#00373b] py-12">
+<div class="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
+<span class="font-['Manrope'] font-extrabold text-[#00373b] dark:text-[#ffffff] text-lg">Fluid Analyst</span>
+<p class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb]">
+                © 2024 Fluid Analyst. Precision Financial Intelligence.
+            </p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Market Disclosure</a>
+</div>
+</footer>
+</body></html>

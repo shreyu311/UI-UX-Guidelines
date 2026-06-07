@@ -1,0 +1,6 @@
+# Normalize line endings for GitHub and cross-platform clones
+* text=auto
+
+*.md text diff=markdown
+*.csv text
+*.html text

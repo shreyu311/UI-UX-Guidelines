@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fluid Analyst - Market Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#66c4cd",
+              "surface-container-highest": "#e0e3e3",
+              "surface-container-high": "#e6e9e9",
+              "surface-tint": "#006970",
+              "primary-fixed": "#94f1fa",
+              "surface": "#f7fafa",
+              "surface-dim": "#d7dbdb",
+              "secondary-container": "#b3e8fb",
+              "surface-bright": "#f7fafa",
+              "on-secondary-container": "#35697a",
+              "tertiary": "#0a3833",
+              "surface-container-low": "#f1f4f4",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#124d5d",
+              "secondary-fixed": "#b6ebfe",
+              "outline": "#70787c",
+              "primary-fixed-dim": "#77d5dd",
+              "inverse-surface": "#2d3131",
+              "on-tertiary-container": "#94bfb8",
+              "on-secondary-fixed": "#001f28",
+              "tertiary-fixed-dim": "#a4cfc8",
+              "error": "#ba1a1a",
+              "surface-container": "#ebeeee",
+              "background": "#f7fafa",
+              "tertiary-fixed": "#bfebe4",
+              "on-background": "#181c1d",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "primary": "#00373b",
+              "on-primary-fixed-variant": "#004f54",
+              "on-surface": "#181c1d",
+              "surface-variant": "#e0e3e3",
+              "outline-variant": "#c0c8cb",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#eef1f1",
+              "secondary-fixed-dim": "#9acee1",
+              "inverse-primary": "#77d5dd",
+              "tertiary-container": "#254f4a",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#306576",
+              "primary-container": "#005055",
+              "on-tertiary-fixed": "#00201d",
+              "on-surface-variant": "#40484b",
+              "on-tertiary-fixed-variant": "#244e48",
+              "on-primary-fixed": "#002022",
+              "on-secondary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+      .edge-pattern {
+        background-image: radial-gradient(circle at 2px 2px, #c0c8cb 1px, transparent 0);
+        background-size: 24px 24px;
+        opacity: 0.1;
+      }
+      .wave-motif {
+        mask-image: linear-gradient(to bottom, black, transparent);
+        opacity: 0.1;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full px-8 py-4 max-w-full mx-auto sticky top-0 z-50 bg-[#f7fafa] dark:bg-[#00373b]">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black text-[#00373b] dark:text-[#ffffff] font-headline">Fluid Analyst</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-headline font-bold text-sm tracking-tight text-[#306576] dark:text-[#b3e8fb] hover:text-[#00373b] hover:bg-[#f1f4f4] transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_7}}">Home</a>
+<a class="font-headline font-bold text-sm tracking-tight text-[#00373b] dark:text-[#77d5dd] border-b-2 border-[#00373b] dark:border-[#77d5dd] pb-1" href="{{DATA:SCREEN:SCREEN_34}}">Markets</a>
+<a class="font-headline font-bold text-sm tracking-tight text-[#306576] dark:text-[#b3e8fb] hover:text-[#00373b] hover:bg-[#f1f4f4] transition-colors duration-300" href="{{DATA:SCREEN:SCREEN_16}}">Portfolio</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#f1f4f4] dark:hover:bg-[#005055] transition-colors scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined text-[#00373b] dark:text-[#77d5dd]" data-icon="star">star</span>
+</button>
+<div class="h-8 w-8 rounded-full overflow-hidden bg-surface-container-highest border border-outline-variant/15">
+<img alt="Analyst Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional analyst with a clean, modern aesthetic and neutral studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-4PLoYGwqL4mqRHFqHCNyDHeNa_ut0Qnf-Uguc-6wIAvb0CMUTC1U10yeVXsVD07yCkgnpi-AZ8DCV0VNQVaYS34DTIR6mH3Atp5Pf_IKFhFmQFzd5ChWDpD4SCa2iGRIT88tUnjD-kHjtEm5nCWq-Pmg7inl_DEk8m2b4DT75i8BVinlGJGiFGosoPZnlZRgzF9lIfIoVQxSjkiotiRzTQ797baWk_bT0oJe1iLMSE7eCs-d2JzLA9JxRxOGc6J1YMw_LT9y7Ss"/>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-8 py-12">
+<!-- Market Header Section -->
+<div class="relative mb-16">
+<div class="absolute inset-0 wave-motif pointer-events-none -z-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+<div class="flex flex-col gap-2 mb-6">
+<div class="flex items-center gap-3">
+<span class="font-label text-xs font-medium uppercase tracking-widest text-secondary">Source: Polymarket</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider">Open</span>
+</div>
+<h1 class="font-headline text-5xl font-extrabold tracking-tight text-primary leading-tight max-w-4xl">
+                    Will BTC hit $100k by July?
+                </h1>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Main Content (Probability & Chart) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Statistics Row -->
+<div class="flex items-end gap-12 bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-full edge-pattern"></div>
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-secondary uppercase tracking-widest">Probability</span>
+<div class="flex items-baseline gap-3">
+<span class="font-headline text-6xl font-black text-primary">62%</span>
+<span class="text-sm font-bold text-emerald-600 flex items-center">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">arrow_upward</span>
+                                    2.4%
+                                </span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8 border-l border-outline-variant/20 pl-12">
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-secondary uppercase tracking-widest">Volume</span>
+<span class="font-headline text-xl font-bold text-primary">$1.2M</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label text-xs font-semibold text-secondary uppercase tracking-widest">Liquidity</span>
+<span class="font-headline text-xl font-bold text-primary">High</span>
+</div>
+</div>
+</div>
+<!-- Chart Placeholder -->
+<div class="w-full h-[400px] bg-surface-container-highest rounded-xl flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 flex items-center justify-center">
+<svg class="w-full h-full stroke-primary" fill="none" stroke-width="3" viewbox="0 0 800 400">
+<path d="M0,320 Q100,280 200,300 T400,220 T600,180 T800,140" stroke-linecap="round"></path>
+</svg>
+</div>
+<div class="z-10 flex flex-col items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="show_chart">show_chart</span>
+</div>
+<p class="font-label text-sm text-secondary font-medium">Historical Probability Curve</p>
+</div>
+</div>
+</div>
+<!-- Sticky Action Sidebar -->
+<aside class="lg:col-span-4 sticky top-28">
+<div class="glass-card rounded-xl p-8 border border-outline-variant/10 shadow-2xl shadow-on-surface/[0.04] flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<h3 class="font-headline text-xl font-extrabold text-primary">Intelligence Actions</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                Our proprietary engine analyzes order book depth, social sentiment, and macro volatility to find directional edges.
+                            </p>
+</div>
+<div class="flex flex-col gap-3">
+<a class="w-full py-4 rounded-full bg-gradient-to-br from-primary to-primary-container text-white font-headline font-bold text-sm transition-all hover:shadow-lg hover:shadow-primary/20 active:scale-[0.98] flex justify-center items-center text-center" href="{{DATA:SCREEN:SCREEN_11}}">
+                                Run edge analysis
+                            </a>
+<button class="w-full py-4 rounded-full border border-outline-variant/30 text-primary font-headline font-bold text-sm hover:bg-surface-container-low transition-all active:scale-[0.98]">
+                                Add to watchlist
+                            </button>
+</div>
+<div class="flex items-center gap-3 bg-secondary-container/30 px-4 py-3 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="timer">timer</span>
+<span class="text-xs font-medium text-on-secondary-container">Note: Analysis takes ~10 seconds</span>
+</div>
+</div>
+<!-- Market Context Card -->
+<div class="mt-8 p-6 bg-surface-container rounded-xl">
+<h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-4">Related Context</h4>
+<ul class="flex flex-col gap-4">
+<li class="flex items-start gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Recent FOMC minutes show a neutral stance on rate cuts through Q3.</p>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mt-1.5"></div>
+<p class="text-xs text-on-surface-variant leading-relaxed">ETF inflows remain positive with $450M average daily volume.</p>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<!-- Bento Grid Insights Section -->
+<section class="mt-24">
+<div class="flex flex-col gap-2 mb-12">
+<span class="font-label text-xs font-semibold text-secondary uppercase tracking-widest">Market Microstructure</span>
+<h2 class="font-headline text-3xl font-extrabold text-primary">Underlying Liquidity</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Bento Item -->
+<div class="md:col-span-2 h-80 bg-surface-container-low rounded-xl p-8 relative overflow-hidden group">
+<div class="flex flex-col h-full justify-between z-10 relative">
+<div>
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-secondary">Depth Map</span>
+<h3 class="font-headline text-2xl font-bold text-primary mt-2">Order Book Skew</h3>
+</div>
+<p class="text-sm text-on-surface-variant max-w-md">Significant bid support identified at the $0.58 probability level, suggesting strong institutional flooring for "Yes" outcomes.</p>
+</div>
+<img alt="Data Visualization" class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-20 group-hover:opacity-30 transition-opacity" data-alt="abstract digital visualization of complex financial data points with glowing blue and teal nodes in a dark environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPQpru6H-kbNlm9aXS_6VjZBsr8YotOGo1I-6-SFzWwejI4b6dn7Mbio4pfWYUTQzY66KZ-dmGDRvm_aPpf2YQVpTdcNPpmyjWLXZZo5lK-9AAbwmNId3PKo60_GnaA-U9YZRpFoy_3oD7PClPBp7AOWOmYKmOgjwQ6vjHAdZ8DOALgJ32jdK6835ybHeHN0Fp0GM5mThKpit_BrMhiPJydoiR3vMMuL1xNdLDdN07R4TG0k5NyCA74iia0O8zTi6YiQ5qz1HXZdY"/>
+</div>
+<!-- Small Bento Item -->
+<div class="h-80 bg-tertiary-container rounded-xl p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl" data-icon="hub">hub</span>
+<div>
+<h3 class="font-headline text-xl font-bold text-on-tertiary">Sentiment Delta</h3>
+<p class="text-sm text-on-tertiary-container mt-2">Correlated social volume up 14% since opening.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="h-80 bg-surface-container-lowest border border-outline-variant/10 rounded-xl p-8 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-secondary">Volatility Index</span>
+<span class="text-emerald-600 text-xs font-bold">Stable</span>
+</div>
+<div class="flex-grow flex items-center justify-center">
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="w-1/3 h-full bg-primary"></div>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Predicted volatility remains within the 12-15% channel for this market duration.</p>
+</div>
+<!-- Card 4 -->
+<div class="md:col-span-2 h-80 bg-primary-container p-8 rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute inset-0 edge-pattern opacity-5"></div>
+<div class="z-10">
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-on-primary-container">Analyst Insight</span>
+<h3 class="font-headline text-2xl font-bold text-white mt-4">Structural Edge Analysis</h3>
+<p class="text-on-primary-container text-sm mt-4 max-w-xl leading-relaxed">Markets currently price in a 5% discount relative to spot derivatives. This represents a potential arbitrage opportunity for long-duration positions held past the June 15th expiration.</p>
+</div>
+<div class="z-10 flex gap-4">
+<button class="px-6 py-2 rounded-full bg-white text-primary font-bold text-xs uppercase tracking-wider">Unlock Report</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-12 w-full mt-24 border-t border-[#c0c8cb]/15 bg-[#f1f4f4] dark:bg-[#00373b] py-12">
+<div class="flex flex-col gap-2">
+<span class="font-['Manrope'] font-extrabold text-[#00373b] dark:text-[#ffffff] text-lg">Fluid Analyst</span>
+<span class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb]">
+                © 2024 Fluid Analyst. Precision Financial Intelligence.
+            </span>
+</div>
+<div class="flex gap-8 mt-8 md:mt-0">
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Market Disclosure</a>
+</div>
+</footer>
+</body></html>

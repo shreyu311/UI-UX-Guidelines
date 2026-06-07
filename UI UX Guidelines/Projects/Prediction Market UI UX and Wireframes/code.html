@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#66c4cd",
+              "surface-container-highest": "#e0e3e3",
+              "surface-container-high": "#e6e9e9",
+              "surface-tint": "#006970",
+              "primary-fixed": "#94f1fa",
+              "surface": "#f7fafa",
+              "surface-dim": "#d7dbdb",
+              "secondary-container": "#b3e8fb",
+              "surface-bright": "#f7fafa",
+              "on-secondary-container": "#35697a",
+              "tertiary": "#0a3833",
+              "surface-container-low": "#f1f4f4",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#124d5d",
+              "secondary-fixed": "#b6ebfe",
+              "outline": "#70787c",
+              "primary-fixed-dim": "#77d5dd",
+              "inverse-surface": "#2d3131",
+              "on-tertiary-container": "#94bfb8",
+              "on-secondary-fixed": "#001f28",
+              "tertiary-fixed-dim": "#a4cfc8",
+              "error": "#ba1a1a",
+              "surface-container": "#ebeeee",
+              "background": "#f7fafa",
+              "tertiary-fixed": "#bfebe4",
+              "on-background": "#181c1d",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "primary": "#00373b",
+              "on-primary-fixed-variant": "#004f54",
+              "on-surface": "#181c1d",
+              "surface-variant": "#e0e3e3",
+              "outline-variant": "#c0c8cb",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#eef1f1",
+              "secondary-fixed-dim": "#9acee1",
+              "inverse-primary": "#77d5dd",
+              "tertiary-container": "#254f4a",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#306576",
+              "primary-container": "#005055",
+              "on-tertiary-fixed": "#00201d",
+              "on-surface-variant": "#40484b",
+              "on-tertiary-fixed-variant": "#244e48",
+              "on-primary-fixed": "#002022",
+              "on-secondary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-wave-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0 50 10 T 100 10' stroke='%23c0c8cb' stroke-width='0.5' fill='none' opacity='0.2'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-[#f7fafa] dark:bg-[#00373b] sticky top-0 z-50 flex justify-between items-center w-full px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-black text-[#00373b] dark:text-[#ffffff] font-headline">Fluid Analyst</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-headline font-bold text-sm tracking-tight text-[#00373b] dark:text-[#77d5dd] border-b-2 border-[#00373b] dark:border-[#77d5dd] pb-1" href="#">Home</a>
+<a class="font-headline font-bold text-sm tracking-tight text-[#306576] dark:text-[#b3e8fb] hover:text-[#00373b] hover:bg-[#f1f4f4] dark:hover:bg-[#005055] transition-colors duration-300 px-2 py-1 rounded" href="{{DATA:SCREEN:SCREEN_34}}">Markets</a>
+<a class="font-headline font-bold text-sm tracking-tight text-[#306576] dark:text-[#b3e8fb] hover:text-[#00373b] hover:bg-[#f1f4f4] dark:hover:bg-[#005055] transition-colors duration-300 px-2 py-1 rounded" href="{{DATA:SCREEN:SCREEN_16}}">Portfolio</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full text-[#306576] hover:bg-[#f1f4f4] dark:hover:bg-[#005055] transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</button>
+<div class="h-8 w-8 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="Analyst Profile" class="w-full h-full object-cover" data-alt="professional portrait of a financial analyst in a modern office with soft daylight and clean composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGVIqpXiOxXu20ZSL8o0R7fEdqox8Ukpwl2UGaV-fuzgm2yzOM8THKAjeF7GISWQJX0V9Ubawgp-pBZ9Tkak084yzJmubTLvSPo9MGtGg_g6oP57T_Le535nqJB9-8ezdDrJvVP-QAvuaLtye7vtv_jZY0N38J8XRQjvWhG-oTmZ1lny9CAwT2OyAmTltVRpkX_RwKCmTd_174SnShQuM-TQoCNmrq5VaKQRC9IBUQzIEL_YoBLsw8iQk5b8KX9Ywtiw3elq7BgwI"/>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-24 pb-32 px-8 overflow-hidden">
+<div class="absolute inset-0 bg-wave-pattern opacity-10 -z-10 transform scale-150 rotate-[-5deg]"></div>
+<div class="max-w-5xl mx-auto text-center">
+<span class="font-label text-xs font-semibold uppercase tracking-[0.2em] text-secondary mb-4 block">Intelligence Refined</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-8">
+                    Navigate the <span class="text-on-primary-container">Fluidity</span> <br/>of Global Markets.
+                </h1>
+<div class="max-w-2xl mx-auto mb-12">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline" data-icon="search">search</span>
+<input class="w-full pl-12 pr-4 py-5 rounded-full bg-surface-container-high border-none focus:ring-2 focus:ring-primary/20 text-lg font-body placeholder:text-outline transition-all" placeholder="Search markets..." type="text"/>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="px-8 py-4 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 inline-block" href="{{DATA:SCREEN:SCREEN_34}}">Browse markets</a>
+<button class="px-8 py-4 rounded-full bg-transparent border border-outline-variant text-primary font-headline font-bold text-lg hover:bg-surface-container-low transition-all duration-300">
+                        View portfolio
+                    </button>
+</div>
+</div>
+</section>
+<!-- Top Edges Today -->
+<section class="px-8 py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="font-label text-xs font-semibold uppercase tracking-widest text-secondary mb-2 block">Market Alpha</span>
+<h2 class="font-headline text-4xl font-extrabold text-primary">Top edges today</h2>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant text-sm font-medium">
+<span class="material-symbols-outlined text-[18px]" data-icon="update">update</span>
+                            Updated 5 mins ago
+                        </div>
+<div class="text-xs text-outline font-medium bg-surface-container-highest px-3 py-1 rounded-full">
+                            Signals: volume + trend + news (prototype)
+                        </div>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- S&P 500 Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 group hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-12">
+<div>
+<h3 class="font-headline text-3xl font-bold text-primary mb-1">S&amp;P 500</h3>
+<p class="text-outline font-medium">Broad Market Index</p>
+</div>
+<div class="text-right">
+<div class="text-4xl font-black text-on-primary-container font-headline">84%</div>
+<div class="text-xs font-bold uppercase tracking-tighter text-on-primary-container">High Edge</div>
+</div>
+</div>
+<div class="h-40 w-full relative">
+<img alt="S&amp;P 500 Trend" class="w-full h-full object-cover rounded-lg opacity-40 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="abstract financial chart with rising green lines and a smooth gradient background representing upward market momentum" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO8OEnns1OYAGdDwQfNqXTjpZJu_KP3f_OmOAyI_4FFF910mmoLEvLGdUULodYfujowQO_PhFGLD4Yb2mXJz39er2s2KIk119NONnH72QKsKbnv3l1H9g1ySSFAjLRfwIhU0lkVsyOy_ucOAguLj5SFw7wNJQVT6YrVVsZpscsblbckub_EPzwNsANZ1dnKeCd9pLe4iq0KtGU0Dxlz4qDiQ-9ccarCYcpwya1BPtF1zHksmDRarQkz9xm_mDnm2MGGNjYJJMhoos"/>
+<div class="absolute inset-0 flex items-end p-4">
+<div class="flex gap-4">
+<span class="flex items-center gap-1 text-xs font-bold text-primary bg-primary-fixed/30 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]" data-icon="trending_up">trending_up</span> Strong Buy
+                                    </span>
+<span class="flex items-center gap-1 text-xs font-bold text-secondary bg-secondary-container/30 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]" data-icon="database">database</span> Volume Spike
+                                    </span>
+</div>
+</div>
+</div>
+</div>
+<!-- BTC/USD Card -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 group hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="currency_bitcoin">currency_bitcoin</span>
+<div class="text-right">
+<div class="text-2xl font-black text-secondary font-headline">62%</div>
+<div class="text-[10px] font-bold uppercase tracking-tighter text-secondary">Medium Edge</div>
+</div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-1">BTC/USD</h3>
+<p class="text-outline text-sm font-medium mb-8">Digital Gold Consolidation</p>
+</div>
+<div class="bg-surface-container-high p-4 rounded-lg">
+<div class="text-xs font-bold text-outline mb-2">Trend Velocity</div>
+<div class="w-full h-1.5 bg-surface-dim rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[62%]"></div>
+</div>
+</div>
+</div>
+<!-- NVIDIA Card -->
+<div class="md:col-span-12 bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 group hover:shadow-md transition-all duration-300">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" data-icon="memory">memory</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline text-2xl font-bold text-primary mb-1">NVIDIA (NVDA)</h3>
+<p class="text-outline text-sm font-medium">Computing &amp; AI Infrastructure Leader</p>
+</div>
+<div class="text-right flex flex-col items-end gap-1">
+<div class="text-4xl font-black text-on-primary-container font-headline">78%</div>
+<div class="text-xs font-bold uppercase tracking-tighter text-on-primary-container">High Edge Score</div>
+<a class="mt-4 text-xs font-bold text-primary flex items-center gap-1 hover:underline" href="{{DATA:SCREEN:SCREEN_4}}">Analyze Deep Signals <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Insights Ticker -->
+<section class="py-12 bg-primary">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="text-on-primary">
+<h4 class="font-headline text-xl font-bold mb-1">The Edge Report</h4>
+<p class="text-on-primary-container text-sm">Daily distillation of fluid market mechanics.</p>
+</div>
+<div class="flex w-full md:w-auto gap-2">
+<input class="bg-primary-container border-none text-on-primary placeholder:text-on-primary-container/60 rounded-full px-6 py-3 text-sm flex-grow min-w-[240px]" placeholder="Email address" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-full text-sm whitespace-nowrap">Join Analysts</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f1f4f4] dark:bg-[#00373b] flex flex-col md:flex-row justify-between items-center px-12 w-full mt-24 border-t border-[#c0c8cb]/15 py-12">
+<div class="mb-8 md:mb-0">
+<span class="font-['Manrope'] font-extrabold text-[#00373b] dark:text-[#ffffff] text-lg block mb-2">Fluid Analyst</span>
+<p class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb]">
+                © 2024 Fluid Analyst. Precision Financial Intelligence.
+            </p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#306576] dark:text-[#b3e8fb] hover:underline decoration-[#77d5dd] transition-all opacity-80 hover:opacity-100" href="#">Market Disclosure</a>
+</div>
+</footer>
+</body></html>
