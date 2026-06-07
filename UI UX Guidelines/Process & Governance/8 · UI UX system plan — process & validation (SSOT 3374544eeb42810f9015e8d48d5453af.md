@@ -1,4 +1,4 @@
-# 3 · UI/UX system plan — process & validation
+# 8 · UI/UX system plan — process & validation
 
 ## What this is
 
@@ -9,7 +9,7 @@ Template for how UI/UX requirements are **defined**, **mocked**, and **validated
 1. **BRANDBOOK.md** — your company's brand identity
 2. **This hub + Standards** — binding UI/UX rules
 3. **Project PRD + UI spec + mocks** — what each product builds
-4. **Exceptions log** — [approved deviations](4%20%C2%B7%20UI%20UX%20exceptions%20log%20%E2%80%94%20approved%20deviations%2042cc3261a0d84faaaf6420c0061d7f71.md)
+4. **Exceptions log** — [approved deviations](7%20%C2%B7%20UI%20UX%20exceptions%20log%20%E2%80%94%20approved%20deviations%2042cc3261a0d84faaaf6420c0061d7f71.md)
 
 ## Requirement categories (use for every feature)
 

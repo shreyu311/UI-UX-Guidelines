@@ -6,13 +6,13 @@ This page is the **canonical entry** for product UI: **color, typography, layout
 
 ### What this standard covers
 
-- **Comprehensive UI coverage:** rules apply to **every shipped UI primitive** (actions, forms, selection, navigation, feedback, data display, overlays, layout). Missing guidance is **missing spec**, not optional taste—see the **UI element inventory** in [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) and the authoritative specs in [4 · Components & patterns](Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
+- **Comprehensive UI coverage:** rules apply to **every shipped UI primitive** (actions, forms, selection, navigation, feedback, data display, overlays, layout). Missing guidance is **missing spec**, not optional taste—see the **UI element inventory** in [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) and the authoritative specs in [5 · Components & patterns](Standards/5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
 - **Visual documentation for color:** recurring patterns ship with **Figma frames or PNGs on real components** (hero/gradient, chrome, cards on background, primary vs secondary CTAs, accent discipline). Example slots + checklist: **Brand, layout & tokens** and **Style Card**; **new frame** hygiene: [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) → *New project / new frame checklist (project baseline)*.
 - **Gradients:** only the **approved primary gradient** (**135deg**, **`primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**), token-backed—no decorative one-offs unless logged as an exception.
 
 ### Visual swatches (hub — link out)
 
-The hub stays text-first; **Figma / PNG proof** for palette application lives in [2 · Brand, layout & tokens](Standards/2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) (*Visual swatches* + *Embedded gallery*) and [3 · Style Card for UI/UX](Standards/3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) (*Embedded pattern gallery*).
+The hub stays text-first; **Figma / PNG proof** for palette application lives in [3 · Brand, layout & tokens](Standards/3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) (*Visual swatches* + *Embedded gallery*) and [4 · Style Card for UI/UX](Standards/4%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) (*Embedded pattern gallery*).
 
 <aside>
 🖼️
@@ -53,14 +53,14 @@ The **master inventory** lives in **Scope & principles**. Use this compact map f
 
 | Category | Where to read |
 | --- | --- |
-| Foundations (color, type, grid, radius, shadows) | [2 · Brand, layout & tokens](Standards/2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) |
-| Components, states, patterns, content, accessibility | [4 · Components & patterns](Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) |
-| Style card / poster | [3 · Style Card for UI/UX](Standards/3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) |
-| Governance, shipping checklist, exceptions | [5 · Governance & shipping](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) |
+| Foundations (color, type, grid, radius, shadows) | [3 · Brand, layout & tokens](Standards/3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) |
+| Components, states, patterns, content, accessibility | [5 · Components & patterns](Standards/5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) |
+| Style card / poster | [4 · Style Card for UI/UX](Standards/4%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) |
+| Governance, shipping checklist, exceptions | [6 · Governance & shipping](Process%20&%20Governance/6%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) |
 
 ### Buttons at a glance
 
-Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [4 · Components & patterns](Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) → *Authoritative button state matrix*. **Heights** 48 / 40 / 32 · **large CTA padding** **32px** horizontal per side (workshop demos sometimes cite **30px** — **snap to 32px** on the **8pt** grid unless a **logged exception**) · **touch target** ≥ 44×44px.
+Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [5 · Components & patterns](Standards/5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) → *Authoritative button state matrix*. **Heights** 48 / 40 / 32 · **large CTA padding** **32px** horizontal per side (workshop demos sometimes cite **30px** — **snap to 32px** on the **8pt** grid unless a **logged exception**) · **touch target** ≥ 44×44px.
 
 | Reference label | ShadCN variant | Default | Hover (fill) | Disabled (summary) |
 | --- | --- | --- | --- | --- |
@@ -76,33 +76,33 @@ Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [4
 - **States required:** loading, empty, error, and success on meaningful **surfaces**; **controls** also define interaction states (see Components).
 - **Accessible by default:** keyboard paths, visible focus, meaningful contrast, respectful motion.
 - **Figma matches code:** semantic variables and component names mirror `globals.css` and the implementation library.
-- **Company-branded by default:** prototypes, decks, and exported artifacts should use your brand from [`BRANDBOOK.md`](../../BRANDBOOK.md) — logo, palette, typography. See [7 · Brand assets](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md). Unbranded output should be logged in `docs/design-exceptions.md`.
+- **Company-branded by default:** prototypes, decks, and exported artifacts should use your brand from [`BRANDBOOK.md`](../../BRANDBOOK.md) — logo, palette, typography. See [2 · Brand assets](Standards/2%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md). Unbranded output should be logged in `docs/design-exceptions.md`.
 
 ### Workflow — Claude Design → Claude Code (operating loop)
 
 <aside>
 ⚙️
 
-The full **operating loop** for the system has its own chapter: [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md). It is **bound** by chapters 1 → 5 and does **not** replace this hub or the Figma library.
+The full **operating loop** for the system has its own chapter: [9 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/9%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md). It is **bound** by chapters 1 → 5 and does **not** replace this hub or the Figma library.
 
 </aside>
 
 #### Inputs (single source of truth)
 
-- **Spec:** this hub + chapters **1 · Scope** (UI element inventory), **2 · Brand, layout & tokens** (semantic palette, gradient, type, grid, radius, shadows), **3 · Style Card** (visual proof), **4 · Components & patterns** (state matrices, accessibility), **5 · Governance** (shipping checklist, exceptions).
+- **Spec:** this hub + chapters **1 · Scope** (UI element inventory), **2 · Brand assets** (logo & brandbook), **3 · Brand, layout & tokens** (semantic palette, gradient, type, grid, radius, shadows), **4 · Style Card** (visual proof), **5 · Components & patterns** (state matrices, accessibility), **6 · Governance** (shipping checklist, exceptions).
 - **Code:** the repo `globals.css` + ShadCN/Tailwind primitives — **token names** in design must match.
 - **Figma library:** canonical mirror of tokens + components (kept in sync with code).
 
-#### Loop (summary — see ch. 6 for detail)
+#### Loop (summary — see ch. 9 for detail)
 
 | Step | What happens | Bound by |
 | --- | --- | --- |
-| **0 · Onboard** | One-time per project: point Claude Design at the **repo**, [`BRANDBOOK.md`](../../BRANDBOOK.md), and this hub (chapters 2 + 4) so it learns your design tokens and component variants. | Ch. 2 + 4 |
+| **0 · Onboard** | One-time per project: point Claude Design at the **repo**, [`BRANDBOOK.md`](../../BRANDBOOK.md), and this hub (chapters 3 + 5) so it learns your design tokens and component variants. | Ch. 3 + 5 |
 | **1 · Brief** | Capture intent in plain language or import a PRD. Use **named elements** from the **UI element inventory** (ch. 1). | Ch. 1 |
-| **2 · Generate** | Claude Design returns initial frames using the onboarded system. Reject any output that uses **raw hex**, off-token spacing, or non-ShadCN variants — re-prompt with the token name. | Ch. 2 |
-| **3 · Refine** | Use inline comments + AI sliders to adjust **layout / color / spacing**. Snap spacing to **4 / 8 / 16 / 24 / 32 / 48 / 64**. Require all interactive states from the **button state matrix** (default, hover, pressed, focus, disabled, loading, selected where relevant). Verify **focus ring** is visible and **hit area ≥ 44×44px**. | Ch. 4 |
-| **4 · Visual cross-check** | Compare frames against **Style Card** and **Visual swatches** in chapters 2 and 3. | Ch. 2 + 3 |
-| **5 · Handoff to Claude Code** | Hand off to **Claude Code** for implementation. PR uses the shipping checklist: tokens, variants, states, a11y, Figma frame linked. | Ch. 5 |
+| **2 · Generate** | Claude Design returns initial frames using the onboarded system. Reject any output that uses **raw hex**, off-token spacing, or non-ShadCN variants — re-prompt with the token name. | Ch. 3 |
+| **3 · Refine** | Use inline comments + AI sliders to adjust **layout / color / spacing**. Snap spacing to **4 / 8 / 16 / 24 / 32 / 48 / 64**. Require all interactive states from the **button state matrix** (default, hover, pressed, focus, disabled, loading, selected where relevant). Verify **focus ring** is visible and **hit area ≥ 44×44px**. | Ch. 5 |
+| **4 · Visual cross-check** | Compare frames against **Style Card** and **Visual swatches** in chapters 3 and 4. | Ch. 3 + 4 |
+| **5 · Handoff to Claude Code** | Hand off to **Claude Code** for implementation. PR uses the shipping checklist: tokens, variants, states, a11y, Figma frame linked. | Ch. 6 |
 | **6 · Mirror back** | Export final frames into the **canonical Figma library** so Dev Mode stays aligned with code. | Figma library |
 
 #### Guardrails (do not bypass)
@@ -115,11 +115,11 @@ The full **operating loop** for the system has its own chapter: [6 · Workflow �
 
 #### One-paragraph summary
 
-Briefs (ch. 1) → Claude Design generates against the onboarded **your company** system (ch. 2) → reviewers refine against state matrices (ch. 4) and visual proof (ch. 3) → one-command handoff to **Claude Code** for ShadCN-first implementation (ch. 5) → frames mirrored back into the **Figma library** so design, code, and Notion stay one system. **Full templates, prompts, FAQ, and pilot plan:** [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md).
+Briefs (ch. 1) → Claude Design generates against the onboarded system (ch. 3) → reviewers refine against state matrices (ch. 5) and visual proof (ch. 4) → one-command handoff to **Claude Code** for ShadCN-first implementation (ch. 6) → frames mirrored back into the **Figma library** so design, code, and docs stay one system. **Full templates, prompts, FAQ, and pilot plan:** [9 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/9%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md).
 
 ### Reading order
 
-Read **chapters 1 → 5** in order: **1** scope + inventory, **2** tokens and visual foundations, **3** style card where used, **4** components and patterns, **5** governance and shipping. **Then ch. 6** — [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) — is the **operating loop** that consumes those five chapters.
+Read **chapters 1 → 11** in order: **1** scope + inventory, **2** brand assets, **3** tokens and visual foundations, **4** style card, **5** components and patterns, **6–8** governance, **9–11** workflow and tooling. Chapter **9** — [9 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/9%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) — is the **operating loop** that consumes chapters 1–6.
 
 ## Engineering appendix — [design.md](http://design.md) complete spec (2026-04-22)
 
@@ -473,48 +473,48 @@ TODO: design file URL, library URL, prototype — for engineers who skip Notion.
 
 ## Reference documents (read in sequence)
 
-Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5 are the standards, chapter 6 is the operating loop, chapter 7 is brand assets (source for the your company branding rule), chapter 8 is engineering workflows, and chapter 9 is the consolidation map across Notion / Repo / Stitch / Figma.
+Authoritative chapters this hub binds. Read **1 → 11** in order: **1–5** design standards, **6–8** governance, **9–11** workflow and tooling.
 
-### Standards (chapters 1–5)
+### Design standards (chapters 1–5)
 
 | # | Chapter | What it covers |
 | --- | --- | --- |
 | **1** | [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) | UI element inventory, scope, new-frame checklist |
-| **2** | [2 · Brand, layout & tokens](Standards/2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) | Semantic palette, gradient, typography, grid, radius, shadows |
-| **3** | [3 · Style Card for UI/UX](Standards/3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) | Visual proof — embedded Figma / dated PNG gallery |
-| **4** | [4 · Components & patterns](Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) | Authoritative component specs, state matrices, accessibility |
-| **5** | [5 · Governance & shipping](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping checklist, exceptions process, ownership |
+| **2** | [2 · Brand assets (logo & brandbook)](Standards/2%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md) | Logo files, clear space, brandbook |
+| **3** | [3 · Brand, layout & tokens](Standards/3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) | Semantic palette, gradient, typography, grid, radius, shadows |
+| **4** | [4 · Style Card for UI/UX](Standards/4%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) | Visual proof — embedded Figma / dated PNG gallery |
+| **5** | [5 · Components & patterns](Standards/5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) | Authoritative component specs, state matrices, accessibility |
 
-### Workflow & tooling (chapters 6–9)
+### Governance (chapters 6–8)
 
 | # | Chapter | What it covers |
 | --- | --- | --- |
-| **6** | [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) | Operating loop: brief → generate → refine → handoff → mirror |
-| **7** | [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md) | Logo files, clear space, brandbook — source for the your company branding rule |
-| **8** | [8 · Github Workflows Code](Workflow%20&%20Tooling/8%20%C2%B7%20Github%20Workflows%20Code%2034a4544eeb4280e19b6cd7a29d505a51.md) | CI/CD checks, PR automation, design-system gates in GitHub Actions |
-| **9** | [9 · Consolidation map — Notion · Repo · Stitch · Figma](Workflow%20&%20Tooling/9%20%C2%B7%20Consolidation%20map%20%E2%80%94%20Notion%20%C2%B7%20Repo%20%C2%B7%20Stitch%20%C2%B7%20F%2034a4544eeb4281b5a45bd1d1321b52bf.md) | Crosswalk of where each artifact lives and which is canonical |
+| **6** | [6 · Governance & shipping](Process%20&%20Governance/6%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping checklist, exceptions process, ownership |
+| **7** | [7 · UI/UX exceptions log](Process%20&%20Governance/7%20%C2%B7%20UI%20UX%20exceptions%20log%20%E2%80%94%20approved%20deviations%2042cc3261a0d84faaaf6420c0061d7f71.md) | Template for logging approved deviations |
+| **8** | [8 · UI/UX system plan — process & validation (SSOT)](Process%20&%20Governance/8%20%C2%B7%20UI%20UX%20system%20plan%20%E2%80%94%20process%20&%20validation%20(SSOT%203374544eeb42810f9015e8d48d5453af.md) | Process + validation SSOT (executable rules pinned in `design.md`) |
 
-### Section hubs (parents of the chapters above)
+### Workflow & tooling (chapters 9–11)
+
+| # | Chapter | What it covers |
+| --- | --- | --- |
+| **9** | [9 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/9%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) | Operating loop: brief → generate → refine → handoff → mirror |
+| **10** | [10 · Github Workflows Code](Workflow%20&%20Tooling/10%20%C2%B7%20Github%20Workflows%20Code%2034a4544eeb4280e19b6cd7a29d505a51.md) | CI/CD checks, PR automation, design-system gates in GitHub Actions |
+| **11** | [11 · Consolidation map — Repo · Stitch · Figma](Workflow%20&%20Tooling/11%20%C2%B7%20Consolidation%20map%20%E2%80%94%20Repo%20%C2%B7%20Stitch%20%C2%B7%20F%2034a4544eeb4281b5a45bd1d1321b52bf.md) | Crosswalk of where each artifact lives and which is canonical |
+
+### Section hubs
 
 | Hub | Contains |
 | --- | --- |
 | [BRANDBOOK.md](../../BRANDBOOK.md) | Your company brand values — colors, fonts, logo, voice |
-| [Standards](Standards%20324f2b3f65974047be3f428f74728975.md) | Parent of chapters 1–4 + 7 |
-| [Process & Governance](Process%20&%20Governance%2082a235b3f3ae44e184dac8cad68e797c.md) | Parent of chapter 5 + governance playbooks |
-| [Workflow & Tooling](Workflow%20&%20Tooling%205ec6517d3604407fb22045305046ba1c.md) | Parent of chapters 6, 8, 9 + design catalog |
+| [Standards](Standards%20324f2b3f65974047be3f428f74728975.md) | Parent of chapters 1–5 |
+| [Process & Governance](Process%20&%20Governance%2082a235b3f3ae44e184dac8cad68e797c.md) | Parent of chapters 6–8 |
+| [Workflow & Tooling](Workflow%20&%20Tooling%205ec6517d3604407fb22045305046ba1c.md) | Parent of chapters 9–11 |
 | [CUSTOMIZATION.md](../../CUSTOMIZATION.md) | How to fork and adapt this template for your company |
 
-### Companion references (CSV-ready + onboarding + history)
+### Appendix
 
 | Reference | Use |
 | --- | --- |
-| [7 · Design catalog — reference index (CSV import)](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md) | **Pre-structured for CSV import** — use this for spreadsheet/CSV exports of the design system index |
-| [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) | Practical onboarding + prompts for the Claude Design loop |
-| [5 · Governance & shipping](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping checklist, exceptions, rollout |
-| [CUSTOMIZATION.md](../../CUSTOMIZATION.md) | How to adapt this template for your organization |
-| [3 · UI/UX system plan — process & validation (SSOT)](Process%20&%20Governance/3%20%C2%B7%20UI%20UX%20system%20plan%20%E2%80%94%20process%20&%20validation%20(SSOT%203374544eeb42810f9015e8d48d5453af.md) | Process + validation SSOT (executable rules pinned in `design.md`) |
-| [4 · UI/UX exceptions log](Process%20&%20Governance/4%20%C2%B7%20UI%20UX%20exceptions%20log%20%E2%80%94%20approved%20deviations%2042cc3261a0d84faaaf6420c0061d7f71.md) | Template for logging approved deviations |
-
-**CSV export:** For a structured design-system index suitable for CSV import, use **[7 · Design catalog — reference index](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md)**.
+| [Design catalog — reference index (CSV import)](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md) | Pre-structured index for spreadsheet/CSV exports |
 
 **Repo mirrors:** pin chapters in `docs/design/` with deviations in `docs/design-exceptions.md`. Keep `BRANDBOOK.md` ↔ hub ↔ Figma library in sync.

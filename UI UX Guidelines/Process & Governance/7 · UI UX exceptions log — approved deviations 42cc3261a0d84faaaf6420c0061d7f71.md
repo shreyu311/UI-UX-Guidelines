@@ -1,4 +1,4 @@
-# 4 · UI/UX exceptions log — approved deviations
+# 7 · UI/UX exceptions log — approved deviations
 
 ## Purpose
 

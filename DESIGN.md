@@ -53,6 +53,6 @@ Regenerate if output uses raw hex outside the token table, generic off-brand pri
 
 ## Deep links
 
-- Components: [`Standards/4 · Components & patterns`](UI%20UX%20Guidelines/Standards/4%20%C2%B7%20Components%20%26%20patterns%203454544eeb4281479040ce5bd99406c7.md)
-- Brand & tokens: [`Standards/2 · Brand, layout & tokens`](UI%20UX%20Guidelines/Standards/2%20%C2%B7%20Brand,%20layout%20%26%20tokens%203454544eeb4281ce92bbf7eb90df3835.md)
+- Components: [`Standards/5 · Components & patterns`](UI%20UX%20Guidelines/Standards/5%20%C2%B7%20Components%20%26%20patterns%203454544eeb4281479040ce5bd99406c7.md)
+- Brand & tokens: [`Standards/3 · Brand, layout & tokens`](UI%20UX%20Guidelines/Standards/3%20%C2%B7%20Brand,%20layout%20%26%20tokens%203454544eeb4281ce92bbf7eb90df3835.md)
 - Your brandbook: [`BRANDBOOK.md`](BRANDBOOK.md)

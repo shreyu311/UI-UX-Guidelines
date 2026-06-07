@@ -1,4 +1,4 @@
-﻿# 7 · Brand assets (logo & brandbook)
+# 2 · Brand assets (logo & brandbook)
 
 Canonical home for your **logo** and **brandbook**. Whenever any artifact (PPT, template, prototype, doc, UI) needs your company logo or theme, use the files in [`assets/`](../../../assets/) and values in [`BRANDBOOK.md`](../../../BRANDBOOK.md).
 

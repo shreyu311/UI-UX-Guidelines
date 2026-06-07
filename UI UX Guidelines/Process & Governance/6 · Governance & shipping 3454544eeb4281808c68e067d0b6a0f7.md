@@ -1,4 +1,4 @@
-# 5 · Governance & shipping
+# 6 · Governance & shipping
 
 ## Ownership
 
@@ -24,7 +24,7 @@ UI is ready to merge when:
 - [ ] Components use documented variants (or logged exception)
 - [ ] Token-only styling — no orphan hex
 - [ ] Loading, empty, error, and success states covered
-- [ ] Keyboard, focus, and semantics verified ([4 · Components & patterns](../Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md))
+- [ ] Keyboard, focus, and semantics verified ([5 · Components & patterns](../Standards/5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md))
 - [ ] Copy matches voice defined in BRANDBOOK.md
 - [ ] Figma frame linked on the work item (or N/A with reason)
 - [ ] Exceptions logged in `docs/design-exceptions.md` when deviating

@@ -78,7 +78,7 @@ Imported from **Design.csv** (raw import). Many fields were blank in the source 
 
 | Folder slug | Title | Reference URL | Summary |
 | --- | --- | --- | --- |
-| internal-ux-standard | UI/UX Standards (CTO View) | [UI/UX guidelines hub](UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) | Single source of truth for UI/UX; intended to be copied into each repo as `docs/design.md` (or repo root). |
+| internal-ux-standard | UI/UX Standards (hub) | [UI/UX guidelines hub](UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) | Single source of truth for UI/UX; intended to be copied into each repo as `docs/design.md` (or repo root). |
 | example-project | Example — product-local design.md | [CUSTOMIZATION.md — projects/](../../CUSTOMIZATION.md#adding-your-own-projects) | Create your own `projects/` folder for pilots. |
-| governance-shipping | UI/UX Governance — Shipping checklist | [5 · Governance & shipping](../Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping and review process. |
+| governance-shipping | UI/UX Governance — Shipping checklist | [6 · Governance & shipping](../Process%20&%20Governance/6%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping and review process. |
 | template-overview | UI/UX standards template overview | [README.md](../../README.md) | Executive entry point (summary + checklist + links). |

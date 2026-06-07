@@ -14,7 +14,7 @@ This document is the single source of truth for **your company** product UI: lay
 
 ### Brand palette snapshot
 
-Canonical product colors (see [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) for usage, gradients, and semantic rules).
+Canonical product colors (see [3 · Brand, layout & tokens](3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) for usage, gradients, and semantic rules).
 
 | Role | HEX | Token (code) |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ Canonical product colors (see [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%
 
 ### Visual swatches (Figma / PNG)
 
-Scope page uses **tables** for canonical HEX. For **Apr 14 visual proof** (gradients + hover on real components), use **Figma embeds** or **PNGs** in [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) and [3 · Style Card for UI/UX](3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) — avoid generated remote tiles here.
+Scope page uses **tables** for canonical HEX. For **Apr 14 visual proof** (gradients + hover on real components), use **Figma embeds** or **PNGs** in [3 · Brand, layout & tokens](3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) and [4 · Style Card for UI/UX](4%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) — avoid generated remote tiles here.
 
 ### What this is / is not
 
@@ -49,22 +49,22 @@ Single map from UI domains to the living spec. If a row points to a section that
 
 | Category | Elements (examples) | Guidelines location |
 | --- | --- | --- |
-| Color & layout foundations | Palette, gradients, grid, radius, elevation | [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) |
-| Actions | Buttons, icon buttons, split buttons, button groups, menus | [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — Buttons |
-| Forms & selection | Text inputs, text areas, selects, checkboxes, radios, switches, date/time, file upload | [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — Controls & inputs |
-| Feedback | Alerts, toasts, banners, validation, progress, skeletons | [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) (semantics) + [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) (Required states, Notifications) |
-| Navigation & shell | Primary nav, tabs, breadcrumbs, page headers, app bars | [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — **Navigation & shell** |
-| Data display | Tables, cards, lists, KPI tiles, charts/maps in product | [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — **Data display & visualization** |
-| Overlays | Modals, drawers, popovers, command palettes | [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md)  • [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) (shadows, radius) |
-| Content & UX writing | Microcopy, errors, empty states, imagery guidance | [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — Content & accessibility |
-| Style previews | Style cards, posters, internal one-pagers | [3 · Style Card for UI/UX](3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) |
+| Color & layout foundations | Palette, gradients, grid, radius, elevation | [3 · Brand, layout & tokens](3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) |
+| Actions | Buttons, icon buttons, split buttons, button groups, menus | [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — Buttons |
+| Forms & selection | Text inputs, text areas, selects, checkboxes, radios, switches, date/time, file upload | [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — Controls & inputs |
+| Feedback | Alerts, toasts, banners, validation, progress, skeletons | [3 · Brand, layout & tokens](3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) (semantics) + [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) (Required states, Notifications) |
+| Navigation & shell | Primary nav, tabs, breadcrumbs, page headers, app bars | [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — **Navigation & shell** |
+| Data display | Tables, cards, lists, KPI tiles, charts/maps in product | [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — **Data display & visualization** |
+| Overlays | Modals, drawers, popovers, command palettes | [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md)  • [3 · Brand, layout & tokens](3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md) (shadows, radius) |
+| Content & UX writing | Microcopy, errors, empty states, imagery guidance | [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md) — Content & accessibility |
+| Style previews | Style cards, posters, internal one-pagers | [4 · Style Card for UI/UX](4%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md) |
 
 ### Where to look next
 
-- **Visual system + tokens:** [2 · Brand, layout & tokens](2%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md)
-- **Components, patterns, content, accessibility:** [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md)
-- **Style card / poster:** [3 · Style Card for UI/UX](3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md)
-- **Ownership, shipping checklist, exceptions:** [5 · Governance & shipping](../Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md)
+- **Visual system + tokens:** [3 · Brand, layout & tokens](3%20%C2%B7%20Brand,%20layout%20&%20tokens%203454544eeb4281ce92bbf7eb90df3835.md)
+- **Components, patterns, content, accessibility:** [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md)
+- **Style card / poster:** [4 · Style Card for UI/UX](4%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md)
+- **Ownership, shipping checklist, exceptions:** [6 · Governance & shipping](../Process%20&%20Governance/6%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md)
 
 ### Repo
 
@@ -120,12 +120,12 @@ Accessibility and **recoverability** win over novelty.
 
 ## New project / new frame checklist (project baseline)
 
-**Canonical location (this page).** Use this before marking a **new Figma file or frame** as dev-ready. **5 · Governance & shipping** links here only—do not fork the list into a second copy.
+**Canonical location (this page).** Use this before marking a **new Figma file or frame** as dev-ready. **6 · Governance & shipping** links here only—do not fork the list into a second copy.
 
 - [ ]  **Semantic color variables only** on production frames (`primary`, `deep`, `background`, `destructive`, … — aligned to `globals.css` / Figma semantic collections).
 - [ ]  **Named text and spacing styles** (no orphan font sizes; **8pt** layout rhythm with **4pt** micro spacing inside components).
-- [ ]  **Hover, focus-visible, disabled** (and **pressed** / **loading** / **selected** where the pattern applies) designed or explicitly documented — see the **Authoritative button state matrix** and controls sections in [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
+- [ ]  **Hover, focus-visible, disabled** (and **pressed** / **loading** / **selected** where the pattern applies) designed or explicitly documented — see the **Authoritative button state matrix** and controls sections in [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
 - [ ]  **Touch targets ≥ 44×44px** for every interactive control (extend invisible hit slop when the visible control is smaller).
 - [ ]  **Canonical library + frame links** on the ticket or PR (or **N/A** with reason logged in `docs/design-exceptions.md`).
-- [ ]  **Density context** labeled on the frame (**Default** / **Marketing** / **Admin**) — see **Density & product context** in [4 · Components & patterns](4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
-- [ ]  **Figma integration hygiene** — if components show **“fix now”** or won’t open, run the triage in [5 · Governance & shipping](../Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) → *Figma integration (workflow)* before treating it as a UX bug.
+- [ ]  **Density context** labeled on the frame (**Default** / **Marketing** / **Admin**) — see **Density & product context** in [5 · Components & patterns](5%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
+- [ ]  **Figma integration hygiene** — if components show **“fix now”** or won’t open, run the triage in [6 · Governance & shipping](../Process%20&%20Governance/6%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) → *Figma integration (workflow)* before treating it as a UX bug.

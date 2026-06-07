@@ -1,8 +1,8 @@
-# 3 · Style Card for UI/UX
+# 4 · Style Card for UI/UX
 
 ## Brand color palette (canonical)
 
-These HEX values match **2 · Brand, layout & tokens** and **`globals.css`**. Use semantic variables in shipped UI—not one-off fills.
+These HEX values match **3 · Brand, layout & tokens** and **`globals.css`**. Use semantic variables in shipped UI—not one-off fills.
 
 <aside>
 

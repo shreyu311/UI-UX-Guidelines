@@ -1,4 +1,4 @@
-# 9 · Consolidation map — Repo · Stitch · Figma
+# 11 · Consolidation map — Repo · Stitch · Figma
 
 **Purpose:** One place to see **where the truth lives**, what to **duplicate** vs **link**, and how to stay aligned when specs live in this repo, code, Google Stitch, and Figma.
 
@@ -15,8 +15,8 @@ You are not merging four unrelated docs — you are maintaining **one design sys
 - **Rule of thumb: one authority per decision type**
     - **Color semantics** (what red means): **Hub semantic table** → mirrored in **`globals.css`** → repeated in **`DESIGN.md`** for agents.
     - **Exact hex / HSL values**: **`globals.css`** is what ships; Standards + Figma document the same values.
-    - **Component states** (hover, focus, disabled): **Figma matrices** + **Standards ch. 4** → **ShadCN** in repo.
-    - **Process** (exceptions, shipping checklist): **Standards ch. 5** only — don’t fork process into Stitch.
+    - **Component states** (hover, focus, disabled): **Figma matrices** + **Standards ch. 6** → **ShadCN** in repo.
+    - **Process** (exceptions, shipping checklist): **Standards ch. 6** only — don’t fork process into Stitch.
 
 ## What to consolidate (copy) vs connect (link)
 
@@ -39,7 +39,7 @@ You are not merging four unrelated docs — you are maintaining **one design sys
 ## Sync rhythm (keep consolidation honest)
 
 - [ ]  **When tokens change:** update `globals.css` first → update Hub semantic table → refresh `DESIGN.md` → flag Figma variables
-- [ ]  **When a pattern is new:** add to Standards ch. 4 + Figma → implement in ShadCN → add PR checklist item if needed
+- [ ]  **When a pattern is new:** add to Standards ch. 6 + Figma → implement in ShadCN → add PR checklist item if needed
 - [ ]  **When a tool breaks a rule:** log in **`docs/design-exceptions.md`** (screenshot + rationale), not only in chat
 
 ## Google Stitch specifically
@@ -64,13 +64,13 @@ Stitch’s **`DESIGN.md`** is an **import/export** format for design rules — t
 
 **Did the change affect how something should look in pixels?** → Figma + Standards ch. 3/4, then repo components.
 
-**Did the change affect process only?** → Standards ch. 5 only.
+**Did the change affect process only?** → Standards ch. 6 only.
 
 ## Related pages
 
 - [UI/UX guidelines hub](UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) — parent hub
-- [6 · Workflow — Claude Design → Claude Code](6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) — workflow chapter
-- [5 · Governance & shipping](../Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) — governance & shipping
+- [9 · Workflow — Claude Design → Claude Code](9%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) — workflow chapter
+- [6 · Governance & shipping](../Process%20&%20Governance/6%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) — governance & shipping
 
 ## Owner / next step
 

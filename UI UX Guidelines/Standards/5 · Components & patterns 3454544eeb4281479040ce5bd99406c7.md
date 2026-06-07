@@ -1,4 +1,4 @@
-# 4 · Components & patterns
+# 5 · Components & patterns
 
 ## Component system (ShadCN)
 
@@ -14,7 +14,7 @@ Different product surfaces need different **information density** without invent
 
 | Context | Type scale & rhythm | Spacing rhythm | Information density | When to use | Required Figma template frames |
 | --- | --- | --- | --- | --- | --- |
-| **Default (product app)** | Standard **H1–caption** scale from **2 · Brand**; body **16/14** desktop/mobile. | **8pt** layout grid; **4pt** micro inside controls; comfortable section gaps (**24–32px**). | Balanced; prioritize scannability over raw rows per screen. | Most signed-in workflows, settings, mixed marketing + app chrome. | Maintain an empty **“Template · Default · 1440”** frame in the canonical library (auto-layout shell + placeholder content regions). |
+| **Default (product app)** | Standard **H1–caption** scale from **3 · Brand**; body **16/14** desktop/mobile. | **8pt** layout grid; **4pt** micro inside controls; comfortable section gaps (**24–32px**). | Balanced; prioritize scannability over raw rows per screen. | Most signed-in workflows, settings, mixed marketing + app chrome. | Maintain an empty **“Template · Default · 1440”** frame in the canonical library (auto-layout shell + placeholder content regions). |
 | **Marketing / storytelling** | Larger display headings; use display font from BRANDBOOK.md; generous line-height for hero copy. | More **48–64px** vertical rhythm between sections; fewer controls per row. | Low density; fewer KPIs visible above the fold; emphasis on narrative and primary CTA. | Landing pages, campaign surfaces, hero bands using the **approved primary gradient**. | **“Template · Marketing · 1440”** frame with hero, primary/secondary CTAs, and accent callouts only where spec allows. |
 | **Admin / dashboards** | Same tokens, tighter vertical rhythm; may step down one text size for tables and metadata. | Prefer **16–24px** gutters inside dense tables; keep **8pt** alignment for chrome. | Higher density; more rows, filters, and secondary actions visible without scrolling. | Internal tools, operator consoles, KPI-heavy dashboards, large data tables. | **“Template · Admin · 1440”** frame with dense table + filter bar + drawer slot; document default row heights here and in Figma. |
 

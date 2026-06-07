@@ -1,1 +1,0 @@
-# design.md — UI/UX Standards (CTO View)

@@ -13,7 +13,7 @@ Use this file so automated tools know **where the binding UI/UX rules live** in 
 ## Tool-specific
 
 - **Figma:** Component and variable naming should align with token names in `BRANDBOOK.md`. Do not invent off-palette accents.
-- **Claude / Cursor:** Read [`Workflow & Tooling/6 · Workflow`](UI%20UX%20Guidelines/Workflow%20%26%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md). Use tokens from `BRANDBOOK.md` — never ship generic Material/blue defaults.
+- **Claude / Cursor:** Read [`Workflow & Tooling/9 · Workflow`](UI%20UX%20Guidelines/Workflow%20%26%20Tooling/9%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md). Use tokens from `BRANDBOOK.md` — never ship generic Material/blue defaults.
 - **Google Stitch / codegen:** Treat [`DESIGN.md`](DESIGN.md) as the import surface; expand from the hub for full rules.
 
 ## Customization
