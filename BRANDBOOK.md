@@ -1,4 +1,4 @@
-﻿# Brandbook — customize for your company
+# Brandbook — customize for your company
 
 This file is the **single source of truth for your brand identity**. Every other document in this repository references the tokens defined here. Replace all `[PLACEHOLDER]` values with your company's actual brand specifications.
 
@@ -8,7 +8,7 @@ This file is the **single source of truth for your brand identity**. Every other
 
 | Field | Placeholder | Your value |
 | --- | --- | --- |
-| Company name | `[YOUR_COMPANY_NAME]` | |
+| Company name | `your company` | |
 | Tagline | `[YOUR_TAGLINE]` | |
 | Logo file | `assets/logo.png` | Place your logo in `assets/` |
 | Brandbook PDF | `assets/brandbook.pdf` | Optional — attach your full brand guidelines |

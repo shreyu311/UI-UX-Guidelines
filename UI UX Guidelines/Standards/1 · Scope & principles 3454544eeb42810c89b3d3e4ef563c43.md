@@ -2,7 +2,7 @@
 
 ## Purpose & scope
 
-This document is the single source of truth for **[YOUR_COMPANY_NAME]** product UI: layout, hierarchy, interaction, visual system, in-product language, required states, and accessibility. Implementation uses **ShadCN + Tailwind** with tokens from **`globals.css`**.
+This document is the single source of truth for **your company** product UI: layout, hierarchy, interaction, visual system, in-product language, required states, and accessibility. Implementation uses **ShadCN + Tailwind** with tokens from **`globals.css`**.
 
 ### Scope
 
@@ -73,7 +73,7 @@ Single map from UI domains to the living spec. If a row points to a section that
 
 ### Standards owner
 
-- [YOUR_NAME]
+- your team
 
 ---
 
@@ -102,7 +102,7 @@ Accessibility and **recoverability** win over novelty.
 - [ ]  Token-driven styling (no orphan hex)
 - [ ]  Loading · empty · error · success covered
 - [ ]  Keyboard, focus, and semantics verified
-- [ ]  Copy matches voice (**[YOUR_COMPANY_NAME]** lowercase, warm, concise)
+- [ ]  Copy matches voice (**your company** lowercase, warm, concise)
 
 ### PR snippet (copy/paste)
 
@@ -118,7 +118,7 @@ Accessibility and **recoverability** win over novelty.
 
 ---
 
-## New project / new frame checklist (Apr 14 baseline)
+## New project / new frame checklist (project baseline)
 
 **Canonical location (this page).** Use this before marking a **new Figma file or frame** as dev-ready. **5 · Governance & shipping** links here only—do not fork the list into a second copy.
 

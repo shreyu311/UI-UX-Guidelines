@@ -79,7 +79,7 @@ Do not ship unlogged drift.
 
 ## Owner and Status
 
-- Owner: [YOUR_NAME]
+- Owner: your team
 - Status: v1 mirror from Apr 2026 hub export
 - Stack target: Next.js App Router + Tailwind + ShadCN
 

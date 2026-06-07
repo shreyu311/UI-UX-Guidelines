@@ -7,7 +7,7 @@ This page is the **canonical entry** for product UI: **color, typography, layout
 ### What this standard covers
 
 - **Comprehensive UI coverage:** rules apply to **every shipped UI primitive** (actions, forms, selection, navigation, feedback, data display, overlays, layout). Missing guidance is **missing spec**, not optional taste—see the **UI element inventory** in [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) and the authoritative specs in [4 · Components & patterns](Standards/4%20%C2%B7%20Components%20&%20patterns%203454544eeb4281479040ce5bd99406c7.md).
-- **Visual documentation for color:** recurring patterns ship with **Figma frames or PNGs on real components** (hero/gradient, chrome, cards on background, primary vs secondary CTAs, accent discipline). Example slots + checklist: **Brand, layout & tokens** and **Style Card**; **new frame** hygiene: [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) → *New project / new frame checklist (Apr 14 baseline)*.
+- **Visual documentation for color:** recurring patterns ship with **Figma frames or PNGs on real components** (hero/gradient, chrome, cards on background, primary vs secondary CTAs, accent discipline). Example slots + checklist: **Brand, layout & tokens** and **Style Card**; **new frame** hygiene: [1 · Scope & principles](Standards/1%20%C2%B7%20Scope%20&%20principles%203454544eeb42810c89b3d3e4ef563c43.md) → *New project / new frame checklist (project baseline)*.
 - **Gradients:** only the **approved primary gradient** (**135deg**, **`primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**), token-backed—no decorative one-offs unless logged as an exception.
 
 ### Visual swatches (hub — link out)
@@ -17,7 +17,7 @@ The hub stays text-first; **Figma / PNG proof** for palette application lives in
 <aside>
 🖼️
 
-**Apr 14 bar:** reviewers should open **embedded Figma** (or dated PNGs) for hero gradient, chrome, cards, CTAs, accent discipline, and semantic states — not generated placeholder tiles.
+**project review bar:** reviewers should open **embedded Figma** (or dated PNGs) for hero gradient, chrome, cards, CTAs, accent discipline, and semantic states — not generated placeholder tiles.
 
 </aside>
 
@@ -25,8 +25,8 @@ The hub stays text-first; **Figma / PNG proof** for palette application lives in
 
 | Swatch name | Hex | Usage |
 | --- | --- | --- |
-| Teal 700 (Primary hover) | **`primary-dark` (see BRANDBOOK.md)** | Gradient start, hover fill for primary buttons |
-| Teal 500 (Primary default) | **`primary` (see BRANDBOOK.md)** | Gradient end, default CTA fill, links |
+| Primary dark | **`primary-dark` (see BRANDBOOK.md)** | Gradient start, hover fill for primary buttons |
+| Primary | **`primary` (see BRANDBOOK.md)** | Gradient end, default CTA fill, links |
 | Sage wash | **`surface-wash` (see BRANDBOOK.md)** | Hover wash for outlined/ghost buttons, subtle surface |
 | Destructive default | **#DC2626** | Destructive button fill, error icon color |
 | Destructive hover | **#B91C1C** | Destructive button hover |
@@ -76,37 +76,7 @@ Full matrix (hover, pressed, focus, disabled, loading, selected) and spacing: [4
 - **States required:** loading, empty, error, and success on meaningful **surfaces**; **controls** also define interaction states (see Components).
 - **Accessible by default:** keyboard paths, visible focus, meaningful contrast, respectful motion.
 - **Figma matches code:** semantic variables and component names mirror `globals.css` and the implementation library.
-- **[YOUR_COMPANY_NAME]-branded by default:** anything produced from this hub — prototypes from **Claude Design / Claude Code, Figma, Stitch**, plus **PPTs, templates, decks, and exported prototypes** — ships with **[YOUR_COMPANY_NAME] branding applied by default** (logo, brand palette, gradient, typography) on **every page, slide, frame, or template variant**. Unbranded output is treated as a defect, not a draft.
-
-### [YOUR_COMPANY_NAME] branding rule (binding)
-
-<aside>
-🦆
-
-**Scope:** every artifact created using this UI/UX guidelines page — including AI-generated prototypes (**Claude Design, Claude Code, Figma, Stitch**), **PowerPoint / Keynote decks, templates, design files, and exported prototypes** — must carry **[YOUR_COMPANY_NAME] branding by default**.
-
-</aside>
-
-**Required on every page / slide / frame / template:**
-
-- [ ]  **company logo** placed per the brand assets page (see [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md)) — title slide / cover frame, and a smaller mark on subsequent pages.
-- [ ]  **Brand palette** — semantic teal **`primary` (see BRANDBOOK.md)** for primary, hover **`primary-dark` (see BRANDBOOK.md)**, approved gradient **135deg `primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**, plus the full semantic table above. No off-brand accents.
-- [ ]  **Typography** — Inter (sans) and the documented type scale; mono only where specified.
-- [ ]  **Surface treatment** — backgrounds, cards, and chrome match the **Style Card** proof in [3 · Style Card for UI/UX](Standards/3%20%C2%B7%20Style%20Card%20for%20UI%20UX%203454544eeb428013a31df04ad5caa2e2.md).
-- [ ]  **Footer / metadata** — workspace label "[[YOUR_COMPANY_NAME]](http://[YOUR_COMPANY_NAME])" and document owner where the artifact format supports it (decks, templates, exported PDFs).
-
-**Where it applies:**
-
-| Artifact type | Where branding must appear | Source of truth |
-| --- | --- | --- |
-| **Claude Design / Claude Code prototypes** | Every frame and exported screen — logo in app chrome or cover, tokens from `globals.css` | Ch. 2 + 4, this hub |
-| **Figma files & libraries** | Cover page, every frame title block, component thumbnails | Canonical Figma library |
-| **Stitch prototypes** | App shell + first/last screen of every flow | This hub + brand assets |
-| **PPT / Keynote decks** | Title slide, every content slide footer, closing slide | [YOUR_COMPANY_NAME] deck template |
-| **Templates (Notion, doc, deck, repo scaffolds)** | Header / cover, plus any repeating page or section header | Brand assets + this hub |
-| **Exported prototypes / PDFs** | Cover, page header or footer on every page | Brand assets |
-
-**Exceptions:** any unbranded artifact must be logged in **`docs/design-exceptions.md`** with reason, screenshot, and reviewer — same process as token / component exceptions in [5 · Governance & shipping](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md).
+- **Company-branded by default:** prototypes, decks, and exported artifacts should use your brand from [`BRANDBOOK.md`](../../BRANDBOOK.md) — logo, palette, typography. See [7 · Brand assets](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md). Unbranded output should be logged in `docs/design-exceptions.md`.
 
 ### Workflow — Claude Design → Claude Code (operating loop)
 
@@ -127,43 +97,25 @@ The full **operating loop** for the system has its own chapter: [6 · Workflow �
 
 | Step | What happens | Bound by |
 | --- | --- | --- |
-| **0 · Onboard** | One-time per project: point Claude Design at the **repo**  • this hub (chapters 2 + 4) so it learns the **[YOUR_COMPANY_NAME] design system** (semantic teal ``primary` (see BRANDBOOK.md)`, destructive `#DC2626`, gradient 135° **`primary-dark` (see BRANDBOOK.md) → `primary` (see BRANDBOOK.md)**, 8pt grid, ShadCN component variants). Confirm inferred system matches the **Semantic color** table. | Ch. 2 + 4 |
-| **1 · Brief** | Capture intent in plain language **or** import (PRD doc, Notion page, web capture). Use **named elements** from the **UI element inventory** (ch. 1) — e.g. *“KPI card”*, *“directory grid card”*, *“slide-over panel”*. | Ch. 1 |
+| **0 · Onboard** | One-time per project: point Claude Design at the **repo**, [`BRANDBOOK.md`](../../BRANDBOOK.md), and this hub (chapters 2 + 4) so it learns your design tokens and component variants. | Ch. 2 + 4 |
+| **1 · Brief** | Capture intent in plain language or import a PRD. Use **named elements** from the **UI element inventory** (ch. 1). | Ch. 1 |
 | **2 · Generate** | Claude Design returns initial frames using the onboarded system. Reject any output that uses **raw hex**, off-token spacing, or non-ShadCN variants — re-prompt with the token name. | Ch. 2 |
 | **3 · Refine** | Use inline comments + AI sliders to adjust **layout / color / spacing**. Snap spacing to **4 / 8 / 16 / 24 / 32 / 48 / 64**. Require all interactive states from the **button state matrix** (default, hover, pressed, focus, disabled, loading, selected where relevant). Verify **focus ring** is visible and **hit area ≥ 44×44px**. | Ch. 4 |
-| **4 · Visual cross-check** | Compare frames against **Style Card** PNGs / **Visual swatches** in chapters 2 and 3 (hero gradient, chrome, cards on background, primary vs. secondary CTAs, accent discipline, semantic states). Reviewers must open the **embedded Figma / dated PNG**, not generated tiles (Apr 14 bar). | Ch. 2 + 3 |
-| **5 · Handoff to Claude Code** | One-command bundle from Claude Design → **Claude Code**, which writes **ShadCN-first** code into the repo. PR uses the standard checklist: tokens (no orphan hex), ShadCN variants (or logged exception), states present, a11y verified, **Figma frame** linked. | Ch. 5 |
-| **6 · Mirror back** | Export final frames into the **canonical Figma library** so Dev Mode stays aligned with code. Update the project’s **UI/UX Compliance** page with the new frames and the spec sections they satisfy. | Library + per-project compliance |
-
-#### Mapping to the phased rollout (A–E)
-
-| Phase | Where it lands in the loop |
-| --- | --- |
-| **A — Inventory & categories** | Step **1 · Brief** — element names feed the prompts; missing items go back to ch. 1. |
-| **B — Visual color & gradients** | Steps **0 · Onboard**  • **4 · Visual cross-check** — palette and gradient validated against Style Card. |
-| **C — Buttons → other components** | Step **3 · Refine** — every variant must show the full state matrix from ch. 4. |
-| **D — Written rules tied to visuals** | Steps **3 + 4** — each frame links back to the rule it satisfies (do/don’t in ch. 4). |
-| **E — Stakeholder closure** | Step **4** — live Claude Design sessions replace some review meetings; stakeholders react in-context. |
+| **4 · Visual cross-check** | Compare frames against **Style Card** and **Visual swatches** in chapters 2 and 3. | Ch. 2 + 3 |
+| **5 · Handoff to Claude Code** | Hand off to **Claude Code** for implementation. PR uses the shipping checklist: tokens, variants, states, a11y, Figma frame linked. | Ch. 5 |
+| **6 · Mirror back** | Export final frames into the **canonical Figma library** so Dev Mode stays aligned with code. | Figma library |
 
 #### Guardrails (do not bypass)
 
-- **Semantic color** is the law: red **only** for destructive/blocking errors; teal ``primary` (see BRANDBOOK.md)` for CTA/links/focus; warning amber, success green, info calm-blue per the **Semantic color** table. Any divergence = exception.
-- **Tokens, not hex:** Claude Design output must reference token names. If a generated frame ships raw hex, fix in chat (“use `primary` and `border` tokens”) before handoff.
-- **States required:** loading / empty / error / success on surfaces; full interaction matrix on controls.
-- **Accessibility:** keyboard path, visible focus, contrast, motion respect — verified before step 5.
-- **Spacing & radius:** 8pt grid; default radius **12px** (`--radius` 0.75rem) unless excepted.
-- **[YOUR_COMPANY_NAME] branding by default:** anything generated from this hub — Claude Design / Claude Code prototypes, Figma frames, Stitch flows, PPT/Keynote decks, templates, exported prototypes — must include the **company logo, brand palette, gradient, and typography** on **every page, slide, frame, or template variant**. Unbranded output = defect; log under exceptions if intentional.
-
-#### Governance & privacy
-
-- **Owner:** [project-name]as Shirke (UI/UX Standards Owner). Pilots: one project per chapter (suggested: Executive Dashboard for ch. 4 components; [project-name] for ch. 2 tokens).
-- **Privacy posture:** Claude Design stores **design-system representations** (not raw source files); when linked to a codebase, repo data stays local and is not used for training. Enterprise admins can keep the tool disabled by default.
-- **Exceptions:** any Claude Design output that breaks tokens, states, or semantic color is logged in **`docs/design-exceptions.md`** with screenshot + reason, per chapter **5 · Governance**.
-- **Status:** Claude Design is in **research preview** (Apr 2026) — treat it as **assistive**; this hub + Figma library remain the **binding** sources.
+- **Semantic color:** use tokens from BRANDBOOK.md — red only for destructive/errors; primary token for CTAs/links/focus.
+- **Tokens, not hex:** generated output must reference token names.
+- **States required:** loading, empty, error, success on surfaces; full interaction matrix on controls.
+- **Accessibility:** keyboard path, visible focus, contrast — verified before handoff.
+- **Branding:** apply your company brand from BRANDBOOK.md on all exported artifacts.
 
 #### One-paragraph summary
 
-Briefs (ch. 1) → Claude Design generates against the onboarded **[YOUR_COMPANY_NAME]** system (ch. 2) → reviewers refine against state matrices (ch. 4) and visual proof (ch. 3) → one-command handoff to **Claude Code** for ShadCN-first implementation (ch. 5) → frames mirrored back into the **Figma library** so design, code, and Notion stay one system. **Full templates, prompts, FAQ, and pilot plan:** [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md).
+Briefs (ch. 1) → Claude Design generates against the onboarded **your company** system (ch. 2) → reviewers refine against state matrices (ch. 4) and visual proof (ch. 3) → one-command handoff to **Claude Code** for ShadCN-first implementation (ch. 5) → frames mirrored back into the **Figma library** so design, code, and Notion stay one system. **Full templates, prompts, FAQ, and pilot plan:** [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md).
 
 ### Reading order
 
@@ -521,7 +473,7 @@ TODO: design file URL, library URL, prototype — for engineers who skip Notion.
 
 ## Reference documents (read in sequence)
 
-Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5 are the standards, chapter 6 is the operating loop, chapter 7 is brand assets (source for the [YOUR_COMPANY_NAME] branding rule), chapter 8 is engineering workflows, and chapter 9 is the consolidation map across Notion / Repo / Stitch / Figma.
+Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5 are the standards, chapter 6 is the operating loop, chapter 7 is brand assets (source for the your company branding rule), chapter 8 is engineering workflows, and chapter 9 is the consolidation map across Notion / Repo / Stitch / Figma.
 
 ### Standards (chapters 1–5)
 
@@ -538,7 +490,7 @@ Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5
 | # | Chapter | What it covers |
 | --- | --- | --- |
 | **6** | [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) | Operating loop: brief → generate → refine → handoff → mirror |
-| **7** | [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md) | Logo files, clear space, brandbook — source for the [YOUR_COMPANY_NAME] branding rule |
+| **7** | [7 · Brand assets (logo & brandbook)](Standards/7%20%C2%B7%20Brand%20assets%20(logo%20&%20brandbook)%203484544eeb4281bcbe84ef71abb8c1ff.md) | Logo files, clear space, brandbook — source for the your company branding rule |
 | **8** | [8 · Github Workflows Code](Workflow%20&%20Tooling/8%20%C2%B7%20Github%20Workflows%20Code%2034a4544eeb4280e19b6cd7a29d505a51.md) | CI/CD checks, PR automation, design-system gates in GitHub Actions |
 | **9** | [9 · Consolidation map — Notion · Repo · Stitch · Figma](Workflow%20&%20Tooling/9%20%C2%B7%20Consolidation%20map%20%E2%80%94%20Notion%20%C2%B7%20Repo%20%C2%B7%20Stitch%20%C2%B7%20F%2034a4544eeb4281b5a45bd1d1321b52bf.md) | Crosswalk of where each artifact lives and which is canonical |
 
@@ -561,8 +513,7 @@ Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5
 | [5 · Governance & shipping](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping checklist, exceptions, rollout |
 | [CUSTOMIZATION.md](../../CUSTOMIZATION.md) | How to adapt this template for your organization |
 | [3 · UI/UX system plan — process & validation (SSOT)](Process%20&%20Governance/3%20%C2%B7%20UI%20UX%20system%20plan%20%E2%80%94%20process%20&%20validation%20(SSOT%203374544eeb42810f9015e8d48d5453af.md) | Process + validation SSOT (executable rules pinned in `design.md`) |
-| [5 · UI/UX governance — PM execution playbook](Process%20&%20Governance/5%20%C2%B7%20UI%20UX%20governance%20%E2%80%94%20PM%20execution%20playbook%20e112617dc0d74306a44fe55ac121ef52.md) | PM execution playbook for the UI/UX governance gates |
-| [UI/UX Reporting Process & Prototyping Standards — Mandatory Compliance](Process%20&%20Governance/UI%20UX%20Reporting%20Process%20&%20Prototyping%20Standards%20%E2%80%94%20%20e1a5cc1e61df4667b06403c01b3643fc.md) | Mandatory compliance checklist template (duplicate per project) |
+| [4 · UI/UX exceptions log](Process%20&%20Governance/4%20%C2%B7%20UI%20UX%20exceptions%20log%20%E2%80%94%20approved%20deviations%2042cc3261a0d84faaaf6420c0061d7f71.md) | Template for logging approved deviations |
 
 **CSV export:** For a structured design-system index suitable for CSV import, use **[7 · Design catalog — reference index](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md)**.
 
