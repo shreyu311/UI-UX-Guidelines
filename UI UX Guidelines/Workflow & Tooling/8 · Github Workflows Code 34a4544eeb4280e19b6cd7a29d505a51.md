@@ -27,8 +27,7 @@ jobs:
       - name: Run token drift check
         run: node scripts/check-design-tokens.mjs
 
-਍
-```
+\n```
 
 ```css
 :root {
@@ -66,22 +65,21 @@ jobs:
   --ring: var(--primary);
 }
 
-਍
-```
+\n```
 
 ```markdown
 # design.md
 
 ## Sync Header
 
-Notion hub is canonical for narrative and visuals: [UI/UX guidelines](https://www.notion.so/[YOUR_COMPANY_NAME]-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
+Repo hub is canonical for narrative and visuals: [UI/UX guidelines](../UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md). Brand values: [BRANDBOOK.md](../../BRANDBOOK.md).
 This file is canonical for tokens and component APIs used in code.
 If this file and implementation drift, log an exception in `docs/design-exceptions.md`.
 Do not ship unlogged drift.
 
 ## Owner and Status
 
-- Owner: [project-name]as Shirke
+- Owner: [YOUR_NAME]
 - Status: v1 mirror from Apr 2026 hub export
 - Stack target: Next.js App Router + Tailwind + ShadCN
 
@@ -151,8 +149,8 @@ Do not ship unlogged drift.
 
 ## Typography
 
-Typography scale is defined in Notion chapter 2.
-Reference: [2 럂 䈀爀愀渀搀Ⰰ 氀愀礀漀甀琀 ☀ 琀漀欀攀渀猀崀⠀栀琀琀瀀猀㨀⼀⼀眀眀眀⸀渀漀琀椀漀渀⸀猀漀⼀㈀ⴀ䈀爀愀渀搀ⴀ氀愀礀漀甀琀ⴀ琀漀欀攀渀猀ⴀ㌀㐀㔀㐀㔀㐀㐀攀攀戀㐀㈀㠀㄀挀攀㤀㈀戀戀昀㜀攀戀㤀　搀昀㌀㠀㌀㔀㼀瀀瘀猀㴀㈀㄀⤀⸀਀਀吀伀䐀伀 ⠀圀攀攀欀 ㈀⤀㨀 椀渀氀椀渀攀 攀砀愀挀琀 栀攀愀搀椀渀最⼀戀漀搀礀 琀礀瀀攀 猀挀愀氀攀 愀渀搀 琀爀愀挀欀椀渀最 琀漀欀攀渀猀⸀਀਀⌀⌀ 䈀甀琀琀漀渀 䄀倀䤀 ⠀匀栀愀搀䌀一 䘀椀爀猀琀⤀਀਀䤀洀瀀漀爀琀 瀀愀琀栀㨀਀਀怀怀怀琀猀砀਀椀洀瀀漀爀琀 笀 䈀甀琀琀漀渀 紀 昀爀漀洀 ∀䀀⼀挀漀洀瀀漀渀攀渀琀猀⼀甀椀⼀戀甀琀琀漀渀∀㬀਀怀怀怀਀਀䄀瀀瀀爀漀瘀攀搀 挀愀氀氀 猀椀最渀愀琀甀爀攀猀㨀਀਀怀怀怀琀猀砀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀搀攀昀愀甀氀琀∀ 猀椀稀攀㴀∀氀最∀㸀匀愀瘀攀 挀栀愀渀最攀猀㰀⼀䈀甀琀琀漀渀㸀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀猀攀挀漀渀搀愀爀礀∀㸀䌀愀渀挀攀氀㰀⼀䈀甀琀琀漀渀㸀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀最栀漀猀琀∀ 猀椀稀攀㴀∀猀洀∀㸀䐀椀猀洀椀猀猀㰀⼀䈀甀琀琀漀渀㸀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀搀攀猀琀爀甀挀琀椀瘀攀∀㸀䐀攀氀攀琀攀 愀挀挀漀甀渀琀㰀⼀䈀甀琀琀漀渀㸀਀怀怀怀਀਀⌀⌀ 䈀甀琀琀漀渀 匀琀愀琀攀 䴀愀琀爀椀砀 ⠀䌀漀洀瀀愀挀琀⤀਀਀簀 䰀愀戀攀氀 簀 嘀愀爀椀愀渀琀 簀 䐀攀昀愀甀氀琀 簀 䠀漀瘀攀爀 簀 䐀椀猀愀戀氀攀搀 簀 倀爀攀猀猀攀搀 ⼀ 䘀漀挀甀猀 ⼀ 䰀漀愀搀椀渀最 ⼀ 匀攀氀攀挀琀攀搀 簀਀簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀਀簀 䌀漀渀琀愀椀渀攀搀 簀 怀搀攀昀愀甀氀琀怀 簀 怀⌀㈀　㠀㘀㤀㈀怀 昀椀氀氀Ⰰ 眀栀椀琀攀 琀攀砀琀 簀 怀⌀㄀㘀㐀䘀㔀䈀怀 昀椀氀氀 簀 怀⌀䐀㄀䐀㔀䐀䈀怀 昀椀氀氀Ⰰ 怀⌀㤀䌀䄀㌀䄀䘀怀 琀攀砀琀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀簀 伀甀琀氀椀渀攀搀 簀 怀猀攀挀漀渀搀愀爀礀怀 簀 洀甀琀攀搀 戀漀爀搀攀爀Ⰰ 搀愀爀欀 琀攀砀琀 簀 眀愀猀栀 怀⌀䔀㔀䔀䄀䐀䘀怀 簀 洀甀琀攀搀 戀漀爀搀攀爀 ⬀ 怀⌀㤀䌀䄀㌀䄀䘀怀 琀攀砀琀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀簀 吀攀砀琀 簀 怀最栀漀猀琀怀 簀 琀爀愀渀猀瀀愀爀攀渀琀Ⰰ 搀愀爀欀 琀攀砀琀 簀 眀愀猀栀 怀⌀䔀㔀䔀䄀䐀䘀怀 簀 怀⌀㤀䌀䄀㌀䄀䘀怀 琀攀砀琀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀簀 䐀攀猀琀爀甀挀琀椀瘀攀 簀 怀搀攀猀琀爀甀挀琀椀瘀攀怀 簀 怀⌀䐀䌀㈀㘀㈀㘀怀 昀椀氀氀 簀 怀⌀䈀㤀㄀䌀㄀䌀怀 昀椀氀氀 簀 洀甀琀攀搀 渀攀甀琀爀愀氀猀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀਀䘀漀爀 昀甀氀氀 洀愀琀爀椀砀 爀漀眀猀Ⰰ 爀攀昀攀爀攀渀挀攀㨀 嬀㐀 숀· Components & patterns](https://www.notion.so/4-Components-patterns-3454544eeb4281479040ce5bd99406c7?pvs=21).
+Typography scale is defined in this repo chapter 2.
+Reference: [2 럂 䈀爀愀渀搀Ⰰ 氀愀礀漀甀琀 ☀ 琀漀欀攀渀猀崀⠀栀琀琀瀀猀㨀⼀⼀眀眀眀⸀渀漀琀椀漀渀⸀猀漀⼀㈀ⴀ䈀爀愀渀搀ⴀ氀愀礀漀甀琀ⴀ琀漀欀攀渀猀ⴀ㌀㐀㔀㐀㔀㐀㐀攀攀戀㐀㈀㠀㄀挀攀㤀㈀戀戀昀㜀攀戀㤀　搀昀㌀㠀㌀㔀㼀瀀瘀猀㴀㈀㄀⤀⸀਀਀吀伀䐀伀 ⠀圀攀攀欀 ㈀⤀㨀 椀渀氀椀渀攀 攀砀愀挀琀 栀攀愀搀椀渀最⼀戀漀搀礀 琀礀瀀攀 猀挀愀氀攀 愀渀搀 琀爀愀挀欀椀渀最 琀漀欀攀渀猀⸀਀਀⌀⌀ 䈀甀琀琀漀渀 䄀倀䤀 ⠀匀栀愀搀䌀一 䘀椀爀猀琀⤀਀਀䤀洀瀀漀爀琀 瀀愀琀栀㨀਀਀怀怀怀琀猀砀਀椀洀瀀漀爀琀 笀 䈀甀琀琀漀渀 紀 昀爀漀洀 ∀䀀⼀挀漀洀瀀漀渀攀渀琀猀⼀甀椀⼀戀甀琀琀漀渀∀㬀਀怀怀怀਀਀䄀瀀瀀爀漀瘀攀搀 挀愀氀氀 猀椀最渀愀琀甀爀攀猀㨀਀਀怀怀怀琀猀砀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀搀攀昀愀甀氀琀∀ 猀椀稀攀㴀∀氀最∀㸀匀愀瘀攀 挀栀愀渀最攀猀㰀⼀䈀甀琀琀漀渀㸀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀猀攀挀漀渀搀愀爀礀∀㸀䌀愀渀挀攀氀㰀⼀䈀甀琀琀漀渀㸀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀最栀漀猀琀∀ 猀椀稀攀㴀∀猀洀∀㸀䐀椀猀洀椀猀猀㰀⼀䈀甀琀琀漀渀㸀਀㰀䈀甀琀琀漀渀 瘀愀爀椀愀渀琀㴀∀搀攀猀琀爀甀挀琀椀瘀攀∀㸀䐀攀氀攀琀攀 愀挀挀漀甀渀琀㰀⼀䈀甀琀琀漀渀㸀਀怀怀怀਀਀⌀⌀ 䈀甀琀琀漀渀 匀琀愀琀攀 䴀愀琀爀椀砀 ⠀䌀漀洀瀀愀挀琀⤀਀਀簀 䰀愀戀攀氀 簀 嘀愀爀椀愀渀琀 簀 䐀攀昀愀甀氀琀 簀 䠀漀瘀攀爀 簀 䐀椀猀愀戀氀攀搀 簀 倀爀攀猀猀攀搀 ⼀ 䘀漀挀甀猀 ⼀ 䰀漀愀搀椀渀最 ⼀ 匀攀氀攀挀琀攀搀 簀਀簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀 ⴀⴀⴀ 簀਀簀 䌀漀渀琀愀椀渀攀搀 簀 怀搀攀昀愀甀氀琀怀 簀 怀⌀㈀　㠀㘀㤀㈀怀 昀椀氀氀Ⰰ 眀栀椀琀攀 琀攀砀琀 簀 怀⌀㄀㘀㐀䘀㔀䈀怀 昀椀氀氀 簀 怀⌀䐀㄀䐀㔀䐀䈀怀 昀椀氀氀Ⰰ 怀⌀㤀䌀䄀㌀䄀䘀怀 琀攀砀琀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀簀 伀甀琀氀椀渀攀搀 簀 怀猀攀挀漀渀搀愀爀礀怀 簀 洀甀琀攀搀 戀漀爀搀攀爀Ⰰ 搀愀爀欀 琀攀砀琀 簀 眀愀猀栀 怀⌀䔀㔀䔀䄀䐀䘀怀 簀 洀甀琀攀搀 戀漀爀搀攀爀 ⬀ 怀⌀㤀䌀䄀㌀䄀䘀怀 琀攀砀琀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀簀 吀攀砀琀 簀 怀最栀漀猀琀怀 簀 琀爀愀渀猀瀀愀爀攀渀琀Ⰰ 搀愀爀欀 琀攀砀琀 簀 眀愀猀栀 怀⌀䔀㔀䔀䄀䐀䘀怀 簀 怀⌀㤀䌀䄀㌀䄀䘀怀 琀攀砀琀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀簀 䐀攀猀琀爀甀挀琀椀瘀攀 簀 怀搀攀猀琀爀甀挀琀椀瘀攀怀 簀 怀⌀䐀䌀㈀㘀㈀㘀怀 昀椀氀氀 簀 怀⌀䈀㤀㄀䌀㄀䌀怀 昀椀氀氀 簀 洀甀琀攀搀 渀攀甀琀爀愀氀猀 簀 䴀甀猀琀 攀砀椀猀琀 瀀攀爀 挀栀愀瀀琀攀爀 㐀 洀愀琀爀椀砀 簀਀਀䘀漀爀 昀甀氀氀 洀愀琀爀椀砀 爀漀眀猀Ⰰ 爀攀昀攀爀攀渀挀攀㨀 嬀㐀 숀· Components & patterns](../../BRANDBOOK.md).
 
 ## Code-Level Do and Don't
 
@@ -213,7 +211,7 @@ Controls also require interaction states as documented in chapter 4.
 - ShadCN component path: `@/components/ui/*`.
 - Token source of truth in code: `app/globals.css`.
 - Figma library URL: `TODO_ADD_CANONICAL_FIGMA_LIBRARY_URL`.
-- Notion canonical narrative and visuals: [UI/UX guidelines](https://www.notion.so/[YOUR_COMPANY_NAME]-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
+- Repo canonical narrative and visuals: [UI/UX guidelines](../../BRANDBOOK.md]-ai/UI-UX-guidelines-20be6c5f913d4f53ac0e76eb5e904eef?source=copy_link).
 
 ## Workflow (Design -> Code, Compact)
 
@@ -227,8 +225,7 @@ Controls also require interaction states as documented in chapter 4.
 | 5 | Handoff to code | ShadCN-first implementation with checklist |
 | 6 | Mirror final frames back | Keep Notion/Figma/code aligned |
 
-Full workflow details: [6 럂 圀漀爀欀昀氀漀眀 ᐀†䌀氀愀甀搀攀 䐀攀猀椀最渀 馀‡䌀氀愀甀搀攀 䌀漀搀攀崀⠀栀琀琀瀀猀㨀⼀⼀眀眀眀⸀渀漀琀椀漀渀⸀猀漀⼀㘀ⴀ圀漀爀欀昀氀漀眀ⴀ䌀氀愀甀搀攀ⴀ䐀攀猀椀最渀ⴀ䌀氀愀甀搀攀ⴀ䌀漀搀攀ⴀ㌀㐀㜀㐀㔀㐀㐀攀攀戀㐀㈀㠀㄀㔀㘀㠀㜀　㈀攀㐀搀搀㜀㄀昀㠀㈀㔀愀㘀㼀瀀瘀猀㴀㈀㄀⤀⸀਀਀⌀⌀ 䔀砀挀攀瀀琀椀漀渀 倀爀漀挀攀猀猀਀਀䄀渀礀 搀攀瘀椀愀琀椀漀渀 昀爀漀洀 猀攀挀琀椀漀渀猀 愀戀漀瘀攀 洀甀猀琀 戀攀 氀漀最最攀搀 椀渀 怀搀漀挀猀⼀搀攀猀椀最渀ⴀ攀砀挀攀瀀琀椀漀渀猀⸀洀搀怀 戀攀昀漀爀攀 洀攀爀最攀⸀਀਀⌀⌀ 倀刀 䄀挀挀攀瀀琀愀渀挀攀 䌀栀攀挀欀氀椀猀琀਀਀怀怀怀洀搀਀ⴀ 嬀 崀 一漀 爀愀眀 栀攀砀 椀渀 挀栀愀渀最攀搀 唀䤀 昀椀氀攀猀 ⠀攀砀挀攀瀀琀 琀漀欀攀渀 搀攀昀椀渀椀琀椀漀渀猀 椀渀 最氀漀戀愀氀猀⸀挀猀猀⤀਀ⴀ 嬀 崀 匀栀愀搀䌀一 瘀愀爀椀愀渀琀猀 甀猀攀搀 昀漀爀 椀渀琀攀爀愀挀琀椀瘀攀 挀漀洀瀀漀渀攀渀琀猀਀ⴀ 嬀 崀 刀攀焀甀椀爀攀搀 猀琀愀琀攀猀 瀀爀攀猀攀渀琀 昀漀爀 渀攀眀 洀攀愀渀椀渀最昀甀氀 猀甀爀昀愀挀攀猀਀ⴀ 嬀 崀 䬀攀礀戀漀愀爀搀 瀀愀琀栀 愀渀搀 瘀椀猀椀戀氀攀 昀漀挀甀猀 瘀攀爀椀昀椀攀搀਀ⴀ 嬀 崀 㐀㐀砀㐀㐀 洀椀渀椀洀甀洀 栀椀琀 琀愀爀最攀琀 瘀攀爀椀昀椀攀搀਀ⴀ 嬀 崀 䘀椀最洀愀 昀爀愀洀攀 漀爀 搀愀琀攀搀 倀一䜀 瀀爀漀漀昀 氀椀渀欀攀搀 椀渀 倀刀਀ⴀ 嬀 崀 䄀渀礀 搀爀椀昀琀 氀漀最最攀搀 椀渀 搀漀挀猀⼀搀攀猀椀最渀ⴀ攀砀挀攀瀀琀椀漀渀猀⸀洀搀਀怀怀怀਀਀ഀ
-```
+Full workflow details: [6 럂 圀漀爀欀昀氀漀眀 ᐀†䌀氀愀甀搀攀 䐀攀猀椀最渀 馀‡䌀氀愀甀搀攀 䌀漀搀攀崀⠀栀琀琀瀀猀㨀⼀⼀眀眀眀⸀渀漀琀椀漀渀⸀猀漀⼀㘀ⴀ圀漀爀欀昀氀漀眀ⴀ䌀氀愀甀搀攀ⴀ䐀攀猀椀最渀ⴀ䌀氀愀甀搀攀ⴀ䌀漀搀攀ⴀ㌀㐀㜀㐀㔀㐀㐀攀攀戀㐀㈀㠀㄀㔀㘀㠀㜀　㈀攀㐀搀搀㜀㄀昀㠀㈀㔀愀㘀㼀瀀瘀猀㴀㈀㄀⤀⸀਀਀⌀⌀ 䔀砀挀攀瀀琀椀漀渀 倀爀漀挀攀猀猀਀਀䄀渀礀 搀攀瘀椀愀琀椀漀渀 昀爀漀洀 猀攀挀琀椀漀渀猀 愀戀漀瘀攀 洀甀猀琀 戀攀 氀漀最最攀搀 椀渀 怀搀漀挀猀⼀搀攀猀椀最渀ⴀ攀砀挀攀瀀琀椀漀渀猀⸀洀搀怀 戀攀昀漀爀攀 洀攀爀最攀⸀਀਀⌀⌀ 倀刀 䄀挀挀攀瀀琀愀渀挀攀 䌀栀攀挀欀氀椀猀琀਀਀怀怀怀洀搀਀ⴀ 嬀 崀 一漀 爀愀眀 栀攀砀 椀渀 挀栀愀渀最攀搀 唀䤀 昀椀氀攀猀 ⠀攀砀挀攀瀀琀 琀漀欀攀渀 搀攀昀椀渀椀琀椀漀渀猀 椀渀 最氀漀戀愀氀猀⸀挀猀猀⤀਀ⴀ 嬀 崀 匀栀愀搀䌀一 瘀愀爀椀愀渀琀猀 甀猀攀搀 昀漀爀 椀渀琀攀爀愀挀琀椀瘀攀 挀漀洀瀀漀渀攀渀琀猀਀ⴀ 嬀 崀 刀攀焀甀椀爀攀搀 猀琀愀琀攀猀 瀀爀攀猀攀渀琀 昀漀爀 渀攀眀 洀攀愀渀椀渀最昀甀氀 猀甀爀昀愀挀攀猀਀ⴀ 嬀 崀 䬀攀礀戀漀愀爀搀 瀀愀琀栀 愀渀搀 瘀椀猀椀戀氀攀 昀漀挀甀猀 瘀攀爀椀昀椀攀搀਀ⴀ 嬀 崀 㐀㐀砀㐀㐀 洀椀渀椀洀甀洀 栀椀琀 琀愀爀最攀琀 瘀攀爀椀昀椀攀搀਀ⴀ 嬀 崀 䘀椀最洀愀 昀爀愀洀攀 漀爀 搀愀琀攀搀 倀一䜀 瀀爀漀漀昀 氀椀渀欀攀搀 椀渀 倀刀਀ⴀ 嬀 崀 䄀渀礀 搀爀椀昀琀 氀漀最最攀搀 椀渀 搀漀挀猀⼀搀攀猀椀最渀ⴀ攀砀挀攀瀀琀椀漀渀猀⸀洀搀਀怀怀怀਀\n```
 
 ```markdown
 # design-exceptions.md
@@ -266,8 +263,7 @@ Use this log for any approved drift from `docs/design.md` or `app/globals.css`.
 
 _No open exceptions._
 
-਍
-```
+\n```
 
 ```jsx
 /**
@@ -334,8 +330,7 @@ module.exports = {
   },
 };
 
-਍
-```
+\n```
 
 ```markdown
 # Custom ESLint Rules
@@ -395,8 +390,7 @@ rules: {
 
 Keep this rule as `warn` initially, then upgrade to `error` after cleanup.
 
-਍
-```
+\n```
 
 ```jsx
 import fs from "node:fs";

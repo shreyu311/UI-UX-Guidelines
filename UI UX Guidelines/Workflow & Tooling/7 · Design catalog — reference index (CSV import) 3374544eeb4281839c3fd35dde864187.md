@@ -78,7 +78,7 @@ Imported from **Design.csv** (raw import). Many fields were blank in the source 
 
 | Folder slug | Title | Reference URL | Summary |
 | --- | --- | --- | --- |
-| internal-ux-standard | UI/UX Standards (CTO View) | [UI/UX guidelines](../UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) | Single source of truth for UI/UX; intended to be copied into each repo as `docs/design.md` (or repo root). |
-| internal-pilot-exec-dashboard | Pilot — [design.md](http://design.md) on Exec Dashboard (Overview + KPI Card) | [Pilot output — [design.md](http://design.md) on Exec Dashboard (Overview + KPI Card)](../Projects/Pilot%20output%20%E2%80%94%20design%20md%20on%20Exec%20Dashboard%20(Overvi%20cba1b3756c52481aa0f981510bb02fd6.md) | Pilot proof artifact. |
+| internal-ux-standard | UI/UX Standards (CTO View) | [UI/UX guidelines hub](UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md) | Single source of truth for UI/UX; intended to be copied into each repo as `docs/design.md` (or repo root). |
+| example-project | Example — product-local design.md | [CUSTOMIZATION.md — projects/](../../CUSTOMIZATION.md#adding-your-own-projects) | Create your own `projects/` folder for pilots. |
 | internal-ux-governance-playbook | UI/UX Governance — PM Execution System | [5 · UI/UX governance — PM execution playbook](../Process%20&%20Governance/5%20%C2%B7%20UI%20UX%20governance%20%E2%80%94%20PM%20execution%20playbook%20e112617dc0d74306a44fe55ac121ef52.md) | Enforcement and reporting. |
-| internal-ux-program-overview | UI/UX standards program (executive summary) | [UI/UX System Proposal Plan](../Planning%20&%20Meetings/UI%20UX%20System%20Proposal%20Plan%203374544eeb42816bb76ff44b58bce073.md) | Executive entry point (summary + visuals + checklist + links). |
+| template-overview | UI/UX standards template overview | [README.md](../../README.md) | Executive entry point (summary + checklist + links). |

@@ -73,7 +73,7 @@ Single map from UI domains to the living spec. If a row points to a section that
 
 ### Standards owner
 
-- [project-name]as Shirke
+- [YOUR_NAME]
 
 ---
 

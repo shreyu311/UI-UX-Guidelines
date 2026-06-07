@@ -2,15 +2,15 @@
 
 ## Ownership
 
-- **Standards owner:** [project-name]as Shirke
+- **Standards owner:** [YOUR_NAME]
 - **Repo SSOT:** `design.md` in `docs/` or repo root
 - **Approved deviations:** `docs/design-exceptions.md`
 
 ## Sources of truth
 
 - **Engineering merge gate:** the Markdown UI specification checked into Git under **docs** (and optionally at the repository root—see **Ownership** for the exact filename). If a PR conflicts with that file, update it first or log an approved exception in the exceptions Markdown next to it.
-- **Design narrative:** this Notion hub is the human-friendly reference (examples, Figma links, tables). If Notion and the Git spec disagree, **follow the Git spec for code** until both are updated together.
-- **Workshop snapshots:** PDF or HTML exports (for example the stakeholder **Components Reference** booklet tied to v1.0 of the Git spec) can lag. Refresh them after substantive changes. **[project-name]as Shirke** (or delegated design ops) owns export cadence.
+- **Design narrative:** this repo hub is the human-friendly reference (examples, Figma links, tables). If Notion and the Git spec disagree, **follow the Git spec for code** until both are updated together.
+- **Workshop snapshots:** PDF or HTML exports (for example the stakeholder **Components Reference** booklet tied to v1.0 of the Git spec) can lag. Refresh them after substantive changes. **[YOUR_NAME]** (or delegated design ops) owns export cadence.
 
 ### Export checklist (design ops)
 
@@ -64,4 +64,4 @@ UI is ready to merge when:
     Earlier Notion splits are kept only for history. Prefer the **five** child pages in this hub for day-to-day work.
     
 
-[Archive — superseded 12-way split (2026-04-17)](5%20%C2%B7%20Governance%20&%20shipping/Archive%20%E2%80%94%20superseded%2012-way%20split%20(2026-04-17)%203454544eeb428102bd52cf241f65aeb4.md)
+[Archive — superseded 12-way split (2026-04-17)](5%20%C2%B7%20Governance%20&%20shipping/5%20%C2%B7%20Governance%20%26%20shipping%203454544eeb4281808c68e067d0b6a0f7.md)%203454544eeb428102bd52cf241f65aeb4.md)

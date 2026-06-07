@@ -1,27 +1,16 @@
 # UI/UX Reporting Process & Prototyping Standards — Mandatory Compliance
 
-<aside>
-🎨
+## Purpose
 
-**TO: All Project Managers**
+Template for establishing a **UI/UX reporting cadence and prototyping baseline** across all active projects in your organization.
 
-**FROM: [project-name] (CTO)**
-
-**DATE: March 16, 2026**
-
-**RE: Establishing a mandatory UI/UX reporting cadence and prototyping baseline across all active projects.**
-
-</aside>
+Customize the fields below for your team. This document defines the standard your PMs should follow.
 
 ---
 
-Team,
+## Why this matters
 
-The [UI/UX Audit — All Active Projects (Feb 26, 2026)](https://www.notion.so/UI-UX-Audit-All-Active-Projects-Feb-26-2026-c26dcae28ba34e86b565c6fee64baf73?pvs=21) made one thing painfully clear: **no project has visual wireframes or mockups, accessibility is universally weak, and interaction states are afterthoughts.** These are not edge-case findings — they are systemic failures that affect every single project we are running.
-
-We are not going to keep shipping specs without visual proof that the UI works. Starting now, UI/UX reporting and prototyping are **mandatory PM responsibilities** — not optional, not "nice to have," not "we'll get to it later."
-
-This document defines the standard. Follow it.
+Teams that ship without visual proof consistently hit the same problems: missing wireframes, weak accessibility, and interaction states added as afterthoughts. UI/UX reporting and prototyping should be **mandatory PM responsibilities** — not optional.
 
 ---
 
@@ -44,8 +33,6 @@ Every Friday, as part of your EOD readiness check, you must update the following
 | **Stakeholder Sign-off** | Which screens have been reviewed and approved by the project lead or client | Sign-off record with date and reviewer name |
 
 <aside>
-🛑
-
 **Rule:** If your weekly report does not include the UI/UX status section, your report is **incomplete** and will be flagged by the Steward PM. No exceptions.
 
 </aside>
@@ -80,8 +67,6 @@ Every project must have prototypes that meet the following baseline **before ent
 - **Naming convention:** `[Project]-HF-[ScreenName]-v[X.X]` (e.g., `[project-name]-HF-CaseDetail-v1.0`)
 
 <aside>
-⚠️
-
 **Gate rule:** No development task for a screen may be marked "In Progress" unless a lo-fi wireframe exists and is linked in the task's acceptance criteria. No screen may enter UAT or client demo without a hi-fi prototype.
 
 </aside>
@@ -126,8 +111,6 @@ Effective immediately, **WCAG 2.1 AA** is the mandatory accessibility target for
 - [x]  **Touch targets:** Minimum 44×44px for all clickable elements (especially for mobile-first projects like [project-name])
 
 <aside>
-📌
-
 **How to validate:** Use Chrome DevTools Lighthouse audit (Accessibility score ≥ 90) and manual keyboard walkthrough. Document results in the project's QA section.
 
 </aside>
@@ -188,8 +171,6 @@ For every project you own, you must be able to check **every single box** below.
 - [x]  **Weekly reporting:** UI/UX status section included in every Friday EOD report
 
 <aside>
-📌
-
 **How to use this checklist:** Duplicate Section 7 as your project's UI/UX compliance tracker. Update it weekly. When all boxes are checked, your project meets the minimum UI/UX standard.
 
 </aside>

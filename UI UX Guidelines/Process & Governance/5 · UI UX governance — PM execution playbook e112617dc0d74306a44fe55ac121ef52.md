@@ -1,6 +1,6 @@
 # 5 · UI/UX governance — PM execution playbook
 
-**Type:** Operational Playbook · **Effective:** 16th March · **Review Deadline:** March 20, 2026 · **Owners:** @[project-name]as Shirke, @[project-name] Patel
+**Type:** Operational Playbook · **Effective:** 16th March · **Review Deadline:** March 20, 2026 · **Owners:** @[YOUR_NAME], @[project-name] Patel
 
 ---
 
@@ -24,7 +24,7 @@ This document converts the 8-phase compliance plan into an **executable system**
 
 ## Required artifacts (new baseline)
 
-- `design.md` (UI/UX Standard): [UI/UX guidelines](../UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md)
+- `design.md` (UI/UX Standard): [UI/UX guidelines hub](UI%20UX%20guidelines%2020be6c5f913d4f53ac0e76eb5e904eef.md)
 - `design-exceptions.md` (Exception log): [4 · UI/UX exceptions log — approved deviations](4%20%C2%B7%20UI%20UX%20exceptions%20log%20%E2%80%94%20approved%20deviations%2042cc3261a0d84faaaf6420c0061d7f71.md)
 
 ## PR enforcement (non-negotiable)
@@ -68,8 +68,6 @@ This document converts the 8-phase compliance plan into an **executable system**
 # 3 · UI/UX Weekly Report Template
 
 <aside>
-📋
-
 **Copy-paste this into your RAD log every Friday. Fill in the values for your project.**
 
 </aside>
@@ -162,8 +160,6 @@ Every UI dev ticket **must** include:
 5. **Acceptance criteria** — at minimum: "Screen matches wireframe layout. All 4 interaction states implemented. A11y checklist items pass."
 
 <aside>
-🚫
-
 **Hard Rule:** No UI ticket moves to "In Progress" without a wireframe link and interaction states reference. The Steward PM enforces this at sprint planning.
 
 </aside>
@@ -206,8 +202,6 @@ If a project cannot meet a gate criterion:
 # 6 · 7-Day Compliance Action Plan
 
 <aside>
-📅
-
 **Goal:** All 4 projects pass Gate G2 (Interaction & A11y Ready) by March 20, 2026 for [project-name]'s review.
 
 </aside>
@@ -270,8 +264,6 @@ If a project cannot meet a gate criterion:
 # 7 · AI-Assisted Engineering — Industry Benchmark
 
 <aside>
-🤖
-
 **Source:** [Uber CTO Praveen Neppalli Naga — Mar 17, 2026](https://x.com/praveenTweets/status/2033627282418655711) · Corroborated by The Hans India reporting.
 
 </aside>
@@ -300,8 +292,6 @@ Uber's engineering org has undergone a fundamental shift that directly validates
 ## What This Means for [YOUR_COMPANY_NAME]
 
 <aside>
-💡
-
 **The Uber data validates our entire governance approach.** As AI agents write more code, the PM's role shifts from "make sure devs build it right" to "make sure the specs are right so AI builds it right." Our 8-phase compliance system, gate milestones, and acceptance criteria (LF-1 through LF-7, HF-1 through HF-7) are not bureaucracy — they are the **input layer** that AI agents will consume to generate correct UI.
 
 </aside>
@@ -323,29 +313,4 @@ Uber's engineering org has undergone a fundamental shift that directly validates
 | R1 | **PMs treat wireframe specs as optional** — submit text descriptions instead of structured layout specs with dimensions and sample data | High | High | Hard gate G1: wireframes must pass LF-1 through LF-7 acceptance criteria. Steward PM validates at Monday meeting. Non-compliant wireframes are rejected same-day. |
 | R2 | **Decisions stay "Open" indefinitely** — no owner takes responsibility, decisions drift past deadline | High | High | Escalation ladder: unowned >24hr → Steward PM assigns. >3 days → [project-name]. >5 days → CTO. Friday report makes open decisions visible weekly. |
 | R3 | **Accessibility becomes checkbox theater** — WCAG declared but never tested, checklists created but never verified | Medium | High | Gate G4 requires Lighthouse ≥ 90 before ship. Per-screen a11y checklists are verified during QA, not just PM sign-off. Random spot-checks by [project-name]. |
-| R4 | **Friday reports become copy-paste with stale data** — PMs submit same numbers week over week | Medium | Medium | Steward PM cross-checks wireframe links in report against actual project repo. Any discrepancy flagged at Monday meeting. Require delta from previous week. |
-| R5 | **[project-name] client decisions block compliance** — 10 pending decisions depend on client response outside PM control | Medium | High | Gate Exception Process allows 1-sprint exception per project. PM documents "decision assumed as X" with client notification. If client overrides, rework is scoped as change request. |
-
-### Failure Mode Prevention Checklist
-
-<aside>
-🛡️
-
-**Common failure modes observed across all 4 projects and how to prevent them:**
-
-</aside>
-
-1. **"We'll add wireframes after build"** → **Prevention:** G1 gate blocks build. No wireframe = no sprint planning for UI tasks. Period.
-2. **"Accessibility is a post-launch fix"** → **Prevention:** G2 requires WCAG declaration + a11y checklists before UI dev tickets are assigned. G4 requires Lighthouse ≥ 90 before deploy.
-3. **"The design system is shadcn defaults"** → **Prevention:** Token sheet with project-specific hex values is a G2 requirement. Generic "shadcn" without values fails.
-4. **"Interaction states are obvious"** → **Prevention:** 4 states (Loading/Empty/Error/Success) with real copy strings must be documented. "Will handle in code" is a gate failure.
-5. **"One person can do all of this"** → **Prevention:** Steward PM rotation distributes enforcement. No single PM can self-approve their own gate passage — peer review is mandatory.
-
----
-
-<aside>
-🎯
-
-**Success Criteria for March 20:** All 4 projects pass Gate G2. All Friday reports submitted. All decisions have owners. Zero overdue blockers. [project-name] approves or conditionally approves each project for the next phase.
-
-</aside>
+| R4 | **Friday reports become copy-paste with stale data** — PMs submit same numbers week over week | Medium | Medium | Steward PM cross-checks wireframe links in report against actual project rep

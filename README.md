@@ -2,7 +2,7 @@
 
 An **open, forkable UI/UX guideline library** any company can adopt and customize. Markdown-first so it renders on **GitHub**, pairs with **Figma** semantic variables, and feeds **AI coding tools** via [`AGENTS.md`](AGENTS.md) and [`DESIGN.md`](DESIGN.md).
 
-**Start customizing:** [`CUSTOMIZATION.md`](CUSTOMIZATION.md) · **Your brand values:** [`BRANDBOOK.md`](BRANDBOOK.md)
+**Start customizing:** [`CUSTOMIZATION.md`](CUSTOMIZATION.md) · **Your brand values:** [`BRANDBOOK.md`](BRANDBOOK.md) · **Example:** [`BRANDBOOK.example.md`](BRANDBOOK.example.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # UI/UX guidelines
 
-## UI/UX guidelines
+> **Customize your brand:** [`BRANDBOOK.md`](../../BRANDBOOK.md) · **How to adapt:** [`CUSTOMIZATION.md`](../../CUSTOMIZATION.md)
 
 This page is the **canonical entry** for product UI: **color, typography, layout, components, states, accessibility, and in-product language**. Engineering pins the same rules in **`design.md`** (`docs/design.md` or repo root). Approved deviations live in **`docs/design-exceptions.md`**.
 
@@ -546,38 +546,24 @@ Authoritative chapters this hub binds. Read **1 → 9** in order; chapters 1–5
 
 | Hub | Contains |
 | --- | --- |
-| [UI/UX Guidelines](../UI%20UX%20Guidelines%2034b4544eeb4280b380c1c4b7e5addcfa.md) | This hub — single source of truth landing page |
+| [BRANDBOOK.md](../../BRANDBOOK.md) | Your company brand values — colors, fonts, logo, voice |
 | [Standards](Standards%20324f2b3f65974047be3f428f74728975.md) | Parent of chapters 1–4 + 7 |
 | [Process & Governance](Process%20&%20Governance%2082a235b3f3ae44e184dac8cad68e797c.md) | Parent of chapter 5 + governance playbooks |
 | [Workflow & Tooling](Workflow%20&%20Tooling%205ec6517d3604407fb22045305046ba1c.md) | Parent of chapters 6, 8, 9 + design catalog |
-| [Planning & Meetings](Planning%20&%20Meetings%20600f402b0ea7461b9ec77523708de715.md) | Working plans, meeting notes, system-plan SSOT |
-| [Projects](Projects%20806da2d7b16e4d29bca33f66a6e194ae.md) | Per-project UI/UX compliance trackers (Executive Dashboard, [project-name], [project-name], [project-name], etc.) |
+| [CUSTOMIZATION.md](../../CUSTOMIZATION.md) | How to fork and adapt this template for your company |
 
 ### Companion references (CSV-ready + onboarding + history)
 
 | Reference | Use |
 | --- | --- |
 | [7 · Design catalog — reference index (CSV import)](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md) | **Pre-structured for CSV import** — use this for spreadsheet/CSV exports of the design system index |
-| [Claude Design Using - UI/UX Guidelines ](Claude%20Design%20Using%20-%20UI%20UX%20Guidelines%203484544eeb4280188264d481b68e5759.md) | Practical onboarding + prompts for the Claude Design loop (companion to ch. 6) |
-| [Governance & rollout](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping/Archive%20%E2%80%94%20superseded%2012-way%20split%20(2026-04-17)/Governance%20&%20rollout%203454544eeb4281908299c56566009e0b.md) | Phased program rollout (A → E), historical context for ch. 5 |
-| [UI/UX System Proposal Plan](Planning%20&%20Meetings/UI%20UX%20System%20Proposal%20Plan%203374544eeb42816bb76ff44b58bce073.md) | Original system proposal — background context |
+| [6 · Workflow — Claude Design → Claude Code](Workflow%20&%20Tooling/6%20%C2%B7%20Workflow%20%E2%80%94%20Claude%20Design%20%E2%86%92%20Claude%20Code%203474544eeb4281568702e4dd71f825a6.md) | Practical onboarding + prompts for the Claude Design loop |
+| [5 · Governance & shipping](Process%20&%20Governance/5%20%C2%B7%20Governance%20&%20shipping%203454544eeb4281808c68e067d0b6a0f7.md) | Shipping checklist, exceptions, rollout |
+| [CUSTOMIZATION.md](../../CUSTOMIZATION.md) | How to adapt this template for your organization |
 | [3 · UI/UX system plan — process & validation (SSOT)](Process%20&%20Governance/3%20%C2%B7%20UI%20UX%20system%20plan%20%E2%80%94%20process%20&%20validation%20(SSOT%203374544eeb42810f9015e8d48d5453af.md) | Process + validation SSOT (executable rules pinned in `design.md`) |
 | [5 · UI/UX governance — PM execution playbook](Process%20&%20Governance/5%20%C2%B7%20UI%20UX%20governance%20%E2%80%94%20PM%20execution%20playbook%20e112617dc0d74306a44fe55ac121ef52.md) | PM execution playbook for the UI/UX governance gates |
 | [UI/UX Reporting Process & Prototyping Standards — Mandatory Compliance](Process%20&%20Governance/UI%20UX%20Reporting%20Process%20&%20Prototyping%20Standards%20%E2%80%94%20%20e1a5cc1e61df4667b06403c01b3643fc.md) | Mandatory compliance checklist template (duplicate per project) |
 
-<aside>
-⚠️
+**CSV export:** For a structured design-system index suitable for CSV import, use **[7 · Design catalog — reference index](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md)**.
 
-**CSV export caveat:** Notion exports a *page* as **Markdown/HTML**, not CSV. Only **databases** export to CSV. So:
-• Exporting **this hub** as Markdown will preserve the tables above as readable Markdown rows — not a true CSV.
-• For a real CSV of the design-system index, use **[7 · Design catalog — reference index (CSV import)](Workflow%20&%20Tooling/7%20%C2%B7%20Design%20catalog%20%E2%80%94%20reference%20index%20(CSV%20import)%203374544eeb4281839c3fd35dde864187.md)** — it is already structured for CSV.
-• To get all linked chapters in one bundle: **Export → "Markdown & CSV" with "Include subpages" toggled on** from the **[UI/UX Guidelines](../UI%20UX%20Guidelines%2034b4544eeb4280b380c1c4b7e5addcfa.md)** page.
-
-</aside>
-
-<aside>
-📚
-
-**Repo mirrors:** the same chapters are pinned in `docs/design/` (`1-scope.md` → `9-motion.md`), with deviations in `docs/design-exceptions.md` and history in `docs/design/CHANGELOG.md`. Keep Notion ↔ repo ↔ Figma library in sync.
-
-</aside>
+**Repo mirrors:** pin chapters in `docs/design/` with deviations in `docs/design-exceptions.md`. Keep `BRANDBOOK.md` ↔ hub ↔ Figma library in sync.
