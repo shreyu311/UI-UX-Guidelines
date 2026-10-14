@@ -1,0 +1,5 @@
+# Consistent line endings across platforms
+* text=auto
+*.md text diff=markdown
+*.svg text
+*.png binary
